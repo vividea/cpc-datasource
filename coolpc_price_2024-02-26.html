@@ -1,0 +1,1172 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=big5">
+<title>原價屋線上估價-含稅</title>
+<style type="text/css">
+*{font:10pt Arial}
+.s, s. option{font-family:'Arial Narrow'}
+body{overflow:auto;margin:0 0 56 0;-moz-user-select:none}
+b{font-weight:700}
+button{color:#eee;background-color:#666;cursor:pointer;height:20;border:none;border-radius:5px;}
+em{color:red;cursor:pointer;margin:0 2 0 22;}
+ins div{margin-left:3px;}
+option, select, #tbdy td ins div, .t{letter-spacing:-0.4px;}
+select option:disabled{font-size:9pt;}
+select{margin-top:1px;margin-bottom:1px;}
+select optgroup{font-family: Arial, Helvetica, sans-serif;font-weight:900}
+tt{padding:4 6 1 5;border-radius:3px;}
+td{white-space:nowrap;padding:0 1 0 1}
+td #myIButton{
+        box-shadow: 3px 4px 0px 0px #8a2a21;
+        background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+        background-color:#c62d1f;
+        border-radius:17px;
+        border:1px solid #d02718;
+        display:inline-block;
+        cursor:pointer;
+        color:#fff3f3;
+        font-family:Arial;
+        font-size:15px;
+        font-weight:900;
+        margin:2px 8px 0px 7px;
+        padding:4px 8px 3px 8px;
+        float:left;
+        text-decoration:none;}
+td #myIButton:hover{
+        background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+        background-color:#f24437;color:#ddd;position:relative;top:1px;left:1px;}
+td #myIButton:active{position:relative;top:2px;left:2px;}
+#installment td,#installment span{color:#fee;font-size:15pt;font-weight:900}
+#installment span{text-decoration:underline;padding-left:3;padding-right:3}
+#Matchs ol{margin:0;list-style:none;}
+#Matchs ol li{padding-top:3px;padding-bottom:2px;border-bottom:1px solid #ddd;cursor:pointer;color:#333;}
+#Matchs ol li:hover{background-color:#d6d6d6;}
+#Matchs ol li::before{content:attr(value);color:#fff;padding:1px 0px;display:inline-block;width:1.5em;margin-left:-2em;margin-right:0.7em;
+  text-align:center;direction:rtl;background-color:#666;border-radius:50%;}
+#Matchs ol li p{color:#888;font-size:9pt;display:inline;}
+#Matchs u{color:orangered}
+#Mdy{color:#840;}
+#logo img{border:0}
+#tbdy th{white-space:nowrap;padding:3 1 0 1;font-weight:normal;vertical-align:top}
+#tbdy th div,#tbdy ins div{height:20;}
+#tbdy td ins div{text-overflow:ellipsis;overflow:hidden;}
+#thy th{padding:2 0 0 2;}
+#thy th, #thy th *{font-size:10pt;}
+#wat, .wat{font-size:15pt;font-weight:900;color:#060;margin-left:3px;}
+#know td{padding:5 8 5 8;}
+#Tester{position:fixed;left:68;top:-8;z-index:5;height:16;animation:blinkingText 1.5s infinite;}
+#Tester .rd{font-size:14pt;cursor:pointer;font-weight:900;position:relative;top:8px;margin-right:9pt;background-color:red;padding:4px 6px;border-radius:0 0 10px 10px;}
+#Tester .rd:hover{background-color:#ddd;color:red}
+
+.MyIButton{animation:blinkingText 1.5s infinite;}
+@keyframes blinkingText{
+    0%{color: #fed;}
+    49%{color: #fed;}
+    60%{color: transparent;}
+    99%{color:transparent;}
+    100%{color: #fed;}
+}
+.cner td{padding:0}
+.doc p{font-size:12pt;font-weight:900}
+.doc td{font-size:10pt}
+.bb{background-color:#ddd;color:brown}
+.bf{background-color:#ddd}
+.b{color:blue}
+.clear{font-size:14pt;cursor:pointer;color:#999}
+.clear:hover{color:red}
+.d{display:none}
+.f{color:brown;position:absolute}
+.fc{float:right;cursor:pointer;padding:2px;border-radius:3px;}
+.fd{float:left;cursor:pointer;padding:2px;margin:0 2px;border-radius:3px;}
+.fe{cursor:pointer;float:right;margin-right:2px;padding:3px;border-radius:2px;}
+.fc:hover{background-color:gold}
+.ftb .fc:hover{background-color:#e5e4e2;}
+.g{color:#090}
+.h{cursor:pointer;float:right;margin-top:1px;}
+.i{font:15pt 'Arial';border:0;border-bottom:ridge black 1px;background-color:transparent;color:blue;font-weight:900;text-align:center}
+.p{cursor:pointer}
+.r{color:red}
+.s{width:97%;margin-bottom1:3px;}
+.SearchBox{padding:3px;background-color:#fff;font-size:11pt;border:2px solid #eb5;border-radius:15px;-moz-border-radius:15px;-webkit-border-radius:15px;-khtml-border-radius:15px}
+.SearchBox:hover{border:2px solid #c80;}
+.Switch{position:fixed;top:-2;left:2;font-size:14pt;color:#fff;z-index:5;padding:0px 1px;cursor:col-resize;}
+#Switch{position:fixed;top:2;left:30;font-size:13pt;color:#fff;z-index:5;padding:0px 1px;cursor:alias;}
+.Switch:hover, #Switch:hover{color:gold;}
+.v{visibility:hidden;float:right}
+.w{font-weight:800;font-size:11pt;padding:0;text-align:center}
+.y{background-color:#fe0;padding:1 3 0 3}
+.ftb{border:2px dashed #996600;-moz-user-select:none;}
+.fixDiv{vertical-align:middle;filter:Alpha(Opacity=96);-moz-opacity:0.96;opacity:0.96;width:1040px;position:fixed;left:50%;bottom:0;transform:translate(-50%,0);}
+</style>
+<script>
+c1=[0,0,76600,69900,45990,0,25900,19490,18500,20900,16800,15900,11900,0,59900,62900,43900,38900,29900,0,43900,25900,0,35900,0,23900,99900,109900,169900,159900,46900,0,0,6900,18900,0,18900,0,17900,15900,13900,9990,0,59900,0,45600,0,29900,0,0,21990,18990,19990,22990,32990,23990,19990,16990,19900,40990,32990,16990,0,46900,0,15900,12500,10800,20500,0,16800,0,0,18900,24800,18800,9800,7999,0,0,25900,20900,24900,17900,17900,14900,14900,9800,8888,0,14900,14900,11900,11900,8900,8900,5900,4900,0,29900,21900,21900,29900,19900,14800,10900,0,39900,19900,0,5990,0,0,10900,0,15700,0,0,19900,14800,24000,18900,15900,7777,5400,4900,4290,0,5190,0,6690,0,6090,6690,0,7390,4390,0,550,1150,250,230,280,450,790,360,0,19900,32900,0,20900,29900,22900,17900,39900,30900,27900,22900,26900,21500,32900,25900,25900,20900,19900,15900,29900,0,18500,0,14500,14900,31900,33900,41900,0,8500,6250,18900]
+c2=[0,0,699,1349,1890,5288,0,0,5900,0,3990,0,4990,0,6190,0,0,8990,0,0,11990,0,13990,0,5290,0,6580,0,0,13990,0,0,22999,19999,1890,1190,24999,0,0,0,790,1990,1890,1590,3990,0,0,0,0,28990,31990,31990,36900,36900,39900,39900,3590,0,0,23999,24900,29990,30999,33490,28990,3590,0,0,44990,36890,44990,3590,0,0,23688,26599,31900,33490,26500,3590,0,0,46900,38990,3590,0,0,31900,38990,5790,0,0,0,19399,26900,0,0,13400,17900,17900,20900,18900,22900,26900,22350,0,0,18588,22350,0,0,27290,29290,31999,0,0,25888,27900,29900,29900,38690,0,0,41900,50900,0,0,35780,37900,50900,39900,42900,59900,54900,62900,48888,63900,57900,0,0,63900,67900,99000,89000,0,0,10888,10888,0,0,23888,21900,23888,23900,25900,25900,0,0,25790,23900,26888,29900,28900,0,0,30390,33999,0,0,46900,41900,0,0,51900,0,0,44500,44800,0,0,23900,26900,0,0,0,0,14990,17850,17850,0,19900,20650,25350,0,29100,35990,0,31990,30900,36550,0,38400,46050,0,48850,66990,0,33800,41350,0,0,29990,35990,0,31900,0,23900,29900,30900,34500,0,30900,0,31900,0,0,47900,54900,0,45900,43900,89900,0,0,39900,39900,43900,43900,32900,32900,0,33900,33900,37900,36900,36900,42900,42900,64900,79900,0,18999,18999,18999,18999,21999,21999,21900,22900,24999,22900,0,23999,25999,0,14900,14900,21900,17999,16999,18999,18999,19999,19999,19999,24900,24900,27900,27900,0,29900,24900,17999,23900,21900,27900,26900,26900,30900,30999,0,22900,0,56999,0,59999,60999,0,36999,57999,57999,74999,0,29999,30499,31999,44999,44999,26999,29999,34999,38999,35999,39999,39999,43999,0,0,34999,36900,39999,79999,0,94999,67999,0,67999,0,79999,0,98999,0,114999,0,114999,0,149999,53999,49999,72999,86900,61999,70999,93999,0,23900,0,27999,29900,26900,34999,29999,32999,38999,36500,39999,39999,43999,48999,56999,84999,0,59999,66999,86999,109900,63999,72999,95999,119999,0,1,0,44900,0,0,27999,29900,0,30900,32999,31900,33900,34900,35990,0,29999,41999,44900,49900,49900,64900,0,49900,58900,68900,0,0,76900,0,94900,0,0,0,0,19900,22500,0,18399,14500,25499,18900,19300,0,28500,36900,41900,43900,0,25900,0,34500,43900,59900,0,39500,0,0,0,50900,54700,0,0,27900,37900,27400,32900,37900,32500,48900,46900,29500,0,0,58900,75900,0,59900,79900,117900,0,0,35900,37400,0,51900,34900,31900,35500,41900,36900,47900,0,87900,69900,117900,0,169900,0,1,1,1,0,84990,95990,0,93900,114990,138990,155990,0,59900,0,157990,0,0,0,32900,26900,32900,32900,26900,42900,42900,49900,43900,54900,0,0,36900,45900,48900,54900,0,0,0,24900,0,36900,0,0,17688,14900,0,30900,36900,0,0,0,25900,38900,36900,39900,0,0,36900,0,0,39900,0,0,0,55900,73900,0,0,12800,0,29500,43400,0,5990,0,390,390,0,1520,0,1690,0,1420,890,950,899,1790,2499,0,888,0,279,490,599,0,599,858,999,0,5290,0,6490,0,760,760,760,760,760,760,760,760,760,760,760,760]
+c3=[0,0,38900,0,36900,0,0,0,1990,1590,2590,3390,799,499,1099,1490,2390,0,33500,0,0,43690,0,0,25000,0,0,31000,0,0,37900,0,0,12900,0,0,37900,0,0,40900,0,0]
+d1=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+d2=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1200,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,500,0,0,0,0,500,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1100,1100,1100,0,0,0,0,0,0,0,0,500,0,0,0,1100,1100,0,0,0,1500,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,990,0,990,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1500,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+d3=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+
+w1=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+w2=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+w3=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+
+Header=[0,[137,15,137,131,25,0],[399,107,400,382,57,6],[19,0,19,9,5,0]]
+g1=[0,0,3.5,4.5,5.5,0,7.5,8.5,9.5,10.5,11.5,12.5,13.5,0,15.5,16.5,17.5,18.5,19.5,0,21.5,22.5,0,24.5,0,26.5,27.5,28.5,29.5,30.5,31.5,0,0,34.5,35.5,0,37.5,0,39.5,40.5,41.5,42.5,0,44.5,0,46.5,0,48.5,0,0,51.5,52.5,53.5,54.5,55.5,58.5,60.5,61.5,62.5,63.5,64.5,65.5,0,67.5,0,69.5,70.5,71.5,72.5,0,74.5,0,0,78.5,79.5,82.5,83.5,84.5,0,0,87.5,88.5,89.5,90.5,91.5,92.5,93.5,94.5,95.5,0,97.5,98.5,99.5,100.5,101.5,102.5,103.5,104.5,0,106.5,107.5,108.5,109.5,110.5,111.5,112.5,0,114.5,115.5,0,117.5,0,0,120,0,122,0,0,125.5,126.5,127.5,128.5,129.5,130.5,131.5,132.5,133.5,0,135.5,0,137.5,0,139.5,140.5,0,142.5,143.5,0,145.5,146.5,147.5,148,149.5,150.5,151.5,152.5,0,154.5,155.5,0,157.5,158.5,159.5,160.5,161.5,162.5,163.5,164.5,165.5,166.5,167.5,168.5,169.5,170.5,171.5,173.5,174,0,176.5,0,178.5,179.5,180.5,181.5,182.5,0,184.5,187,188]
+g2=[0,0,190.5,191.5,192.5,193.5,0,0,196.5,0,198.5,0,200.5,0,202.5,0,0,206.5,0,0,209.5,0,211.5,0,213.5,0,215.5,0,0,218.5,0,0,221.5,222.5,223.5,224.5,225.5,0,0,0,240,241,242,243,0,0,0,0,0,249.5,250.5,251.5,252.5,253.5,254.5,255.5,256,0,0,259.5,261.5,262.5,263.5,264.5,265.5,266,0,0,269.5,270.5,271.5,272,0,0,275.5,276.5,278.5,279.5,280.5,281,0,0,284.5,285.5,286,0,0,289.5,290.5,291,0,0,0,295.5,296.5,0,0,299.5,300.5,301.5,302.5,303.5,304.5,305.5,306.5,0,0,309.5,310.5,0,0,313.5,314.5,315.5,0,0,318.5,319.5,320.5,321.5,322.5,0,0,325.5,326.5,0,0,329.5,330.5,331.5,332.5,333.5,334.5,335.5,336.5,337.5,338.5,339.5,0,0,343.5,344.5,346.5,347.5,0,0,351.5,353.5,0,0,356.5,357.5,358.5,359.5,361.5,362.5,0,0,365.5,366.5,368.5,369.5,370.5,0,0,374.5,375.5,0,0,378.5,379.5,0,0,382.5,0,0,385.5,386.5,0,0,389.5,390.5,0,0,0,0,396.5,397.5,398.5,0,400.5,401.5,402.5,0,406.5,407.5,0,409.5,410.5,411.5,0,413.5,414.5,0,418.5,419.5,0,425.5,426.5,0,0,429.5,430.5,0,432.5,0,434.5,435.5,436.5,437.5,0,439.5,0,441.5,0,0,446.5,447.5,0,449.5,450.5,451.5,0,0,454.5,455.5,456.5,457.5,458.5,459.5,0,461.5,462.5,463.5,464.5,465.5,466.5,467.5,468.5,469.5,0,471.5,472.5,473.5,474.5,475.5,476.5,477.5,478.5,479.5,480.5,481.5,482.5,483.5,484,485.5,486.5,487.5,488.5,489.5,490.5,491.5,492.5,493.5,494.5,495.5,496.5,497.5,498.5,0,500.5,502.5,503.5,504.5,505.5,506.5,507.5,508.5,509.5,510.5,0,512.5,0,514.5,0,516.5,517.5,0,519.5,520.5,521.5,522.5,0,524.5,525.5,526.5,527.5,528.5,529.5,530.5,531.5,532.5,533.5,534.5,535.5,536.5,0,0,539.5,540.5,541.5,542.5,0,544.5,545.5,0,547.5,0,549.5,0,551.5,0,553.5,0,555.5,0,557.5,558.5,559.5,560.5,561.5,562.5,563.5,564.5,0,566.5,0,568.5,569.5,570.5,571.5,572.5,573.5,574.5,575.5,576.5,577.5,578.5,579.5,580.5,581.5,0,583.5,584.5,585.5,586.5,587.5,588.5,589.5,590.5,0,592.5,0,594.5,0,0,597.5,598.5,0,600.5,601.5,602.5,603.5,604.5,605.5,0,607.5,608.5,609.5,610.5,611.5,612.5,0,614.5,615.5,616.5,0,0,620.5,0,622.5,0,0,0,0,629.5,630.5,0,632.5,633.5,634.5,635.5,636.5,0,638.5,639.5,640.5,641.5,0,643.5,0,645.5,646.5,647.5,0,649.5,0,651.5,0,653.5,654.5,0,0,657.5,659.5,660.5,661.5,662.5,663.5,664.5,665.5,666.5,0,0,669.5,670.5,0,673.5,674.5,675.5,0,0,681.5,682.5,0,684.5,685.5,686.5,687.5,688.5,689.5,690.5,0,692.5,693.5,694.5,0,696.5,0,698.5,699,700,0,703.5,704.5,0,706.5,707.5,708.5,709.5,0,711.5,0,713.5,0,0,0,717.5,718.5,719.5,720.5,721.5,722.5,723.5,724.5,725.5,726.5,0,0,729.5,730.5,731.5,732.5,0,0,0,736.5,0,738.5,0,0,741.5,742.5,0,744.5,745.5,0,0,0,749.5,751.5,752.5,753.5,0,0,756.5,0,0,759.5,0,0,0,763.5,764.5,0,0,767.5,0,769,770,0,776.5,0,778.5,779.5,0,781.5,0,783.5,0,785.5,786,787.5,788.5,789.5,790.5,0,792.5,0,794,795.5,796.5,0,798.5,799.5,800.5,0,804,0,806,0,808.5,809.5,810.5,811.5,812.5,813.5,814.5,815.5,816.5,817.5,818.5,819.5]
+g3=[0,0,821,0,823.5,0,0,0,827,828,829,830,831,832,833,834,835,0,843.5,0,0,846.5,0,0,849.5,0,0,852.5,0,0,855.5,0,0,860.5,0,0,863.5,0,0,866.5,0,0]
+J=3
+ftime=1708959606
+DD='&D=1';DT='?D=1'
+Mobile=0
+function ChkPost(){
+}
+</script>
+<script language=JavaScript src="/js/e19.js"></script>
+</head>
+<body bgcolor="#111111" background="/img/bg.gif" onLoad="init();Cpy=false;" oncontextmenu="return Cpy" onselectstart="return Cpy" onkeyup="QPrint(event)" onresize="CheckXBar()" >
+<span id=Psu style="position:absolute;left:0;top:0;background-color:#000;z-index:10;filter:Alpha(Opacity=85);-moz-opacity:0.85;opacity:0.85"></span>
+<span id=tip style="position:absolute;z-index:15"></span>
+<span id=doc style="position:absolute;z-index:20"></span>
+<form name=QP method=post target=pWin action="eva-print.php"><input type="hidden" name="PHPSESSID" value="3dc181241e22ae092b900d1865e32576" /><input type=hidden name=QS></form>
+<iframe name=DL width=0 height=0 class=d></iframe><form name=S method=post target=DL action="eva-excel.php"><input type="hidden" name="PHPSESSID" value="3dc181241e22ae092b900d1865e32576" />
+<input type=hidden name=Duty value=1>
+<input type=hidden name=UL>
+<br>
+<center>
+<table cellscpaing=0 cellpadding=0>
+<tr><td id=ItemList width="686" valign=top style="display:none;">
+<script>
+iClear='<body><table width="100%" height="98%"><tr><th style="color:white;font-size:24pt;">請先進行估價！</th></tr></table><span style="display:none" id="mtime"></span></body>'
+document.write('<iframe id="Fitem" name="FItem" width=686 height='+(document.body.clientHeight-18)+' allowtransparency=true style="border:0;position:fixed;"></iframe>')
+//FItem.document.body.outerHTML=iClear // 用 innerHTML fireFox 出問題 
+FItem.src="javascript:parent.iClear" // 2023/9/30 以後的 Chrome 在 iframe tag 的 src="javascript:parent.iClear" 會出問題
+</script>
+</td>
+<td id=LayerMode>
+<div id=hid><iframe src="/home/img/top.html" width="1190" height="132" scrolling="no" align="center" frameborder="0"></iframe></div>
+<table cellspacing=0 width=1200>
+<caption>
+<table border=0 cellspacing=0 cellpadding=0 width=99% id=Ttitle>
+  <tr>
+    <td width=30% nowrap rowspan=2>
+      <u style="display:none">Designed by ShauPi 吳祚維</u>
+      <table cellspacing=0 id=know>
+	<tr><td><a href="/tw/shop/welcome-to-coolpc/coolpc-buy/?PHPSESSID=3dc181241e22ae092b900d1865e32576" target=_blank><img src="/img/know.gif" border=0></a><td><a href="/m/?PHPSESSID=3dc181241e22ae092b900d1865e32576" target=_blank><img src="/img/phone.gif" border=0 title="手機行動網路版"></a></tr>
+	<tr><td><img src="/img/tea.gif" border=0 onClick="window.open('https://www.youtube.com/embed/D2OlHBJ-soM?hd=1')" style="cursor:pointer"><td><img src="/img/success.gif" border=0 onClick="window.open('http://photo.coolpc.com.tw')" style="cursor:pointer"></tr>
+	<tr><td><img src="/img/tell.gif" border=0 onClick="Gauze(5)" style="cursor:pointer"><td><a href="/tw/?PHPSESSID=3dc181241e22ae092b900d1865e32576" target=_blank><img src="/img/act.gif" border=0></tr>
+      </table>
+    </td>
+    <td>
+<a href='/tw/shop/motherboard/asus-pro-ws-trx50-sage-wifi/?PHPSESSID=3dc181241e22ae092b900d1865e32576' target=_blank><img src='/mkt/fb/asus/pro-ws-trx50-sage-wifi/coolpc-pro-ws-trx50-sage-wifi-banner.jpg' border=0></a>
+<a href='/tw/shop/laptop/gigabyte-aorus-16x-2024/?PHPSESSID=3dc181241e22ae092b900d1865e32576' target=_blank><img src='/mkt/fan/ad/coolpc-gigabyte-aorus16x2024-ad.jpg' border=0></a>
+<a href='/tw/shop/laptop/acer-swift-go-sfg14-72t-577w/?PHPSESSID=3dc181241e22ae092b900d1865e32576' target=_blank><img src='/mkt/da/acer/swift-go-sfx14-72t-577w/coolpc-swift-go-sfg14-72t-150.jpg' border=0></a>
+<a href='https://www.aorus.com/zh-tw/explore/events/c-2401001-likeadragon8' target=_blank><img src='/mkt/da/ad/gigabyte-banner-0331-150x80.gif' border=0></a>
+<a href='/tw/shop/keyboard/ducky-one2-pro/?PHPSESSID=3dc181241e22ae092b900d1865e32576' target=_blank><img src='/mkt/age/ad/coolpc-ducky-one2-pro.jpg' border=0></a>
+<a href='/tw/shop/cooler/water-cooling/coolermaster-masterliquid-360-atmos-argb/?PHPSESSID=3dc181241e22ae092b900d1865e32576' target=_blank><img src='/mkt/da/coolermaster/masterliquid-atmos-argb/coolpc-masterliquid-360-atmos-argb-150.jpg' border=0></a></td>
+  </tr>
+  <tr><td><div style="color:gold"><nobr>已<font color=#00cc00>【聯絡我們】</font>者：<marquee id=mailOK width=790 scrolldelay=150 style="float:right;margin-right:6px;">【劉珈◎ 02/26 22:50】
+【簡瑋◎ 02/26 22:42】
+【jane702702 02/26 22:40】
+【陳柏◎ 02/26 22:36】
+【賴天◎ 02/26 22:33】
+【黃聖◎ 02/26 22:31】
+【唐永◎ 02/26 22:29】
+【王宏◎ 02/26 22:26】
+【蕭啟◎ 02/26 22:26】
+【黃實◎ 02/26 22:25】
+【leeyauchen 02/26 22:21】
+【a955885277 02/26 22:17】
+【劉其◎ 02/26 22:12】
+【黃翊◎ 02/26 22:03】
+【林于◎ 02/26 21:59】
+【陳家◎ 02/26 21:55】
+【賴至◎ 02/26 21:53】
+【jim7762000 02/26 21:34】
+【許銘◎ 02/26 21:26】
+【snelson594239 02/26 21:23】
+資料僅保存最近更新的20筆
+</marquee></nobr></div>
+</td></tr>
+</table>
+</caption>
+<tr><td width=95% valign=top>
+<table border=0 cellspacing=1 width=100% id=Tfix>
+<col width=18><col width=152><col width=606><col width=55><col width=43><col width=46><col align=center>
+<tr align=middle bgcolor=#ffcc66 id=thy>
+<th bgcolor=#993300 width=18 onClick="Save()" style="cursor:pointer;cursor:hand" title="將估價結果產生一個網頁連結檔">Ｃ<th>品　名<th width=606><font id=Mdy>2024/2/26 23:00<span style="font-family:'Segoe UI Symbol', Wingdings;margin-left:8">&#xe1db;</span> </font>　<font class=r>紅-熱賣</font>　<font class=g>綠-價格異動</font>　<font class=b>藍-熱賣+價格異動</font>　◆開箱討論　★參考圖片　<img src=/img/recommend.gif align=top title="啟動熱賣商品推薦" class=p onClick="ReComm(this)"><th width=55>數 量<th width=43>單 價<th width=46>小 計<th width=23>◆★<th class=d>備 註</tr>
+<tbody id=tbdy>
+<TR bgColor=efefe0><TD class=w>1<TD class=t>品牌小主機、AIO｜VR虛擬</TD><TD noWrap>
+<SELECT onchange="cnt(1)" onmouseover="Tip(this,event)" name=n1 class=s>
+<OPTION value=0 selected class=bf>共有商品 137 樣，熱賣 15，圖片 137，討論 131，價格異動 25
+<OPTGROUP LABEL='華碩 ASUS 品牌主機區'>
+<OPTION value=2>ASUS G35CA-1390KF173W i9-13900KF/32G/1TB SSD/WIN11/RTX3090, $76600 ◆ ★</OPTION>
+<OPTION value=3>ASUS G22CH-1370KF028W i7-13700KF/32G/1T+512G SSD/WIN11/RTX3070, $69900 ◆ ★</OPTION>
+<OPTION value=4 class=r>ASUS G22CH-714700004W I7-14700/8G DDR5/512G SSD/WIN11, $45990 ◆ ★ 熱賣</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=5>　　&#x21AA; 買G22CH-714700004W，加送華碩 ROG Strix Scope II Rx 機械式鍵盤 $4190</OPTION>
+<OPTION value=6>ASUS H-S500SD-712700015W i7-12700/16G/512G SSD/WIN11/300W, $25900 ◆ ★</OPTION>
+<OPTION value=7 class=g>ASUS H-S500SE-513400006W i5-13400/8G/512G/WIN11/300W, $19900↘$19490 ◆ ★</OPTION>
+<OPTION value=8>ASUS H-S500SD-512400051W i5-12400/8G/512G SSD/WIN11/300W, $18500 ◆ ★</OPTION>
+<OPTION value=9>ASUS H-S500SD-512400045W i5-12400/8G/1T+256G SSD/WIN11 *內含GTX1030, $20900 ◆ ★</OPTION>
+<OPTION value=10>ASUS H-S500SE-313100007W i3-13100/8G/512G/WIN11/300W, $16800 ◆ ★</OPTION>
+<OPTION value=11>ASUS H-S500SD-312100034W i3-12100/8G/512G SSD/WIN11/180W, $15900 ◆ ★</OPTION>
+<OPTION value=12>ASUS H-S500SD-0G6900011W G6900/4G/1T/WIN11/180W, $11900 ◆ ★</OPTION>
+<OPTGROUP LABEL='微星 MSI 電競主機'>
+<OPTION value=14>MSI Infinite S3 14TH【1466TW】i7-14700F/32G/2T SSD/WIN11/RTX 4060Ti, $59900 ◆ ★</OPTION>
+<OPTION value=15>MSI Infinite S3 14NUB7【1618TW】i7-14700F/32G/2T SSD/WIN11/RTX 4060Ti, $62900 ◆ ★</OPTION>
+<OPTION value=16>MSI Infinite S3 14NUB5【1619TW】i5-14400F/16G/1T SSD/WIN11/RTX 4060Ti, $43900 ◆ ★</OPTION>
+<OPTION value=17>MSI Infinite S3 14NUC5【1468TW】i5-14400F/16G/1T SSD/WIN11/RTX 4060, $38900 ◆ ★</OPTION>
+<OPTION value=18 class=r>MSI Infinite S3 13TH【846TW】i5-13400F/16G/512GB SSD/WIN11/RTX3050-8G, $29900 ◆ ★ 熱賣</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=19>　　&#x21AA; 買MSI Infinite S3 13TH【846TW】，送MSI G245CV 24吋 曲面螢幕 $3290</OPTION>
+<OPTION value=20>MSI Infinite S3 13NUD【883TW】i5-13400F/16G/1TB/4060Ti/WIN11, $43900 ◆ ★</OPTION>
+<OPTION value=21 class=r>MSI Infinite S3 13TH【661TW】i5-13400F/8G/512G SSD/【GTX1660S】, $25900 ◆ ★ 熱賣</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=22>　　&#x21AA; 買MSI Infinite S3 13TH【661TW】，送MSI G245CV 24吋 曲面螢幕 $3290</OPTION>
+<OPTION value=23 class=r>MSI Infinite S3 13TH【1016TW】i5-13400F/16G(8*2)/512G SSD/WIN11/RTX 4060, $35900 ◆ ★ 熱賣</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=24>　　&#x21AA; 買MSI Infinite S3 13TH【1016TW】，送MSI G2712V 27吋 螢幕 $4290</OPTION>
+<OPTION value=25>MSI Infinite S3 12BSA【1606TW】i5-12400F/16G/1T SSD/WIN11/GTX 1650, $23900 ◆ ★</OPTION>
+<OPTION value=26>MSI Infinite X2 13FNUG【022TW】i7-13700KF/32G/2T+2T/W11P/RTX4080 訂, $99900 ◆ ★</OPTION>
+<OPTION value=27>MSI Trident X2 14TH【268TW】i9-14900KF/32G/1TB SSD/RTX 4070TI /WIN1 PRO, $109900 ◆ ★</OPTION>
+<OPTION value=28>MSI Trident X2 14TH【267TW】i9-14900KF/64G/2TB HDD+2TB SSD/RTX 4090/WIN1 PRO, $169900 ◆ ★</OPTION>
+<OPTION value=29>MSI Infinite X2 14TH【299TW】i7-14700KF/64G/2TB HDD+1TB SSD/RTX 4090/WIN11, $159900 ◆ ★</OPTION>
+<OPTION value=30 class=r>MSI Trident AS 13TH【612TW】i5-13400F/16G(8*2)/1TB SSD/WIN11/RTX 4060, $46900 ◆ ★ 熱賣</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=31>　　&#x21AA; 買MSI Trident AS 13TH【612TW】，送MSI G2712V 27吋 螢幕 $4290</OPTION>
+<OPTGROUP LABEL='宏碁 ACER 品牌主機區'>
+<OPTION value=33>Acer RB610（DT.BL4TA.002）Celeron 7305/4G/128G UFS/WIN11 PRO, $6900 ◆ ★</OPTION>
+<OPTION value=34>Acer Nitro N50-650 (UD.E3GTA.00D) i5-13500/16G/1TB SSD/無OS*無內顯，須加裝顯卡, $18900 ◆ ★</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=35>　　&#x21AA; 買Acer Nitro N50-650 (UD.E3GTA.00D)，加碼送 ZOTAC GTX1630 顯示卡 現賺$2990</OPTION>
+<OPTION value=36>Acer TC-1780 (UD.BK6TA.002) i5-13400/8G/512G SSD/WINDOWS 11, $18900 ◆ ★</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=37>　　&#x21AA; 買Acer TC-1780 (UD.BK6TA.002)，加送 金士頓 8G DDR4-3200 記憶體</OPTION>
+<OPTION value=38>Acer TC-1750_E-00K (UD.BHVTA.00K) i5-12400F/8G/512G SSD/GTX1650/W11, $17900 ◆ ★</OPTION>
+<OPTION value=39>Acer TC-1750_E-00E (UD.BHVTA.00E) i5-12400/16G/1T SSD/無作業系統, $15900 ◆ ★</OPTION>
+<OPTION value=40>Acer TC-1750_E-007 (UD.BHVTA.007) i3-12100/8G/512G SSD/W11, $13900 ◆ ★</OPTION>
+<OPTION value=41>Acer XC-1760_E-00F (UD.BHWTA.00F) G6900/8G/256G SSD/W11, $9990 ◆ ★</OPTION>
+<OPTGROUP LABEL='惠普 HP 品牌主機區'>
+<OPTION value=43 class=b>HP Z1G9【8G9B9PA】i7-13700/16G DDR5/512G SSD/550W/WIN11 PRO/RTX 3070, $64500↘$59900 ◆ ★ 熱賣</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=44>　　&#x21AA; 買HP Z1G9【8G9B9PA】，加碼送 BenQ PD2705Q 專業設計繪圖螢幕(現賺$9988)</OPTION>
+<OPTION value=45>HP Z2G9TWR【8F2J6PA】i7-13700/8G DDR5/500G SSD/700W/WIN11 PRO, $45600 ◆ ★</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=46>　　&#x21AA; 買HP Z2G9TWR【8F2J6PA】，加碼送 BenQ PD2705Q 專業繪圖螢幕(現賺$9988)</OPTION>
+<OPTION value=47 class=b>HP Z2G9TWR【6N0G2PA】i7-12700/8G DDR5/1TB SATA/500W/WIN11 PRO, $33900↘$29900 ◆ ★ 熱賣</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=48>　　&#x21AA; 買HP Z2G9TWR【6N0G2PA】，送HP Z24f G3 FHD 24吋 工作站顯示器(市價$8490)</OPTION>
+<OPTGROUP LABEL='戴爾 DELL 品牌主機區'>
+<OPTION value=50>DELL Inspiron 3030S-R1508BTW I5-14400/8G/512G SSD/180W/WIN11, $21990 ◆ ★</OPTION>
+<OPTION value=51>DELL Inspiron 3030S-R1308BTW I3-14100/8G/512G SSD/180W/WIN11, $18990 ◆ ★</OPTION>
+<OPTION value=52>DELL Inspiron 3030T-R1308BTW I3-14100/8G/512G SSD/300W/WIN11, $19990 ◆ ★</OPTION>
+<OPTION value=53>DELL Inspiron 3030T-R1508BTW I5-14400/8G/512G SSD/300W/WIN11, $22990 ◆ ★</OPTION>
+<OPTION value=54>DELL Inspiron 3030T-R1708BTW I7-14700/16G/1T SSD/300W/WIN11, $32990 ◆ ★</OPTION>
+<OPTION value=55>DELL Inspiron 3020T-R2708BTW I7-13700/16G/512G SSD/300W/WIN11, $23990 ◆ ★</OPTION>
+<OPTION value=56>DELL Vostro Small V3020S-R1608NTW I5-13400/8G/1T+256G/180W/WIN11 Pro, $19990 ◆ ★</OPTION>
+<OPTION value=57>DELL Vostro Small V3020S-R1308NTW I3-13100/8G/1T+256G/180W/WIN11 Pro, $16990 ◆ ★</OPTION>
+<OPTION value=58>DELL Vostro Tower V3020T-R1508STW I5-13400/8G/1T+256G/300W/WIN11 Pro, $19900 ◆ ★</OPTION>
+<OPTION value=59 class=g>DELL Vostro Tower V3020T-R3718STW I7-13700F/16G/512G SSD【RTX3060】, $41990↘$40990 ◆ ★</OPTION>
+<OPTION value=60 class=g>DELL Vostro Tower V3020T-R3618STW I5-13400F/16G/1T+256G SSD【RTX3060】, $39900↘$32990 ◆ ★</OPTION>
+<OPTION value=61>DELL Vostro Tower V3020T-R1308STW I3-13100/8G/1T+256G/300W/WIN11 Pro, $16990 ◆ ★</OPTION>
+<OPTGROUP LABEL='Intel NUC 迷你小主機 系列'>
+<OPTION value=63>Intel NUC RNUC13RNGI90001 i9-13900K (HDD.RAM.OS選購), $46900 ◆ ★</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=64>　　&#x21AA; 買NUC RNUC13RNGI90001 ，送Solidigm P41 Plus 1TB Gen4 M.2 SSD (價值$1700)</OPTION>
+<OPTION value=65 class=g>Intel NUC RNUC13ANHI50001 13代 i5-1340P (HDD.RAM.OS選購), $16900↘$15900 ◆ ★</OPTION>
+<OPTION value=66 class=g>Intel NUC RNUC12WSHI50000 12代 i5-1240P (HDD.RAM.OS選購), $13500↘$12500 ◆ ★</OPTION>
+<OPTION value=67 class=g>Intel NUC RNUC13ANHI30001 13代 i3-1315U (HDD.RAM.OS選購), $11900↘$10800 ◆ ★</OPTION>
+<OPTION value=68>Intel NUC RNUC13ANHI70000 13代 i7-1360P (HDD.RAM.OS選購), $20500 ◆ ★</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=69>　　&#x21AA; 買NUC RNUC13ANHI70000 ，送Solidigm P41 Plus 1TB Gen4 M.2 SSD (價值$1700)</OPTION>
+<OPTION value=70>Intel NUC RNUC12WSHI70000 12代 i7-1260P (HDD.RAM.OS選購), $16800 ◆ ★</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=71>　　&#x21AA; 買NUC RNUC12WSHI70000 ，送Solidigm P41 Plus 1TB Gen4 M.2 SSD (價值$1700)</OPTION>
+<OPTGROUP LABEL='華碩 ASUS VivoMini PC區'>
+<OPTION value=73>ASUS PN53-66HHPYA(R5-6600H/8G/512G SSD/WIN11), $18900 ◆ ★</OPTION>
+<OPTION value=74>ASUS PN80-117UPKA(i7-11700B/8G/512G SSD/WIN 11), $24800 ◆ ★</OPTION>
+<OPTION value=75>ASUS PN64-122HNYA(i3-1220P/8G/256G SSD/WIN 11), $18800 ◆ ★</OPTION>
+<OPTION value=76 class=g>ASUS CHROMEBOX5-730YMGA (Celeron 7305/4G/128G/Chrome OS), $9900↘$9800 ◆ ★</OPTION>
+<OPTION value=77 class=g>ASUS CHROMEBOX4-52UYMGA (Celeron 5250U/4G/128G/Chrome OS), $8300↘$7999 ◆ ★</OPTION>
+<OPTGROUP LABEL='微星 MSI 小主機 系列'>
+<OPTGROUP LABEL='MSI CUBI 主機'>
+<OPTION value=80>MSI CUBI 5 12M【267TW】I7-12550U/16G/1TG SSD/WIN11 PRO/黑色, $25900 ◆ ★</OPTION>
+<OPTION value=81>MSI CUBI 5 12M【033TW】I7-12550U/8G/512G SSD/WIN11/黑色, $20900 ◆ ★</OPTION>
+<OPTION value=82>MSI CUBI 5 12M【081TW】I7-12550U/16G/512G SSD/WIN11 PRO/白色, $24900 ◆ ★</OPTION>
+<OPTION value=83>MSI CUBI 5 12M【034TW】I5-1235U/8G/512G SSD/WIN11/黑色, $17900 ◆ ★</OPTION>
+<OPTION value=84>MSI CUBI 5 12M【082TW】I5-1235U/8G/512G SSD/WIN11/白色, $17900 ◆ ★</OPTION>
+<OPTION value=85>MSI CUBI 5 12M【035TW】I3-1215U/8G/512G SSD/WIN11/黑色, $14900 ◆ ★</OPTION>
+<OPTION value=86>MSI CUBI 5 12M【083TW】I3-1215U/8G/512G SSD/WIN11/白色, $14900 ◆ ★</OPTION>
+<OPTION value=87>MSI CUBI N ADL【035TW】Intel N200/4G/128G SSD/WIN11 PRO/黑色, $9800 ◆ ★</OPTION>
+<OPTION value=88 class=g>MSI CUBI N ADL【036TW】Intel N100/4G/128G SSD/WIN11 PRO/黑色, $8900↘$8888 ◆ ★</OPTION>
+<OPTGROUP LABEL='MSI CUBI 準系統'>
+<OPTION value=90 class=g>MSI CUBI 5 12M【010BTW】Intel i7-1255U (SSD.RAM.HDD.OS選購), $14990↘$14900 ◆ ★</OPTION>
+<OPTION value=91 class=g>MSI CUBI 5 12M【043BTW】Intel i7-1255U (SSD.RAM.HDD.OS選購)/白色, $14990↘$14900 ◆ ★</OPTION>
+<OPTION value=92 class=g>MSI CUBI 5 12M【011BTW】Intel i5-1235U (SSD.RAM.HDD.OS選購), $11990↘$11900 ◆ ★</OPTION>
+<OPTION value=93 class=g>MSI CUBI 5 12M【044BTW】Intel i5-1235U (SSD.RAM.HDD.OS選購)/白色, $11990↘$11900 ◆ ★</OPTION>
+<OPTION value=94 class=g>MSI CUBI 5 12M【012BTW】Intel i3-1215U (SSD.RAM.HDD.OS選購), $8990↘$8900 ◆ ★</OPTION>
+<OPTION value=95 class=g>MSI CUBI 5 12M【045BTW】Intel i3-1215U (SSD.RAM.HDD.OS選購)/白色, $8990↘$8900 ◆ ★</OPTION>
+<OPTION value=96 class=b>MSI CUBI N ADL 【018BTW】Intel N200 準系統 (SSD,RAM,HDD,OS選購)/黑色, $5990↘$5900 ◆ ★ 熱賣</OPTION>
+<OPTION value=97 class=b>MSI CUBI N ADL 【021BTW】Intel N100 準系統 (SSD,RAM,HDD,OS選購)/黑色, $4990↘$4900 ◆ ★ 熱賣</OPTION>
+<OPTGROUP LABEL='MSI PRO DP 主機'>
+<OPTION value=99>MSI PRO DP10 13M【005TW】i7-1360P/16G/1TB SSD/WIN11 PRO/白色, $29900 ◆ ★</OPTION>
+<OPTION value=100>MSI PRO DP10 13M【006TW】i5-1340P/8G/512G SSD/WIN11 PRO/白色, $21900 ◆ ★</OPTION>
+<OPTION value=101>MSI PRO DP10 13M【007TW】i5-1340P/8G/512G SSD/WIN11 PRO/黑色, $21900 ◆ ★</OPTION>
+<OPTION value=102>MSI PRO DP21 13M【493TW】i7-13700/16G/512G SSD/WIN11 PRO, $29900 ◆ ★</OPTION>
+<OPTION value=103 class=g>MSI PRO DP21 13M【494TW】i5-13400/8G/512G SSD/WIN11 PRO, $21900↘$19900 ◆ ★</OPTION>
+<OPTION value=104>MSI PRO DP21 13M【492TW】i3-13100/8G/512G SSD/WIN11, $14800 ◆ ★</OPTION>
+<OPTION value=105>MSI PRO DP21 13M【627TW】G7400/4G/128G SSD/WIN11 PRO, $10900 ◆ ★</OPTION>
+<OPTGROUP LABEL='MSI MSI PRO DP 準系統'>
+<OPTION value=107 class=r>MSI PRO DP180 13【029TW】i7-13700F/16G/1TBHD+512G/WIN11 P *搭RTX4060, $39900 ◆ ★ 熱賣</OPTION>
+<OPTION value=108 class=r>MSI PRO DP180 13【038TW】i5-13400F/8G/512G SSD/WIN11*搭GTX1650, $19900 ◆ ★ 熱賣</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=109>　　&#x21AA; 買 MSI PRO DP180【038TW】，加碼送金士頓 8GB DDR4-3200 記憶體(現賺$499)</OPTION>
+<OPTION value=110>MSI PRO DP21 13M【082BTW】Intel H610 (CPU.SSD.RAM.HDD選購), $5990 ◆ ★</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=111>　　&#x21AA; MSI PRO DP21 13M【082BTW】，內含 AX211 WIFI6E+BT5.3 無線網卡</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=112>　　&#x21AA; 買微星 DP21【082BTW】任搭CPU，加送 MSI SK-9626/SM-9023 有線鍵盤滑鼠組</OPTION>
+<OPTION value=113>【狂】i3-12100+MSI PRO DP21 13M【082BTW】/8G DDR4-3200/500G M.2 SSD, $10900 ★</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=114>　　&#x21AA; 買微星 DP21【082BTW】整機，加送 MSI SK-9626/SM-9023 有線鍵盤滑鼠組</OPTION>
+<OPTION value=115>【狂】i5-13500+MSI PRO DP21 13M【082BTW】/16G DDR4-3200/1T M.2 SSD, $15700 ★</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=116>　　&#x21AA; 買微星 DP21【082BTW】整機，加送 MSI SK-9626/SM-9023 有線鍵盤滑鼠組</OPTION>
+<OPTGROUP LABEL='技嘉 GIGABYTE BRIX 超微型電腦'>
+<OPTION value=118 class=g>GIGABYTE BRIX BER7HS-5700(R7-5700U 8C16T/選購 HDD/SSD、RAM/三年保固), $20380↘$19900 ◆ ★</OPTION>
+<OPTION value=119 class=g>GIGABYTE BRIX BER5HS-5500(R5-5500U 6C12T/選購 HDD/SSD、RAM/三年保固), $15880↘$14800 ◆ ★</OPTION>
+<OPTION value=120>GIGABYTE BRIX BEi7H-1260 (Core i7-1260P 12C16T/選購 SSD、RAM/三年保固), $24000 ◆ ★</OPTION>
+<OPTION value=121>GIGABYTE BRIX BEi5H-1240 (Core i5-1240P 12C16T/選購 SSD、RAM/三年保固), $18900 ◆ ★</OPTION>
+<OPTION value=122>GIGABYTE BRIX BEi3H-1220 (Core i3-1220P 10C12T/選購 SSD、RAM/三年保固), $15900 ◆ ★</OPTION>
+<OPTION value=123 class=b>GIGABYTE BRIX BSi3-1115G4 (Core i3-1115G4 2C4T/選購 SSD、RAM/三年保固), $8888↘$7777 ◆ ★ 熱賣</OPTION>
+<OPTION value=124>GIGABYTE BRIX BMPD-6005 (Pentium N6005 4C4T/選購 HDD/SSD、RAM/三年保固), $5400 ◆ ★</OPTION>
+<OPTION value=125 class=g>GIGABYTE BRIX BMCE-5105 (Celeron N5105 4C4T/選購 HDD/SSD、RAM/三年保固), $4990↘$4900 ◆ ★</OPTION>
+<OPTION value=126>GIGABYTE BRIX BMCE-4500C (Celeron N4500 2C2T/選購 HDD/SSD、RAM/三年保固), $4290 ◆ ★</OPTION>
+<OPTGROUP LABEL='華擎 ASRock 迷你準系統'>
+<OPTION value=128 class=r>ASRock DeskMini AMD架構 X300【準系統】彩裝內含CPU風扇 (不含CPU/RAM/HDD), $5190 ◆ ★ 熱賣</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=129>　　&#x21AA; 買ASRock DeskMini X300，送美光 Micron Crucial 16GB DDR4-3200(2048*8) $990</OPTION>
+<OPTION value=130>ASRock DeskMeet AMD架構 X600【準系統】 (不含CPU/RAM/HDD) 適用AM5 8000/7000系列, $6690 ◆ ★</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=131>　　&#x21AA; 買DeskMeet X600，加送華擎 DeskMini & DeskMeet WiFi + BT4.2 無線模組 價值$550</OPTION>
+<OPTION value=132>ASRock DeskMeet AMD架構 X300【準系統】 (不含CPU/RAM/HDD), $6090 ◆ ★</OPTION>
+<OPTION value=133>ASRock DeskMini INTEL 架構 B760【準系統】(不含CPU/RAM/HDD) 適用12/13/14代 CPU, $6690 ◆ ★</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=134>　　&#x21AA; 買DeskMini B760，任搭CPU加送DeskMini AX210 WiFi 6E + BT5.2 無線網卡 價值$1150</OPTION>
+<OPTION value=135>ASRock DeskMeet INTEL 架構 B660【準系統】(不含CPU/RAM/HDD) 適用12/13/14代 CPU, $7390 ◆ ★</OPTION>
+<OPTION value=136>ASRock DeskMini 4205 INTEL 架構【準系統】(不含RAM/HDD), $4390 ◆ ★</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=137>　　&#x21AA; 買ASRock DeskMini 4205，加送 美光 8G DDR4 SO-DIMM 價值$499</OPTION>
+<OPTION value=138>ASRock DeskMini＆DeskMeet intel 3168 WIFI+BT4.2(intel 3168) 無線模組, $550 ◆ ★</OPTION>
+<OPTION value=139>ASRock DeskMini＆DeskMeet AX210 Wi-Fi 6E M.2 無線網卡 (M.2 2230), $1150 ◆ ★</OPTION>
+<OPTION value=140>ASRock DeskMini USB2.0 二埠擴充線, $250 ◆ ★</OPTION>
+<OPTION value=141>ASRock DeskMini VESA Mount 後背架, $230 ★</OPTION>
+<OPTION value=142>ASRock DeskMini A300/X300 AMD 散熱器, $280 ◆ ★</OPTION>
+<OPTION value=143>ASRock DeskMini Rear audio Cable 後置音效延長線, $450 ◆ ★</OPTION>
+<OPTION value=144>ASRock DeskMini＆DeskMeet ARGB 磁吸式燈條, $790 ◆ ★</OPTION>
+<OPTION value=145>ASRock DeskMini USB HUB 轉卡, $360 ◆ ★</OPTION>
+<OPTGROUP LABEL='宏碁 ACER AIO 主機'>
+<OPTION value=147>ACER Aspire C C24-1700（DQ.BJWTA.001）i5-1235U/8G/512G/Win11, $19900 ◆ ★</OPTION>
+<OPTION value=148>ACER Aspire S S27-1755（DQ.BLMTA.001）i5-1240P/16G/1TSSD/WIN11【粉】, $32900 ◆ ★</OPTION>
+<OPTGROUP LABEL='微星 MSI AIO 主機'>
+<OPTION value=150>MSI Modern AM272P 12M【499TW】27吋/i3-1215U/8G/512G SSD/WIN11/白, $20900 ◆ ★</OPTION>
+<OPTION value=151>MSI Modern AM242TP 12M【469TW】23.8吋/i5-1235U/8G/512G/WIN 11 PRO/白, $29900 ◆ ★</OPTION>
+<OPTION value=152>MSI Modern AM242 12M【677TW】23.8吋/i5-1235U/8G/512G/WIN 11, $22900 ◆ ★</OPTION>
+<OPTION value=153>MSI Modern AM242 12M【678TW】23.8吋/i3-1215U/8G/512G/WIN 11, $17900 ◆ ★</OPTION>
+<OPTION value=154>MSI PRO AP272P 14M【497TW】27吋/i7-14700/16G/1TB SSD/WIN11 PRO/白, $39900 ◆ ★</OPTION>
+<OPTION value=155>MSI PRO AP272P 13MA【478TW】27吋/i5-13400/8G/512G SSD/WIN11 PRO/白, $30900 ◆ ★</OPTION>
+<OPTION value=156>MSI PRO AP272P 13MA【479TW】27吋/i5-13400/8G/512G SSD/WIN11/白, $27900 ◆ ★</OPTION>
+<OPTION value=157>MSI PRO AP272P 13MA【480TW】27吋/i3-13100/8G/512G SSD/WIN11/白, $22900 ◆ ★</OPTION>
+<OPTION value=158>MSI PRO AP272 13M【403TW】27吋/i5-13400/8G/512G SSD/WIN 11/黑, $26900 ◆ ★</OPTION>
+<OPTION value=159>MSI PRO AP272 13M【452TW】27吋/I3-13100/8G/512GB/W11/白, $21500 ◆ ★</OPTION>
+<OPTION value=160>MSI PRO AP242P 14M【626TW】23.8吋/i7-14700/16G/1TB SSD/WIN11 PRO/白, $32900 ◆ ★</OPTION>
+<OPTION value=161>MSI PRO AP242P 14M【619TW】23.8吋/i5-14400/8G/512G SSD/WIN11/黑, $25900 ◆ ★</OPTION>
+<OPTION value=162>MSI PRO AP242P 14M【624TW】23.8吋/i5-14400/8G/512G SSD/WIN11/白, $25900 ◆ ★</OPTION>
+<OPTION value=163>MSI PRO AP242P 14M【625TW】23.8吋/i3-14100/8G/512G SSD/WIN11/白, $20900 ◆ ★</OPTION>
+<OPTION value=164>MSI PRO AP242 12M【050TW】23.8吋/i5-12400/8G/512GB SSD/W11/黑, $19900 ◆ ★</OPTION>
+<OPTION value=165>MSI PRO AP242 12M【601TW】23.8吋/G7400/4G/128G/WIN11 PRO, $15900 ◆ ★</OPTION>
+<OPTION value=166>MSI PRO AP222T 13M【209TW】21.5吋/i5-13400/8G/512G/WIN11 PRO/觸控, $29900 ★</OPTION>
+<OPTGROUP LABEL='聯想 LENOVO AIO 主機'>
+<OPTION value=168 class=g>IdeaCentre AIO 3 24ITL6【F0G0012ATW】23.8吋/i5-1135G7/8G/512G SSD/Win11白, $19000↘$18500 ◆ ★</OPTION>
+<OPTGROUP LABEL='HTC VIVE 主機 (VR/MR虛擬實境)'>
+<OPTION value=170>HTC VIVE COSMOS 虛擬實境裝置, $14500 ◆ ★</OPTION>
+<OPTION value=171>HTC VIVE COSMOS ELITE (頭戴式顯示器), $14900 ◆ ★</OPTION>
+<OPTION value=172>HTC VIVE Focus3, $31900 ◆ ★</OPTION>
+<OPTION value=173 class=r>HTC VIVE XR ELITE 無線串流一體機, $33900 ◆ ★ 熱賣</OPTION>
+<OPTION value=174 class=r>HTC VIVE Pro 2 VR 專業版 (整組), $41900 ◆ ★ 熱賣</OPTION>
+<OPTGROUP LABEL='HTC VIVE 周邊'>
+<OPTION value=176>HTC VIVE PRO / VIVE COSMOS 無線模組通用版, $8500 ◆ ★</OPTION>
+<OPTION value=177>HTC VIVE 自定位追蹤器, $6250 ★</OPTION>
+<OPTION value=178>HTC VIVE 自定位追蹤器 3+1組合, $18900 ★</OPTION>
+</SELECT><img src=f.gif class=h title='Click篩選條件' onclick=Ftr(1)>
+<ins></ins>
+<div style='display:none'>
+<div>篩選條件：<button onclick="FReset('appT')">清除</button>
+　　價格：＄<input name=appTB size=7 onkeyup="FPrice('appT');this.focus()" onkeydown="return OnlyNum()"> 以上 ～
+＄<input name=appTE size=7 onkeyup="FPrice('appT');this.focus()" onkeydown="return OnlyNum()"> 以下
+<img src="img/select.gif" onclick="AppearItemList(iNum)" class=fc>
+</div>
+</div>
+<span id=nb1></span><TD align=right valign=top><SELECT style='width:39px' onchange="cnt(1)" name=u1>
+<OPTION value=1 selected>1<OPTION value=2>2<OPTION value=3>3<OPTION value=4>4<OPTION value=5>5<OPTION value=6>6<OPTION value=7>7<OPTION value=8>8<OPTION value=9>9<OPTION value=10>10</SELECT><img src=a.gif class=v>
+<ins></ins>
+<TH align=right id=p1><TH align=right id=t1><TH id=k1><TD class=d></TR>
+<TR bgColor=efefe0><TD class=w>2<TD class=t>手機｜平板｜筆電｜穿戴<TD noWrap>
+<SELECT onchange="cnt(2)" onmouseover="Tip(this,event)" name=n2 class=s>
+<OPTION value=0 selected class=bf>共有商品 399 樣，熱賣 107，圖片 400，討論 382，價格異動 57，限時下殺▼6
+<OPTGROUP LABEL='PAD 智慧平板/遊戲掌機 區'>
+<OPTION value=2>【加購優惠】任選平板或筆電享Gigastone PD-7650W 三孔充電器 加購優惠價, $699 ◆ ★</OPTION>
+<OPTION value=3>【加購優惠】任選平板或筆電享Gigastone PD-100B+CC-7800 100W充電器含線 優惠價, $1349 ◆ ★</OPTION>
+<OPTION value=4 class=r>Smart Mirror EV22A-010 2.0 智慧魔鏡 (黑/21.5吋/Rockchip RK3288 四核/2G/16G/WIFI), $1890 ◆ ★ 熱賣</OPTION>
+<OPTION value=5 class=g>TCL TAB 10 FHD (2023) (星塵灰 / 10.1吋 / 聯發科 MT8768E 八核 / 4G / 128G / WIFI)▼下殺到 2/29 23:59, $5580↘$5288 ◆ ★</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=6>　　&#x21AA; 【買就送】買TCL TAB 10 FHD 就送 專屬書本式保護套 + 專屬保護貼！</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=7>　　&#x21AA; 【買就送】買TCL TAB 10 FHD 再送 小米 米家魔方延長線</OPTION>
+<OPTION value=8 class=g>TCL TAB 10 Gen2 (太空灰 / 10.4吋 / 聯發科 MT8768 八核 / 4G / 128G / WIFI), $5988↘$5900 ◆ ★</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=9>　　&#x21AA; 【買就送】買TCL TAB 10 Gen2 就送 專屬書本式保護套</OPTION>
+<OPTION value=10>Lenovo TAB M8(4代) TB300FU(灰/8吋/聯發科 A22 四核/4G/64G/WIFI)▼下殺到 2/29 23:59, $3990 ◆ ★</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=11>　　&#x21AA; 【買就送】買TAB M8 就送 金士頓 Canvas Select+ 128G micro SDXC</OPTION>
+<OPTION value=12 class=g>Lenovo TAB M10(3代) TB328FU(灰/10吋/Unisoc T610 八核/4G/64G/WIFI), $5111↘$4990 ◆ ★</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=13>　　&#x21AA; 【買就送】買TAB M10 就送專屬皮套！</OPTION>
+<OPTION value=14 class=g>Lenovo TAB M10 Plus(3代) TB128FU(藍/10吋/高通 SDM680 八核/4G/128G/WIFI)▼下殺到 2/29 23:59, $7490↘$6190 ◆ ★</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=15>　　&#x21AA; 【買就送】買TAB M10 Plus 就送專屬皮套！</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=16>　　&#x21AA; 【買就送】買TAB M10 Plus就送 金士頓 Canvas Select+ 128G micro SDXC</OPTION>
+<OPTION value=17 class=g>Lenovo TAB P11(2代) TB350FU(灰/11吋/聯發科 G99 八核/4G/128G/WIFI)▼下殺到 2/29 23:59, $9990↘$8990 ◆ ★</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=18>　　&#x21AA; 【買就送】買TAB P11 就送專屬皮套！</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=19>　　&#x21AA; 【買就送】買Lenovo TAB P11 再送 小米 米家魔方延長線</OPTION>
+<OPTION value=20>Lenovo TAB P12 TB370FU(香檳金/12吋/聯發科 7050 八核/8G/256G/WIFI), $11990 ◆ ★</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=21>　　&#x21AA; Lenovo TAB P12 內附觸控筆</OPTION>
+<OPTION value=22>Lenovo TAB P12 TB370FU + TAB P12 專用鍵盤, $13990 ◆ ★</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=23>　　&#x21AA; 【買就送】買Lenovo TAB P12 再送 TAB P12 專用包</OPTION>
+<OPTION value=24>ACER Iconia Tab M10 (香檳金 / 10.1吋 / 聯發科 M8183C 八核 / 4G / 64G / WIFI), $5290 ◆ ★</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=25>　　&#x21AA; ACER Iconia Tab M10 內附 充電器、A to C 傳輸線、原廠透明保護殼</OPTION>
+<OPTION value=26>ACER Iconia Tab P10 (鑄鐵灰 / 10.4吋 / 聯發科 M8183C 八核 / 6G / 128G / WIFI), $6580 ◆ ★</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=27>　　&#x21AA; ACER Iconia Tab P10 內附 充電器、A to C 傳輸線、原廠皮質保護殼</OPTION>
+<OPTGROUP LABEL='遊戲主機'>
+<OPTION value=29 class=b>雷蛇RAZER Edge WIFI版 電競掌機RZ80-04610100-B3A1 (含 Kishi V2 Pro手把), $15990↘$13990 ◆ ★ 熱賣 ↓酷幣1200↓</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=30>　　&#x21AA; 買 RAZER 電競掌機，送Razer Hello Kitty And Friends 滑鼠鼠墊組(RZ83-03850100-B3M1)</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=31>　　&#x21AA; 買 RAZER 電競掌機，送Samsung EVO Plus MicroSDXC 512G U3 V30 A2(MB-MC512KA)</OPTION>
+<OPTION value=32 class=r>華碩 ROG ALLY EXTREME〈旗艦版〉+ROG ALLY 收納保護包+擴充充電DOCK, $22999 ◆ ★ 熱賣</OPTION>
+<OPTION value=33>華碩 ROG ALLY EXTREME〈旗艦版〉Z1-Extreme/16G/512G/AMD Radeon Navi3, $19999 ◆ ★</OPTION>
+<OPTION value=34 class=r>華碩 ROG Gaming IO擴充充電DOCK (華碩 ROG ALLY 掌機可用), $1890 ◆ ★ 熱賣</OPTION>
+<OPTION value=35>華碩 ROG ALLY 收納保護包〈黑〉, $1190 ◆ ★</OPTION>
+<OPTION value=36 class=g>微星 Claw A1M【026TW】Core Ultra 7 155H / 16G / 1TB / Intel Arc / Wi-Fi 7▼下殺到 2/29 23:59, $27999↘$24999 ◆ ★</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=37>　　&#x21AA; 【買就送】買微星Claw A1M 就送 霧黑摺疊耳罩式耳機，價值$1990</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=38>　　&#x21AA; 【買就送】買微星Claw A1M 官網登錄再送 100WPD變壓器+Game Pass 3 個月序號</OPTION>
+<OPTGROUP LABEL='筆電搭購電競周邊優惠專區'>
+<OPTION value=40>【筆電搭購優惠】華碩 TUF gaming M4 Wireless 雙模無線滑鼠, $790 ★</OPTION>
+<OPTION value=41>【筆電搭購優惠】華碩 ROG Gladius III Wireless 無線滑鼠, $1990 ★</OPTION>
+<OPTION value=42>【筆電搭購優惠】羅技 G512 機械式鍵盤, $1890 ★</OPTION>
+<OPTION value=43>【筆電搭購優惠】羅技 G502 X 高效能電競滑鼠, $1590 ★</OPTION>
+<OPTION value=44>【筆電搭購優惠】MSI PRO MP161 商務隨身螢幕(15.6吋)(1920*1080 IPS)(600:1)(USB-C), $3990</OPTION>
+<OPTGROUP LABEL='戴爾 DELL 筆電館-全館刷卡分期零利率(3)'>
+<OPTION disabled value=46>&#x2764; 買DELL指定筆電，官網登錄送好禮再參加AI智慧愛沙發抽獎(活動以官網公告為主) ~2/29止</OPTION>
+<OPTGROUP LABEL='13.3吋 DELL戴爾 Inspiron 5000 系列'>
+<OPTION disabled value=48>&#x2764; DELL 筆電享有原廠〈24hr線上故障診斷〉及〈工作日現場維修(家庭、學校、工作)〉</OPTION>
+<OPTION value=49 class=r>DELL Inspiron i5-1340P/16G/512G/13吋 粉 13-5330-R1608PTW, $28990 ◆ ★ 熱賣</OPTION>
+<OPTION value=50 class=r>DELL Inspiron i7-1360P/16G/512G/13吋 粉 13-5330-R1808PTW, $31990 ◆ ★ 熱賣</OPTION>
+<OPTION value=51 class=r>DELL Inspiron i7-1360P/16G/512G/13吋 銀 13-5330-R1808STW, $31990 ◆ ★ 熱賣</OPTION>
+<OPTION value=52 class=g>DELL Inspiron Ultra 5-125H/16G/1T/13吋 粉 13-5330N-R3608PTW, $36990↘$36900 ◆ ★</OPTION>
+<OPTION value=53 class=g>DELL Inspiron Ultra 5-125H/16G/1T/13吋 銀 13-5330N-R3608STW, $36990↘$36900 ◆ ★</OPTION>
+<OPTION value=54 class=g>DELL Inspiron Ultra 7-155H/16G/1T/13吋 粉 13-5330N-R3808PTW, $39990↘$39900 ◆ ★</OPTION>
+<OPTION value=55 class=g>DELL Inspiron Ultra 7-155H/16G/1T/13吋 銀 13-5330N-R3808STW, $39990↘$39900 ◆ ★</OPTION>
+<OPTION value=56>DELL Inspiron 系列延長保固一年〈搭機加購享優惠，請洽詢門市〉, $3590 ★</OPTION>
+<OPTGROUP LABEL='14吋 DELL戴爾 Inspiron 5000 系列'>
+<OPTION disabled value=58>&#x2764; DELL 筆電享有原廠〈24hr線上故障診斷〉及〈工作日現場維修(家庭、學校、工作)〉</OPTION>
+<OPTION value=59>DELL Inspiron R5-7530U/16G/512G/14吋 銀 14-5435-R1608STW, $23999 ◆ ★</OPTION>
+<OPTION value=60>DELL Inspiron i5-1340P/16G/512G/14吋 銀 14-5430-R1508STW *展示機出清, $24900 ◆ ★</OPTION>
+<OPTION value=61>DELL Inspiron i5-1340P/16G/512G/14吋 銀 14-5430-R1608STW, $29990 ◆ ★</OPTION>
+<OPTION value=62>DELL Inspiron i7-1360P/16G/512G/14吋 銀 14-5430-R1708STW, $30999 ◆ ★</OPTION>
+<OPTION value=63 class=r>DELL Inspiron i7-1360P/16G/512G/14吋 銀 14-5430-R1808STW, $33490 ◆ ★ 熱賣</OPTION>
+<OPTION value=64 class=r>DELL Inspiron i5-1340P/MX550/16G/512G/14吋 銀 14-5430-R1528STW, $28990 ◆ ★ 熱賣</OPTION>
+<OPTION value=65>DELL Inspiron 系列延長保固一年〈搭機加購享優惠，請洽詢門市〉, $3590 ★</OPTION>
+<OPTGROUP LABEL='14吋 DELL戴爾 Inspiron 7000 Plus 系列 〈高性能創作筆電〉'>
+<OPTION disabled value=67>&#x2764; DELL 筆電享有原廠〈24hr線上故障診斷〉及〈工作日現場維修(家庭、學校、工作)〉</OPTION>
+<OPTION value=68>DELL Inspiron Plus i7-13700H/RTX4050/16G/512G/14吋 銀 14-7430-R1868STW, $44990 ◆ ★</OPTION>
+<OPTION value=69 class=g>DELL Inspiron Plus Ultra 5-125H/16G/512G/14吋 藍 14-7440-R1508LTW, $36990↘$36890 ◆ ★</OPTION>
+<OPTION value=70>DELL Inspiron Plus Ultra 7-155H/32G/1T/14吋 藍 14-7440-R2808LTW, $44990 ◆ ★</OPTION>
+<OPTION value=71>DELL Inspiron 系列延長保固一年〈搭機加購享優惠，請洽詢門市〉, $3590 ★</OPTION>
+<OPTGROUP LABEL='16吋 DELL戴爾 Inspiron 5000 系列'>
+<OPTION disabled value=73>&#x2764; DELL 筆電享有原廠〈24hr線上故障診斷〉及〈工作日現場維修(家庭、學校、工作)〉</OPTION>
+<OPTION value=74 class=g>DELL Inspiron R5-7530U/16G/512G/16吋 銀 16-5635-R1608STW, $23999↘$23688 ◆ ★</OPTION>
+<OPTION value=75>DELL Inspiron i5-1340P/16G/512G/16吋 銀 16-5630-R1508STW, $26599 ◆ ★</OPTION>
+<OPTION value=76>DELL Inspiron i7-1360P/16G/512G/16吋 銀 16-5630-R1708STW, $31900 ◆ ★</OPTION>
+<OPTION value=77 class=r>DELL Inspiron i7-1360P/16G/512G/16吋 銀 16-5630-R2808STW, $33490 ◆ ★ 熱賣</OPTION>
+<OPTION value=78>DELL Inspiron i5-1340P/RTX2050/16G/512G/16吋 藍 16-5630-R1648BTW *展示機出清, $26500 ◆ ★</OPTION>
+<OPTION value=79>DELL Inspiron 系列延長保固一年〈搭機加購享優惠，請洽詢門市〉, $3590 ★</OPTION>
+<OPTGROUP LABEL='16吋 DELL戴爾 Inspiron 7000 Plus 系列 〈高性能創作筆電〉'>
+<OPTION disabled value=81>&#x2764; DELL 筆電享有原廠〈24hr線上故障診斷〉及〈工作日現場維修(家庭、學校、工作)〉</OPTION>
+<OPTION value=82>DELL Inspiron Plus i7-13700H/RTX4050/16G/512G/16吋 銀 16-7630-R1868STW, $46900 ◆ ★</OPTION>
+<OPTION value=83>DELL Inspiron Plus Ultra 5-125H/16G/1T/16吋 藍 16-7640-R1608LTW, $38990 ◆ ★</OPTION>
+<OPTION value=84>DELL Inspiron 系列延長保固一年〈搭機加購享優惠，請洽詢門市〉, $3590 ★</OPTION>
+<OPTGROUP LABEL='16吋 DELL戴爾 Vostro 5000 系列 〈輕商務筆電〉'>
+<OPTION disabled value=86>&#x2764; DELL 筆電享有原廠〈24hr線上故障診斷〉及〈工作日現場維修(家庭、學校、工作)〉</OPTION>
+<OPTION value=87>DELL Vostro i5-1340P/16G/512G/16吋 灰 V16-5630-R1608ATW, $31900 ◆ ★</OPTION>
+<OPTION value=88>DELL Vostro i7-1360P/16G/512G/16吋 灰 V16-5630-R2808ATW, $38990 ◆ ★</OPTION>
+<OPTION value=89>DELL Vostro 系列延長保固一年〈搭機加購享優惠，請洽詢門市〉, $5790 ★</OPTION>
+<OPTGROUP LABEL='宏碁 Acer 家用.電競 筆電館-全館刷卡分期零利率(3)'>
+<OPTGROUP LABEL='14吋 Acer宏碁 Aspire 5 系列'>
+<OPTION disabled value=92>&#x2764; 〈活動〉買Acer筆電(Predator不適用)，加價購【一年延伸保固卡】只要$1290元〈限量〉</OPTION>
+<OPTION value=93 class=g>Acer Aspire 5 i5-1335U/16G/512G/14吋 灰 A514-56M-55H0, $19900↘$19399 ◆ ★</OPTION>
+<OPTION value=94>Acer Aspire 5 i5-1335U/16G/512G/14吋 灰 A5SP14-51MTN-54K1 *觸控翻轉, $26900 ◆ ★</OPTION>
+<OPTGROUP LABEL='15.6吋 Acer宏碁 Aspire 5 系列'>
+<OPTION disabled value=96>&#x2764; 〈活動〉買Acer筆電(Predator不適用)，加價購【一年延伸保固卡】只要$1290元〈限量〉</OPTION>
+<OPTION value=97>Acer Aspire 5 i3-1305U/8G/512G/15吋 灰 A515-58P-30EZ, $13400 ◆ ★</OPTION>
+<OPTION value=98>Acer Aspire 5 i5-1335U/8G/512G/15吋 灰 A515-58P-599T, $17900 ◆ ★ ↓酷幣500↓</OPTION>
+<OPTION value=99 class=r>Acer Aspire 5 i5-1235U/8G/512G/15吋 灰 A515-57-52NZ *送金士頓8G D4-3200, $17900 ◆ ★ 熱賣</OPTION>
+<OPTION value=100>Acer Aspire 5 i5-1335U/16G/512G/15吋 灰 A515-58M-50Z1, $20900 ◆ ★</OPTION>
+<OPTION value=101>Acer Aspire 5 i5-1335U/16G/512G/15吋 灰 A515-58M-50Z1 *福利品-有維修紀錄, $18900 ◆ ★</OPTION>
+<OPTION value=102>Acer Aspire 5 i5-13420H/16G/512G/15吋 灰 A515-58M-59JV *活動優惠中~, $22900 ◆ ★</OPTION>
+<OPTION value=103>Acer Aspire 5 i7-13620H/16G/512G/15吋 灰 A515-58M-74M4, $26900 ◆ ★ ↓酷幣500↓</OPTION>
+<OPTION value=104>Acer Aspire 5 i5-1335U/RTX2050/8G/512G/15吋 灰 A515-58GM-510J, $22350 ◆ ★</OPTION>
+<OPTGROUP LABEL='17.3吋 Acer宏碁 Aspire 5 系列'>
+<OPTION disabled value=106>&#x2764; 〈活動〉買Acer筆電(Predator不適用)，加價購【一年延伸保固卡】只要$1290元〈限量〉</OPTION>
+<OPTION value=107 class=g>Acer Aspire 5 i3-1315U/16G/512G/17吋 灰 A517-58M-393F, $18900↘$18588 ◆ ★</OPTION>
+<OPTION value=108>Acer Aspire 5 i5-1335U/16G/512G/17吋 灰 A517-58M-53V9, $22350 ◆ ★</OPTION>
+<OPTGROUP LABEL='15.6吋 Acer宏碁 Nitro V 電競機'>
+<OPTION disabled value=110>&#x2764; 〈活動〉買Acer筆電(Predator不適用)，加價購【一年延伸保固卡】只要$1290元〈限量〉</OPTION>
+<OPTION value=111>Acer Nitro V i5-13420H/RTX2050/16G/512G/15吋 黑 ANV15-51-55K7, $27290 ◆ ★</OPTION>
+<OPTION value=112>Acer Nitro V i5-13420H/RTX3050/16G/512G/15吋 黑 ANV15-51-58L8, $29290 ◆ ★</OPTION>
+<OPTION value=113>Acer Nitro V i5-13420H/RTX4050/16G/512G/15吋 黑 ANV15-51-55GN, $31999 ◆ ★</OPTION>
+<OPTGROUP LABEL='15.6吋 Acer宏碁 Nitro 電競機'>
+<OPTION disabled value=115>&#x2764; 〈活動〉買Acer筆電(Predator不適用)，加價購【一年延伸保固卡】只要$1290元〈限量〉</OPTION>
+<OPTION value=116>Acer Nitro 5 i5-12500H/RTX3050/8G/512G/15吋 黑 AN515-58-582W, $25888 ◆ ★</OPTION>
+<OPTION value=117 class=g>Acer Nitro 5 i5-12500H/RTX4050/8G/512G/15吋 黑 AN515-58-56TV, $28900↘$27900 ◆ ★</OPTION>
+<OPTION value=118>Acer Nitro 5 i5-12500H/RTX4060/8G/1T/15吋 黑 AN515-58-57XK *送 美光8G D5-4800, $29900 ◆ ★</OPTION>
+<OPTION value=119 class=g>Acer Nitro 5 i5-12500H/RTX4060/16G/512G/15吋 黑 AN515-58-5427, $32900↘$29900 ◆ ★</OPTION>
+<OPTION value=120>Acer Nitro 5 i7-12700H/RTX4060/16G/512G/15吋 黑 AN515-58-79ZL, $38690 ◆ ★</OPTION>
+<OPTGROUP LABEL='17.3吋 Acer宏碁 Nitro 17 電競機'>
+<OPTION disabled value=122>&#x2764; 〈活動〉買Acer筆電(Predator不適用)，加價購【一年延伸保固卡】只要$1290元〈限量〉</OPTION>
+<OPTION value=123 class=g>Acer Nitro 17 i7-13700H/RTX4050/16G/512G/17吋 黑 AN17-51-78WP, $42900↘$41900 ◆ ★</OPTION>
+<OPTION value=124>Acer Nitro 17 i7-13700H/RTX4060/16G/512G/17吋 黑 AN17-51-740P, $50900 ◆ ★</OPTION>
+<OPTGROUP LABEL='16吋 Acer宏碁 Predator Helios Neo 16 電競機〈官網登錄送一年延保〉'>
+<OPTION disabled value=126>&#x2764; 〈活動〉購買Predator系列筆電，加贈【Acer NGR200遊戲手把】 *數量有限.送完為止~</OPTION>
+<OPTION value=127>Acer Predator Neo i5-13500HX/RTX4050/16G/512G/16吋 黑 PHN16-71-57LQ*送金士頓16G D5, $35780 ◆ ★</OPTION>
+<OPTION value=128 class=g>Acer Predator Neo i5-13500HX/RTX4060/16G/512G/16吋 黑 PHN16-71-56ZU, $39900↘$37900 ◆ ★</OPTION>
+<OPTION value=129>Acer Predator Neo i5-14500HX/RTX4060/16G/512G/16吋 黑 PHN16-72-517P, $50900 ◆ ★</OPTION>
+<OPTION value=130>Acer Predator Neo i7-13700HX/RTX4050/16G/512G/16吋 黑 PHN16-71-7121, $39900 ◆ ★</OPTION>
+<OPTION value=131 class=g>Acer Predator Neo i7-13700HX/RTX4060/16G/512G/16吋 黑 PHN16-71-79C7, $46900↘$42900 ◆ ★</OPTION>
+<OPTION value=132 class=g>Acer Predator Neo i7-13700HX/RTX4070/16G/1T/16吋 黑 PHN16-71-781X, $62900↘$59900 ◆ ★</OPTION>
+<OPTION value=133>Acer Predator Neo i7-14700HX/RTX4060/16G/512G/16吋 黑 PHN16-72-74BH, $54900 ◆ ★</OPTION>
+<OPTION value=134>Acer Predator Neo i7-14700HX/RTX4070/16G/1T/16吋 黑 PHN16-72-74DU, $62900 ◆ ★</OPTION>
+<OPTION value=135 class=g>Acer Predator Neo i9-13900HX/RTX4060/16G/1T/16吋 黑 PHN16-71-91QX, $48900↘$48888 ◆ ★</OPTION>
+<OPTION value=136 class=g>Acer Predator Neo i9-13900HX/RTX4070/32G/1T/16吋 黑 PHN16-71-931B, $64900↘$63900 ◆ ★</OPTION>
+<OPTION value=137>Acer Predator Neo i9-14900HX/RTX4060/16G/512G/16吋 黑 PHN16-72-99HX, $57900 ◆ ★</OPTION>
+<OPTGROUP LABEL='18吋 Acer宏碁 Predator Helios 18 電競機〈官網登錄送一年延保〉'>
+<OPTION disabled value=139>&#x2764; 〈活動〉購買Predator系列筆電，加贈【Acer NGR200遊戲手把】 *數量有限.送完為止~</OPTION>
+<OPTION value=140>Acer Predator i7-13700HX/RTX4060/32G/1T/18吋 黑 PH18-71-75QG, $63900 ◆ ★</OPTION>
+<OPTION value=141>Acer Predator i7-13700HX/RTX4070/32G/1T/18吋 黑 PH18-71-77ZF, $67900 ◆ ★</OPTION>
+<OPTION value=142>Acer Predator i9-13900HX/RTX4080/32G/2T/18吋 黑 PH18-71-91CF *客訂, $99000 ◆ ★</OPTION>
+<OPTION value=143>Acer Predator i9-13900HX/RTX4080/32G/2T/18吋 黑 PH18-71-91CF *展示機出清, $89000 ◆ ★</OPTION>
+<OPTGROUP LABEL='14吋 Acer宏碁 Swift 1 系列'>
+<OPTION disabled value=145>&#x2764; 〈活動〉買Acer筆電(Predator不適用)，加價購【一年延伸保固卡】只要$1290元〈限量〉</OPTION>
+<OPTION value=146>Acer Swift 1 Celeron N5100/8G/256G/14吋 彩虹銀 SF114-34-C04D, $10888 ◆ ★</OPTION>
+<OPTION value=147>Acer Swift 1 Celeron N5100/8G/256G/14吋 粉 SF114-34-C9ZV, $10888 ◆ ★</OPTION>
+<OPTGROUP LABEL='14吋 Acer宏碁 Swift 3 系列'>
+<OPTION disabled value=149>&#x2764; 〈活動〉買Acer筆電(Predator不適用)，加價購【一年延伸保固卡】只要$1290元〈限量〉</OPTION>
+<OPTION value=150>Acer Swift 3 i5-1240P/16G/512G/14吋 銀 SF314-512-50JE, $23888 ◆ ★ ↓酷幣1100↓</OPTION>
+<OPTION value=151>Acer Swift 3 i5-1240P/16G/512G/14吋 金 SF314-512-50DB *展示機出清, $21900 ◆ ★ ↓酷幣1100↓</OPTION>
+<OPTION value=152 class=g>Acer Swift 3 i5-1240P/16G/512G/14吋 藍 SF314-512-50ZX, $23900↘$23888 ◆ ★ ↓酷幣1100↓</OPTION>
+<OPTION value=153 class=r>Acer Swift 3 i5-12500H/16G/512G/14吋 金 SF314-71-54UR, $23900 ◆ ★ 熱賣</OPTION>
+<OPTION value=154 class=r>Acer Swift 3 i7-12700H/16G/512G/14吋 金 SF314-71-79NM, $25900 ◆ ★ 熱賣</OPTION>
+<OPTION value=155 class=r>Acer Swift 3 i7-12700H/16G/512G/14吋 灰 SF314-71-7659, $25900 ◆ ★ 熱賣</OPTION>
+<OPTGROUP LABEL='14吋 Acer宏碁 Swift Go 系列'>
+<OPTION disabled value=157>&#x2764; 〈活動〉買Acer筆電(Predator不適用)，加價購【一年延伸保固卡】只要$1290元〈限量〉</OPTION>
+<OPTION value=158>Acer Swift Go i5-13500H/16G/512G/14吋 銀 SFG14-71-54EW, $25790 ◆ ★</OPTION>
+<OPTION value=159>Acer Swift Go i5-13500H/16G/512G/14吋 金 SFG14-71-575H *展示機出清, $23900 ◆ ★</OPTION>
+<OPTION value=160 class=g>Acer Swift Go i5-13500H/16G/512G/14吋 銀 SFG14-71T-55QB *intel i5 觸控機種, $26900↘$26888 ◆ ★</OPTION>
+<OPTION value=161>Acer Swift Go i7-13700H/16G/512G/14吋 銀 SFG14-71T-70D9 *intel i7 觸控機種, $29900 ◆ ★ ↓酷幣500↓</OPTION>
+<OPTION value=162>Acer Swift Go Ultra 5-125H/16G/512G/14吋 銀 SFG14-72T-577W *Ultra 5 觸控機種, $28900 ◆ ★</OPTION>
+<OPTGROUP LABEL='16吋 Acer宏碁 Swift Go 系列'>
+<OPTION disabled value=164>&#x2764; 〈活動〉買Acer筆電(Predator不適用)，加價購【一年延伸保固卡】只要$1290元〈限量〉</OPTION>
+<OPTION value=165 class=g>Acer Swift Go i5-13500H/16G/512G/16吋 灰 SFG16-71-55WZ, $30900↘$30390 ◆ ★ ↓酷幣1100↓</OPTION>
+<OPTION value=166>Acer Swift Go i7-13700H/16G/512G/16吋 灰 SFG16-71-71EZ, $33999 ◆ ★ ↓酷幣1100↓</OPTION>
+<OPTGROUP LABEL='14.5吋 Acer宏碁 Swift X 系列 〈輕巧纖薄創作者筆電〉'>
+<OPTION disabled value=168>&#x2764; 〈活動〉買Acer筆電(Predator不適用)，加價購【一年延伸保固卡】只要$1290元〈限量〉</OPTION>
+<OPTION value=169>Acer Swift X i5-13500H/RTX4050/32G/512G/14吋 灰 SFX14-71G-51EP, $46900 ◆ ★</OPTION>
+<OPTION value=170>Acer Swift X i7-13700H/RTX3050/16G/512G/14吋 灰 SFX14-71G-74EQ, $41900 ◆ ★ ↓酷幣1500↓</OPTION>
+<OPTGROUP LABEL='16吋 Acer宏碁 Swift X 系列 〈輕巧纖薄創作者筆電〉'>
+<OPTION disabled value=172>&#x2764; 〈活動〉買Acer筆電(Predator不適用)，加價購【一年延伸保固卡】只要$1290元〈限量〉</OPTION>
+<OPTION value=173 class=g>Acer Swift X R7-7840HS/RTX4050/32G/1T/16吋 灰 SFX16-61G-R4EP, $52900↘$51900 ◆ ★</OPTION>
+<OPTGROUP LABEL='16吋 Acer宏碁 Swift Edge 系列 〈頂級超輕量工作生活筆電〉'>
+<OPTION disabled value=175>&#x2764; 〈活動〉買Acer筆電(Predator不適用)，加價購【一年延伸保固卡】只要$1290元〈限量〉</OPTION>
+<OPTION value=176>Acer Swift Edge R7 PRO-6850U/16G/512G/16吋 曜石黑 SFA16-41-R78J, $44500 ◆ ★</OPTION>
+<OPTION value=177>Acer Swift Edge R7-7735U/16G/512G/16吋 極光銀 SFE16-42-R260, $44800 ◆ ★</OPTION>
+<OPTGROUP LABEL='14吋 Acer宏碁 TravelMate P2 系列〈商務筆電〉'>
+<OPTION disabled value=179>&#x2764; 〈活動〉買Acer筆電(Predator不適用)，加價購【一年延伸保固卡】只要$1290元〈限量〉</OPTION>
+<OPTION value=180 class=b>Acer TravelMate P2 i5-1235U/8G/512G/14吋 黑 TMP214-54-53SG, $26900↘$23900 ◆ ★ 熱賣</OPTION>
+<OPTION value=181 class=b>Acer TravelMate P2 i7-1255U/8G/512G/14吋 黑 TMP214-54-778D, $28880↘$26900 ◆ ★ 熱賣</OPTION>
+<OPTGROUP LABEL='聯想 Lenovo 家用&電競 筆電館-全館刷卡分期零利率(3)'>
+<OPTION disabled value=183>&#x2764; 買Lenovo指定筆電，官網登錄送好禮再參加旅遊金抽獎(活動以官網公告為主) ~3/14止</OPTION>
+<OPTION disabled value=184>&#x2764; 買Lenovo指定筆電，官網登錄送〈一年意外損壞保護〉 (活動以官網公告為準) ~3/31止</OPTION>
+<OPTGROUP LABEL='15.6吋 Lenovo聯想 IdeaPad Slim 3 系列'>
+<OPTION value=186 class=g>Lenovo IdeaPad 3 i5-12450H/8G/512G/15吋 灰 83ER000GTW▼下殺到 2/29 23:59, $15990↘$14990 ◆ ★</OPTION>
+<OPTION value=187 class=r>Lenovo IdeaPad 3 i5-13420H/16G/512G/15吋 灰 83EM0008TW, $17850 ◆ ★ 熱賣</OPTION>
+<OPTION value=188 class=r>Lenovo IdeaPad 3 i5-13420H/16G/512G/15吋 藍 83EM0007TW, $17850 ◆ ★ 熱賣</OPTION>
+<OPTGROUP LABEL='16吋 Lenovo聯想 IdeaPad Slim 5 系列'>
+<OPTION value=190>Lenovo IdeaPad 5 i5-1340P/16G/512G/16吋 灰 82XF001JTW *展示機出清, $19900 ◆ ★</OPTION>
+<OPTION value=191 class=b>Lenovo IdeaPad 5 i5-13500H/16G/512G/16吋 藍 82XF004DTW, $21600↘$20650 ◆ ★ 熱賣</OPTION>
+<OPTION value=192>Lenovo IdeaPad 5 i7-13700H/16G/512G/16吋 藍 82XF002MTW, $25350 ◆ ★</OPTION>
+<OPTGROUP LABEL='16吋 Lenovo聯想 IdeaPad Pro 5 系列'>
+<OPTION value=194 class=g>Lenovo IdeaPad Pro 5 i5-13500H/RTX3050/16G/512G/16吋 灰 83AQ001XTW, $31950↘$29100 ◆ ★</OPTION>
+<OPTION value=195>Lenovo IdeaPad Pro 5 Ultra 7-155H/32G/512G/16吋 灰 83D40010TW, $35990 ◆ ★ ↓酷幣990↓</OPTION>
+<OPTGROUP LABEL='15.6吋 Lenovo聯想 LOQ 系列'>
+<OPTION value=197 class=r>Lenovo LOQ i5-13450HX/RTX4050/8G/512G/15吋 灰 83DV003FTW, $31990 ◆ ★ 熱賣 ↓酷幣990↓</OPTION>
+<OPTION value=198 class=g>Lenovo LOQ i7-13620H/RTX4050/8G/512G/15吋 灰 82XV008CTW, $31000↘$30900 ◆ ★</OPTION>
+<OPTION value=199>Lenovo LOQ i7-13620H/RTX4060/16G/512G/15吋 灰 82XV004PTW *送威剛8G D5-5600, $36550 ◆ ★</OPTION>
+<OPTGROUP LABEL='16吋 Lenovo聯想 Legion Slim 5 電競系列'>
+<OPTION value=201>Lenovo Legion Slim 5 i5-13500H/RTX4050/16G/512G/16吋 灰 82YA008XTW*送威剛16G D5, $38400 ◆ ★</OPTION>
+<OPTION value=202>Lenovo Legion Slim 5 i7-13700H/RTX4060/16G/512G/16吋 灰 82YA003NTW, $46050 ◆ ★</OPTION>
+<OPTGROUP LABEL='16吋 Lenovo聯想 Legion Pro 5 電競系列'>
+<OPTION value=204>Lenovo Legion Pro 5 i7-13700HX/RTX4060/16G/1T/16吋 灰 82WK007CTW, $48850 ◆ ★</OPTION>
+<OPTION value=205>Lenovo Legion Pro 5 i9-14900HX/RTX4070/32G/1T/16吋 灰 83DF0040TW, $66990 ◆ ★</OPTION>
+<OPTGROUP LABEL='14.5 吋 Lenovo聯想 Yoga Pro 7 系列'>
+<OPTION value=207>Lenovo Yoga Pro 7 i7-13700H/16G/1T/14吋 灰 82Y7005FTW, $33800 ◆ ★</OPTION>
+<OPTION value=208 class=r>Lenovo Yoga Pro 7 i7-13700H/RTX3050/16G/1T/14吋 灰 82Y7004FTW, $41350 ◆ ★ 熱賣</OPTION>
+<OPTGROUP LABEL='聯想 Lenovo 商務 筆電館-全館刷卡分期零利率(3)'>
+<OPTGROUP LABEL='14 吋 Lenovo聯想 ThinkBook 14 系列〈時尚商務系列〉'>
+<OPTION value=211>Lenovo ThinkBook 14 i5-1335U/16G/512G/14吋 灰 21KGA05ETW, $29990 ◆ ★</OPTION>
+<OPTION value=212>Lenovo ThinkBook 14 i7-13700H/16G/1T/14吋 灰 21KGA05HTW, $35990 ◆ ★</OPTION>
+<OPTGROUP LABEL='14 吋 Lenovo聯想 ThinkPad E14 系列〈傳奇小紅點〉'>
+<OPTION value=214>Lenovo ThinkPad E14 i5-13500H/16G/512G/14吋 黑 21JKS0GD00, $31900 ◆ ★</OPTION>
+<OPTGROUP LABEL='14 吋 Lenovo聯想 ThinkPad L14 系列〈傳奇小紅點〉'>
+<OPTION value=216 class=g>Lenovo ThinkPad L14 i5-1240P/8G/512G/14吋 黑 21C1S00R00 *展示機出清, $24900↘$23900 ◆ ★</OPTION>
+<OPTION value=217 class=b>Lenovo ThinkPad L14 i7-1260P/8G/512G/14吋 黑 21C1008CTW, $30900↘$29900 ◆ ★ 熱賣</OPTION>
+<OPTION value=218>Lenovo ThinkPad L14 i5-1340P/8G/512G/14吋 黑 21H1002ATW, $30900 ◆ ★</OPTION>
+<OPTION value=219>Lenovo ThinkPad L14 i7-1360P/8G/512G/14吋 黑 21H1002BTW, $34500 ◆ ★</OPTION>
+<OPTGROUP LABEL='15.6 吋 Lenovo聯想 ThinkPad L15 系列〈傳奇小紅點〉'>
+<OPTION value=221 class=r>Lenovo ThinkPad L15 i7-1260P/8G/512G/15吋 黑 21C3S01400, $30900 ◆ ★ 熱賣</OPTION>
+<OPTGROUP LABEL='16 吋 Lenovo聯想 ThinkPad T16 系列〈傳奇小紅點〉'>
+<OPTION value=223 class=b>Lenovo ThinkPad T16 i5-1240P/MX550/8G/512G/16吋 黑 21BV00G6TW, $33900↘$31900 ◆ ★ 熱賣</OPTION>
+<OPTGROUP LABEL='華碩 ASUS 筆電館-全館刷卡分期零利率(3)'>
+<OPTGROUP LABEL='15.6吋 華碩 Vivobook Pro'>
+<OPTION value=226 class=r>華碩 Vivobook Pro i9-13900H/RTX4050/16G/512G/15吋 藍 K6502VU-0042B13900H, $47900 ◆ ★ 熱賣 ↓酷幣3000↓</OPTION>
+<OPTION value=227>華碩 Vivobook Pro Ultra 9-185H/16G/1T/RTX4060/15吋 伯爵灰 N6506MV-0022G185H, $54900 ◆ ★</OPTION>
+<OPTGROUP LABEL='16吋 華碩 Vivobook Pro / ProArt 系列'>
+<OPTION value=229 class=r>華碩 Vivobook Pro i5-13500H/RTX4050/16G/512G/16吋 藍 K6602VU-0052B13500H, $45900 ◆ ★ 熱賣</OPTION>
+<OPTION value=230>華碩 Vivobook Pro i5-13500H/RTX4050/16G/512G/16吋 藍 K6602VU-0052B13500H福利品, $43900 ◆ ★</OPTION>
+<OPTION value=231 class=r>華碩 ProArt Pro i9-13980HX/RTX4070/32G/2T/16吋 黑 H7604JI-0022K13980HX 現貨, $89900 ◆ ★ 熱賣</OPTION>
+<OPTGROUP LABEL='13吋 華碩 Zenbook系列 現場送筆電清潔組'>
+<OPTION disabled value=233>&#x2764; 世界最薄 13吋 OLED UX5304 上市</OPTION>
+<OPTION value=234 class=r>華碩 Zenbook i5-1335U/16G/512G/13吋 玄武灰 UX5304VA-0122I1335U, $39900 ◆ ★ 熱賣</OPTION>
+<OPTION value=235 class=r>華碩 Zenbook i5-1335U/16G/512G/13吋 紳士藍 UX5304VA-0112B1335U, $39900 ◆ ★ 熱賣</OPTION>
+<OPTION value=236 class=r>華碩 Zenbook i7-1355U/16G/512G/13吋 玄武灰 UX5304VA-0132I1355U, $43900 ◆ ★ 熱賣</OPTION>
+<OPTION value=237 class=r>華碩 Zenbook i7-1355U/16G/512G/13吋 紳士藍 UX5304VA-0142B1355U, $43900 ◆ ★ 熱賣</OPTION>
+<OPTION value=238>華碩 Zenbook R7-7840U/16G/512G/13吋 優雅白 UM5302LA-0179W7840U極輕薄/客訂, $32900 ◆ ★</OPTION>
+<OPTION value=239>華碩 Zenbook R7-7840U/16G/512G/13吋 裸粉色 UM5302LA-0169D7840U極輕薄/客訂, $32900 ◆ ★</OPTION>
+<OPTGROUP LABEL='14吋 華碩 Zenbook系列 現場送筆電清潔組'>
+<OPTION value=241 class=r>華碩 Zenbook i5-1340P/16G/512G/14吋 白霧銀 UX3402VA-0072S1340P超值2K OLED, $33900 ◆ ★ 熱賣</OPTION>
+<OPTION value=242 class=r>華碩 Zenbook i5-1340P/16G/512G/14吋 紳士藍 UX3402VA-0052B1340P超值2K OLED, $33900 ◆ ★ 熱賣</OPTION>
+<OPTION value=243 class=r>華碩 Zenbook i7-1360P/16G/512G/14吋 紳士藍 UX3402VA-0082B1360P超值2K OLED, $37900 ◆ ★ 熱賣</OPTION>
+<OPTION value=244>華碩 Zenbook Ultra 5-125H/16G/1T/14吋 紳士藍 UX3405MA-0122B125H 智能AI筆電, $36900 ◆ ★</OPTION>
+<OPTION value=245>華碩 Zenbook Ultra 5-125H/16G/1T/14吋 白霧銀 UX3405MA-0132S125H 智能AI筆電, $36900 ◆ ★</OPTION>
+<OPTION value=246>華碩 Zenbook Ultra 7-155H/32G/1T/14吋 紳士藍 UX3405MA-0142B155H 智能AI筆電, $42900 ◆ ★</OPTION>
+<OPTION value=247>華碩 Zenbook Ultra 7-155H/32G/1T/14吋 白霧銀 UX3405MA-0152S155H 智能AI筆電, $42900 ◆ ★</OPTION>
+<OPTION value=248 class=r>華碩 Zenbook Pro Ultra 9-185H/32G/1T/14吋 墨灰色 UX8406MA-0022I185H雙觸控螢幕, $64900 ◆ ★ 熱賣</OPTION>
+<OPTION value=249>華碩 Zenbook Pro i9-13900H/RTX4070/32G/1T/14吋 科技黑 UX6404VI-0022K13900H 訂, $79900 ◆ ★</OPTION>
+<OPTGROUP LABEL='14吋 華碩 Vivobook系列'>
+<OPTION value=251>華碩 Vivobook i5-1335U/8G/512G/14吋 搖滾黑 X1405VA-0061K1335U, $18999 ◆ ★</OPTION>
+<OPTION value=252>華碩 Vivobook i5-1335U/8G/512G/14吋 冰河銀 X1405VA-0071S1335U, $18999 ◆ ★</OPTION>
+<OPTION value=253>華碩 Vivobook i5-1335U/8G/512G/14吋 午夜藍 X1404VA-0021B1335U, $18999 ◆ ★</OPTION>
+<OPTION value=254>華碩 Vivobook i5-1335U/8G/512G/14吋 冰河銀 X1404VA-0031S1335U, $18999 ◆ ★</OPTION>
+<OPTION value=255>華碩 Vivobook i5-13500H/8G/512G/14吋 搖滾黑 X1405VA-0041K13500H, $21999 ◆ ★</OPTION>
+<OPTION value=256>華碩 Vivobook i5-13500H/8G/512G/14吋 冰河銀 X1405VA-0051S13500H 售完為止/強力, $21999 ◆ ★</OPTION>
+<OPTION value=257 class=r>華碩 Vivobook i5-12500H/8G/512G/14吋 冰河銀 X1403ZA-0171S12500H送8G直升16G, $21900 ◆ ★ 熱賣</OPTION>
+<OPTION value=258>華碩 Vivobook i5-12500H/8G/512G/14吋 午夜藍 X1403ZA-0161B12500H送8G直升16G, $22900 ◆ ★</OPTION>
+<OPTION value=259 class=r>華碩 Vivobook i5-12500H/16G/512G/14吋 初心綠 S3402ZA-0232E12500H 超值OLED, $24999 ◆ ★ 熱賣</OPTION>
+<OPTION value=260 class=r>華碩 Vivobook i5-12500H/16G/512G/14吋 初心綠 S3402ZA-0232E12500H福利品/僅展示, $22900 ◆ ★ 熱賣</OPTION>
+<OPTION disabled value=261>&#x2764; 華碩 Vivobook i5-12500H/16G/512G/14吋 晨曦灰 S5402ZA-0098G12500H 25999元 ◆ ★</OPTION>
+<OPTION value=262 class=r>華碩 Vivobook i5-12500H/16G/512G/14吋 晨曦灰 S5402ZA-0098G12500H福利品/僅展示, $23999 ◆ ★ 熱賣</OPTION>
+<OPTION value=263>華碩 Vivobook i5-12500H/16G/512G/14吋 午夜黑 S5402ZA-0068K12500H, $25999 ◆ ★</OPTION>
+<OPTGROUP LABEL='15.6吋 華碩 VivoBook / VivoBook GO 系列 現場送筆電清潔組'>
+<OPTION value=265>華碩 VivoBook GO Pentium N6000/8G/512G/15吋 搖滾黑 X1500KA-0441KN6000, $14900 ◆ ★</OPTION>
+<OPTION value=266>華碩 VivoBook GO i3-N305/8G/256G/15吋 混成黑 E1504GA-0061KN305, $14900 ◆ ★</OPTION>
+<OPTION value=267>華碩 VivoBook GO R5-7520U/16G/512G/15吋 混成黑 E1504FA-0081K7520U, $21900 ◆ ★</OPTION>
+<OPTION value=268>華碩 VivoBook i5-1235U/8G/512G/15吋 午夜藍 X1502ZA-0021B1235U 免費升級內洽, $17999 ◆ ★</OPTION>
+<OPTION value=269 class=r>華碩 VivoBook i5-1235U/8G/512G/15吋 午夜藍 X1502ZA-0021B1235U福利品/僅展示, $16999 ◆ ★ 熱賣</OPTION>
+<OPTION value=270 class=r>華碩 VivoBook i5-1235U/8G/512G/15吋 午夜藍 X1504ZA-0151B1235U 送酷幣1000, $18999 ◆ ★ 熱賣</OPTION>
+<OPTION value=271 class=r>華碩 VivoBook i5-1235U/8G/512G/15吋 蜜誘金 X1504ZA-0171C1235U 送酷幣1000, $18999 ◆ ★ 熱賣</OPTION>
+<OPTION value=272 class=g>華碩 VivoBook i5-1335U/8G/512G/15吋 午夜藍 X1504VA-0021B1335U, $20999↘$19999 ◆ ★</OPTION>
+<OPTION value=273 class=g>華碩 VivoBook i5-1335U/8G/512G/15吋 酷玩銀 X1504VA-0031S1335U, $20999↘$19999 ◆ ★</OPTION>
+<OPTION value=274 class=b>華碩 VivoBook i5-1335U/8G/512G/15吋 蜜誘金 X1504VA-0231C1335U 溫柔色系, $20999↘$19999 ◆ ★ 熱賣</OPTION>
+<OPTION value=275>華碩 VivoBook i5-13500H/8G/512G/15吋 搖滾黑 X1505VA-0161K13500H, $24900 ◆ ★</OPTION>
+<OPTION value=276>華碩 VivoBook i5-13500H/8G/512G/15吋 酷玩銀 X1505VA-0171S13500H, $24900 ◆ ★</OPTION>
+<OPTION value=277>華碩 VivoBook i5-13500H/16G/512G/15吋 午夜黑 S5504VA-0132K13500H, $27900 ◆ ★</OPTION>
+<OPTION value=278>華碩 VivoBook i5-13500H/16G/512G/15吋 酷玩銀 S5504VA-0152S13500H, $27900 ◆ ★</OPTION>
+<OPTGROUP LABEL='16吋 華碩 Vivobook系列/Vivobook X系列'>
+<OPTION value=280 class=r>華碩 Vivobook i7-12700H/8G/512G/16吋 午夜藍 X1603ZA-0281B12700H 活動促銷, $29900 ◆ ★ 熱賣</OPTION>
+<OPTION value=281 class=r>華碩 Vivobook i7-1255U/8G/512G/16吋 搖滾黑 X1605ZA-0161K1255U 免費加碼送8G, $24900 ◆ ★ 熱賣</OPTION>
+<OPTION value=282>華碩 Vivobook i5-1235U/8G/512G/16吋 冰河銀 X1605ZA-0061S1235U, $17999 ◆ ★</OPTION>
+<OPTION value=283>華碩 Vivobook i5-13500H/8G/512G/16吋 搖滾黑 X1605VA-0031K13500H, $23900 ◆ ★</OPTION>
+<OPTION value=284>華碩 Vivobook i5-13500H/8G/512G/16吋 搖滾黑 X1605VA-0031K13500H 福利品/僅展示, $21900 ◆ ★</OPTION>
+<OPTION value=285 class=r>華碩 Vivobook i7-13700H/8G/512G/16吋 搖滾黑 X1605VA-0041K13700H, $27900 ◆ ★ 熱賣</OPTION>
+<OPTION value=286>華碩 Vivobook i5-12500H/RTX2050/8G/512G/16吋 黑 K3605ZF-0132K12500H送酷幣1500, $26900 ◆ ★</OPTION>
+<OPTION value=287 class=r>華碩 Vivobook i5-12450H/RTX3050/8G/512G/16吋 黑 K3605ZC-0062K12450H送酷幣2000, $26900 ◆ ★ 熱賣</OPTION>
+<OPTION value=288>華碩 Vivobook i5-12500H/RTX4050/16G/512G/16吋 黑 K3605ZU-0032K12500H送酷幣2000, $30900 ◆ ★</OPTION>
+<OPTION value=289 class=g>華碩 Vivobook i5-12500H/RTX4060/16G/512G/16吋 黑 K3605ZV-0102K12500H, $33900↘$30999 ◆ ★</OPTION>
+<OPTGROUP LABEL='17吋 華碩 Vivobook系列'>
+<OPTION value=291 class=r>華碩 Vivobook i5-1335U/8G/512G/17吋 午夜藍 X1704VA-0021B1335U 大尺寸送酷幣500, $22900 ◆ ★ 熱賣</OPTION>
+<OPTGROUP LABEL='13吋 華碩 ROG / Flow X13 電競系列 現場送筆電清潔組'>
+<OPTION value=293>華碩 ROG R9-7940HS/RTX4050/16G/1T/13吋 黑 GV302XU-0021A7940HS-NBL, $56999 ◆ ★</OPTION>
+<OPTION disabled value=294>&#x2764; 全球第一台RTX二合一電競筆電〈電競平板〉 CPU液態金屬優化散熱 MUX 獨顯直連</OPTION>
+<OPTION value=295 class=r>華碩 ROG i9-13900H/RTX4060/16G/1T/13吋 無盡黑 GZ301VV-0021A13900H-NBL, $59999 ◆ ★ 熱賣</OPTION>
+<OPTION value=296>華碩 XG Mobile GC33Y-033 筆電外接顯示卡〈RTX4090 16GB〉僅限華碩ROG Flow機種, $60999 ◆ ★</OPTION>
+<OPTGROUP LABEL='14吋 華碩TUF Gaming/ROG電競系列 現場送筆電清潔組'>
+<OPTION value=298 class=r>華碩 ROG R7-6800HS/RX6800S/16G/1T/14吋 白 GA402RK-0122D6800HS輕盈高效能, $36999 ◆ ★ 熱賣</OPTION>
+<OPTION value=299>華碩 ROG R9-7940HS/RTX4060/16G/1T/14吋 灰 GA402XV-0026E7940HS-NBL, $57999 ◆ ★</OPTION>
+<OPTION value=300>華碩 ROG R9-7940HS/RTX4060/16G/1T/14吋 白 GA402XV-0046D7940HS-NBL, $57999 ◆ ★</OPTION>
+<OPTION value=301>華碩 ROG R9-7940HS/RTX4080/16G/1T/14吋 灰 GA402XZ-0026E7940HS-NBL, $74999 ◆ ★</OPTION>
+<OPTGROUP LABEL='15.6吋 華碩TUF Gaming/ROG電競系列 現場送筆電清潔組'>
+<OPTION value=303>華碩 TUF R7-7735HS/RTX4050/8G/512G/15吋 灰 FA507NU-0032B7735H 新7000系列, $29999 ◆ ★</OPTION>
+<OPTION value=304 class=r>華碩 TUF R7-7735HS/RTX4050/8G/512G/15吋 灰 FA507NU-0032B7735H 加碼送8G, $30499 ◆ ★ 熱賣</OPTION>
+<OPTION value=305>華碩 TUF R5-7535HS/RTX4060/16G/512G/15吋 灰 FA507NV-0042B7535HS, $31999 ◆ ★</OPTION>
+<OPTION value=306>華碩 TUF R9-7940HS/RTX4070/16G/512G/15吋 御鐵灰 FA507XI-0032B7940H, $44999 ◆ ★</OPTION>
+<OPTION value=307 class=r>華碩 TUF R9-7940HS/RTX4070/16G/512G/15吋 灰 FA507XI-0032B7940H 加碼送16G, $44999 ◆ ★ 熱賣</OPTION>
+<OPTION value=308>華碩 TUF i5-12500H/RTX3050/8G/512G/15吋 機甲灰 FX507ZC4-0051A12500H, $26999 ◆ ★</OPTION>
+<OPTION value=309 class=r>華碩 TUF i7-12700H/RTX3050/16G/512G/15吋 機甲灰 FX507ZC4-0101A12700H 短促, $29999 ◆ ★ 熱賣</OPTION>
+<OPTION value=310>華碩 TUF i7-12700H/RTX4050/8G/512G/15吋 御鐵灰 FX507ZU4-0132B12700H 送8G, $34999 ◆ ★</OPTION>
+<OPTION value=311>華碩 TUF i7-12700H/RTX4060/16G/512G/15吋 御鐵灰 FX507ZV4-0102B12700H, $38999 ◆ ★</OPTION>
+<OPTION value=312 class=g>華碩 TUF i7-13620H/RTX4050/16G/512G/15吋 御鐵灰 FX507VU-0102B13620H, $36999↘$35999 ◆ ★</OPTION>
+<OPTION value=313 class=g>華碩 TUF i7-13620H/RTX4060/16G/512G/15吋 御鐵灰 FX507VV-0142B13620H, $40999↘$39999 ◆ ★</OPTION>
+<OPTION value=314>華碩 TUF i9-13900H/RTX4050/16G/512G/15吋 御鐵灰 FX507VU4-0062B13900H, $39999 ◆ ★</OPTION>
+<OPTION value=315>華碩 TUF i9-13900H/RTX4060/16G/512G/15吋 灰 FX507VV4-0042B13900H-NBL, $43999 ◆ ★</OPTION>
+<OPTGROUP LABEL='16吋 華碩 ROG Zephyrus M16 / Flow X16 電競系列/TUF Gaming A16 Advantage'>
+<OPTION disabled value=317>&#x2764; 薄邊框軍規電競 AMD 7000系列，MUX獨顯直連84扇6導管4出風口全方位解熱。</OPTION>
+<OPTION value=318>華碩 TUF R7-7735HS/RX7600S/16G/512G/16吋 暴風沙 FA617NS-0042C7735H, $34999 ◆ ★</OPTION>
+<OPTION value=319>華碩 TUF R7-7735HS/RX7600S/16G/512G/16吋 FA617NS-0042C7735H搭金士頓32G, $36900 ◆ ★</OPTION>
+<OPTION value=320>華碩 TUF R9-7940HS/RX7600S/16G/512G/16吋 FA617XS-0062C7940H-NBL 客訂, $39999 ◆ ★</OPTION>
+<OPTION value=321 class=r>華碩 ROG i9-13900H/RTX4070/32G/1T/16吋 黑 GV601VI-0022A13900H-NBLM觸控翻轉, $79999 ◆ ★ 熱賣</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=322>　　&#x21AA; 全球首創 16" 翻轉觸控電競筆電/Mini LED/165Hz高刷新率+頂級色彩表現/100% DCI-P3</OPTION>
+<OPTION value=323>華碩 ROG i9-13900H/RTX4080/32G/1T/16吋 黑 GU604VZ-0026A13900H-NBLM, $94999 ◆ ★</OPTION>
+<OPTION value=324 class=r>華碩 ROG Ultra 9-185H/RTX4060/32G/1T/16吋 鉑月銀 GU605MV-0082H185H-NBLO, $67999 ◆ ★ 熱賣</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=325>　　&#x21AA; ROG Zephyrus G16 預購，同步上線登錄送「半年延長保固」活動 2/29 止</OPTION>
+<OPTION value=326 class=r>華碩 ROG Ultra 9-185H/RTX4060/32G/1T/16吋 日蝕灰 GU605MV-0092E185H-NBLO, $67999 ◆ ★ 熱賣</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=327>　　&#x21AA; ROG Zephyrus G16 預購，同步上線登錄送「半年延長保固」活動 2/29 止</OPTION>
+<OPTION value=328>華碩 ROG Ultra 9-185H/RTX4070/32G/2T/16吋 日蝕灰 GU605MI-0082E185H-NBLO, $79999 ◆ ★</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=329>　　&#x21AA; ROG Zephyrus G16 預購，同步上線登錄送「半年延長保固」活動 2/29 止</OPTION>
+<OPTION value=330 class=r>華碩 ROG Ultra 9-185H/RTX4080/32G/2T/16吋 日蝕灰 GU605MZ-0058E185H-NBLO, $98999 ◆ ★ 熱賣</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=331>　　&#x21AA; ROG Zephyrus G16 預購，同步上線登錄送「半年延長保固」活動 2/29 止</OPTION>
+<OPTION value=332 class=r>華碩 ROG Ultra 9-185H/RTX4090/32G/2T/16吋 鉑月銀 GU605MY-0088H185H-NBLO, $114999 ◆ ★ 熱賣</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=333>　　&#x21AA; ROG Zephyrus G16 預購，同步上線登錄送「半年延長保固」活動 2/29 止</OPTION>
+<OPTION value=334 class=r>華碩 ROG Ultra 9-185H/RTX4090/32G/2T/16吋 日蝕灰 GU605MY-0078E185H-NBLO, $114999 ◆ ★ 熱賣</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=335>　　&#x21AA; ROG Zephyrus G16 預購，同步上線登錄送「半年延長保固」活動 2/29 止</OPTION>
+<OPTION value=336 class=r>華碩 ROG R9-7945HX/RTX4090/64G/4T/16吋 黑 GX650PY-0021A7945HX-NBLM 現貨, $149999 ◆ ★ 熱賣</OPTION>
+<OPTION value=337>華碩 ROG i9-13980HX/RTX4050/16G/1T/16吋 電光綠 G614JU-0102G13980HX-NBL, $53999 ◆ ★</OPTION>
+<OPTION value=338 class=r>華碩 ROG i9-13980HX/RTX4050/16G/1T/16吋 綠 G614JU-0102G13980HX-NBL福利品, $49999 ◆ ★ 熱賣</OPTION>
+<OPTION value=339>華碩 ROG i9-13980HX/RTX4080/16G/1T/16吋 電光綠 G614JZ-0072G13980HX-NBL, $72999 ◆ ★</OPTION>
+<OPTION value=340>華碩 ROG i9-13980HX/RTX4080/32G/1T/16吋 黑 G634JZ-0021A13980HX-NBLM, $86900 ◆ ★</OPTION>
+<OPTION value=341>華碩 ROG i9-14900HX/RTX4060/16G/1T/16吋 電光綠 G614JVR-0023G14900HX-NBL, $61999 ◆ ★</OPTION>
+<OPTION value=342>華碩 ROG i9-14900HX/RTX4070/16G/2T/16吋 電光綠 G614JIR-0043G14900HX-NBL, $70999 ◆ ★</OPTION>
+<OPTION value=343>華碩 ROG i9-14900HX/RTX4080/32G/1T/16吋 黑 G634JZR-0033A14900HX-NBLM, $93999 ◆ ★</OPTION>
+<OPTGROUP LABEL='17吋 華碩TUF Gaming / ROG 電競系列 現場送筆電清潔組'>
+<OPTION value=345 class=r>華碩 TUF i5-11400H/RTX2050/8G/512G/17吋 戰魂黑 FX706HF-0022B11400H 送8G, $23900 ◆ ★ 熱賣</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=346>　　&#x21AA; 本商品為客製化商品，工程人員將會拆封安裝記憶體及開機檢測，可接受者方可下單</OPTION>
+<OPTION value=347>華碩 TUF i5-12500H/RTX3050/16G/512G/17吋 機甲灰 FX707ZC4-0071A12500H, $27999 ◆ ★</OPTION>
+<OPTION value=348 class=b>華碩 TUF i7-12700H/RTX3050/16G/512G/17吋 機甲灰 FX707ZC4-0031A12700H, $30999↘$29900 ◆ ★ 熱賣</OPTION>
+<OPTION value=349>華碩 TUF i7-12700H/RTX3050/16G/512G/17吋 灰 FX707ZC4-0031A12700H福利機/僅展示, $26900 ◆ ★</OPTION>
+<OPTION value=350>華碩 TUF i7-12700H/RTX4050/8G/512G/17吋 御鐵灰 FX707ZU4-0092B12700H 送8G, $34999 ◆ ★</OPTION>
+<OPTION value=351 class=g>華碩 TUF R5-7535HS/RTX4050/16G/512G/17吋 御鐵灰 FA707NU-0052B7535HS, $30999↘$29999 ◆ ★</OPTION>
+<OPTION value=352 class=g>華碩 TUF R5-7535HS/RTX4060/16G/512G/17吋 御鐵灰 FA707NV-0022B7535HS, $33999↘$32999 ◆ ★</OPTION>
+<OPTION value=353>華碩 TUF i7-12700H/RTX4060/8G/512G/17吋 御鐵灰 FX707ZV4-0022B12700H 送8G, $38999 ◆ ★</OPTION>
+<OPTION value=354 class=g>華碩 TUF i7-13620H/RTX4050/16G/512G/17吋 御鐵灰 FX707VU-0092B13620H, $37500↘$36500 ◆ ★</OPTION>
+<OPTION value=355 class=g>華碩 TUF i9-13900H/RTX4050/16G/512G/17吋 幻影灰 FX707VU4-0022B13900H, $40999↘$39999 ◆ ★</OPTION>
+<OPTION value=356 class=g>華碩 TUF i7-13620H/RTX4060/16G/512G/17吋 御鐵灰 FX707VV-0042B13620H, $40999↘$39999 ◆ ★</OPTION>
+<OPTION value=357>華碩 TUF i9-13900H/RTX4060/16G/512G/17吋 幻影灰 FX707VV4-0032B13900H, $43999 ◆ ★</OPTION>
+<OPTION value=358>華碩 ROG R9-7945HX/RTX4060/16G/512G/17吋 黑 G713PV-0072F7945HX, $48999 ◆ ★</OPTION>
+<OPTION value=359 class=r>華碩 ROG R9-7945HX/RTX4070/16G/1T/17吋 黑 G713PI-0042F7945HX, $56999 ◆ ★ 熱賣</OPTION>
+<OPTION value=360 class=r>華碩 ROG R9-7945HX/RTX4080/32G/1T/17吋 黑 G733PZ-0022D7945HX-NBL, $84999 ◆ ★ 熱賣</OPTION>
+<OPTGROUP LABEL='18吋 華碩 ROG 電競系列 現場送筆電清潔組'>
+<OPTION value=362 class=r>華碩 ROG i9-13980HX/RTX4060/16G/1T/18吋 電光綠 G814JV-0032G13980HX-NBL, $59999 ◆ ★ 熱賣</OPTION>
+<OPTION value=363>華碩 ROG i9-13980HX/RTX4070/16G/1T/18吋 電光綠 G814JI-0022G13980HX-NBL客訂, $66999 ◆ ★</OPTION>
+<OPTION value=364 class=r>華碩 ROG i9-13980HX/RTX4080/32G/1T/18吋 黑 G834JZ-0031A13980HX-NBL, $86999 ◆ ★ 熱賣</OPTION>
+<OPTION value=365>華碩 ROG i9-13980HX/RTX4090/32G/2T/18吋 黑 G834JY-0031A13980HX-NBL, $109900 ◆ ★</OPTION>
+<OPTION value=366 class=r>華碩 ROG i9-14900HX/RTX4060/16G/1T/18吋 電光綠 G814JVR-0023G14900HX-NBL, $63999 ◆ ★ 熱賣</OPTION>
+<OPTION value=367>華碩 ROG i9-14900HX/RTX4070/16G/2T/18吋 電光綠 G814JIR-0033G14900HX-NBL, $72999 ◆ ★</OPTION>
+<OPTION value=368>華碩 ROG i9-14900HX/RTX4080/32G/1T/18吋 黑 G834JZR-0023A14900HX-NBLM, $95999 ◆ ★</OPTION>
+<OPTION value=369>華碩 ROG i9-14900HX/RTX4090/64G/2T/18吋 黑 G834JYR-0033A14900HX-NBLM, $119999 ◆ ★</OPTION>
+<OPTGROUP LABEL='技嘉 GIGABYTE 筆電館-全館刷卡分期零利率(3)'>
+<OPTION value=371>【活動】買技嘉筆記電腦，登錄送《人中之龍8》PC數位版(Steam)免費下載序號 3/31止, $1 ◆ ★</OPTION>
+<OPTGROUP LABEL='14吋 技嘉 AERO 14 系列'>
+<OPTION value=373>技嘉 AERO 14 OLED i5-12500H/RTX4050/16G/1T/14吋 銀 9MF-E2TWBB4SH, $44900 ◆ ★</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=374>　　&#x21AA; 技嘉 AERO 14 OLED機身左側Type-C為充電孔(僅限專屬變壓器使用)，不支援資料傳輸。</OPTION>
+<OPTGROUP LABEL='15.6吋 GIGABYTE技嘉 G5 / AORUS 15 系列'>
+<OPTION value=376 class=r>技嘉 i5-12500H/RTX4060/8G/512G/15吋 黑 G5 KF-E3TW333SH性價比最高的RTX4060, $27999 ◆ ★ 熱賣</OPTION>
+<OPTION value=377 class=r>技嘉 i5-12500H/RTX4060/8G/512G/15吋 黑 G5 KF-E3TW333SH 搭金士頓 32G, $29900 ◆ ★ 熱賣</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=378>　　&#x21AA; 本商品為客製化商品，工程人員將會拆封安裝記憶體及開機檢測，可接受者方可下單</OPTION>
+<OPTION value=379>技嘉 i5-13500H/RTX4060/8G/512G/15吋 黑 G5 KF5-53TW383SH 效能直逼 i7, $30900 ◆ ★</OPTION>
+<OPTION value=380>技嘉 i5-13500H/RTX4060/8G/512G/15吋 黑 G5 KF5-53TW383SH 搭32G直升40G, $32999 ◆ ★</OPTION>
+<OPTION value=381 class=g>技嘉 i7-12650H/RTX4060/16G/512G/15吋 黑 G5 KF-G3TW313SH, $33900↘$31900 ◆ ★</OPTION>
+<OPTION value=382 class=r>技嘉 i7-13620H/RTX4060/16G/512G/15吋 黑 G5 KF5-H3TW353SH僅外箱髒污福利品, $33900 ◆ ★ 熱賣</OPTION>
+<OPTION value=383 class=r>技嘉 i7-13620H/RTX4060/16G/512G/15吋 黑 G5 KF5-H3TW353SH i7+4060最佳組合, $34900 ◆ ★ 熱賣</OPTION>
+<OPTION value=384 class=g>技嘉 i7-13620H/RTX4060/32G/512G/15吋 黑 G5 KF5-H3TW353SH搭金士頓32G-4800, $35999↘$35990 ◆ ★</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=385>　　&#x21AA; 本商品為客製化商品，工程人員將會拆封安裝記憶體及開機檢測，可接受者方可下單</OPTION>
+<OPTION value=386>技嘉 AORUS 15 i5-12500H/RTX4050/8G/512G/15吋 黑 9MF-E2TW383SH, $29999 ◆ ★</OPTION>
+<OPTION value=387>技嘉 AORUS 15 i7-13620H/RTX4060/16G/512G/15吋 黑 BKF-H3TW553SH, $41999 ◆ ★</OPTION>
+<OPTION value=388 class=r>技嘉 AORUS 15 i7-13700H/RTX4060/16G/1T/15吋 黑 BKF-73TW754SH, $44900 ◆ ★ 熱賣</OPTION>
+<OPTION value=389>技嘉 AORUS 15 i7-13700H/RTX4070/16G/1T/15吋 黑 BSF-73TW754SH, $49900 ◆ ★</OPTION>
+<OPTION value=390 class=r>技嘉 AORUS 15X i9-13980HX/RTX4070/16G/1T/15吋 ASF-D3TW754SP僅外箱髒污福利品, $49900 ◆ ★ 熱賣</OPTION>
+<OPTION value=391>技嘉 AORUS 15X i9-13980HX/RTX4070/16G/1T/15吋 黑 ASF-D3TW754SP超高性價比, $64900 ◆ ★</OPTION>
+<OPTGROUP LABEL='16吋 GIGABYTE技嘉 AORUS 16 系列'>
+<OPTION value=393>技嘉 AORUS 16 i7-13700H/RTX4060/16G/1T/16吋 黑 BKF-73TW654SH, $49900 ◆ ★</OPTION>
+<OPTION value=394>技嘉 AORUS 16 i7-13700H/RTX4070/16G/1T/16吋 黑 BSF-73TW654SH 客訂, $58900 ◆ ★</OPTION>
+<OPTION value=395 class=r>技嘉 AORUS 16X i9-14900HX/RTX4070/32G/2T/16吋 黑 ASG-63TWC65SH贈128G龍碟, $68900 ◆ ★ 熱賣</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=396>　　&#x21AA; 購買 AORUS 16X ASG-63TWC65SH則贈送金士頓 萌龍隨身碟 128G 龍年伴手禮</OPTION>
+<OPTGROUP LABEL='16吋 技嘉 AERO 16 系列'>
+<OPTION value=398 class=r>技嘉 AERO 16 OLED i9-13900H/RTX4070/32G/1T/16吋 銀 BSF-A3TW964SP, $76900 ◆ ★ 熱賣</OPTION>
+<OPTGROUP LABEL='17吋 技嘉 G7 / AORUS 7 / AORUS 17 系列'>
+<OPTION value=400 class=r>技嘉 AORUS 17X i9-14900HX/RTX4080/32G/1T/17吋 黑 AXG-64TW664SH 全省現貨, $94900 ◆ ★ 熱賣</OPTION>
+<OPTGROUP LABEL='微星 MSI 筆電館-全館刷卡分期零利率(3)'>
+<OPTGROUP LABEL='微星活動贈品區'>
+<OPTION disabled value=403>&#x2764; 全館購買MSI筆電贈 保眼抗藍光保護貼 + 超潔亮麗清潔套組 送完為止</OPTION>
+<OPTGROUP LABEL='14吋 微星 - 輕薄美型 Modern'>
+<OPTION value=405>微星 Modern i5-1335U/16G/512G/14吋 經典黑 14 C13M-1063TW, $19900 ◆ ★</OPTION>
+<OPTION value=406>微星 Modern i7-1355U/16G/1T/14吋 杏藕粉 14 C13M-887TW, $22500 ◆ ★</OPTION>
+<OPTGROUP LABEL='15吋 微星 - 輕薄美型 Modern'>
+<OPTION value=408>微星 Modern i5-1235U/16G/512G/15吋 黑 15 B12M-435TW, $18399 ◆ ★</OPTION>
+<OPTION value=409>微星 Modern i3-1215U/16G/512G/15吋 星辰藍 15 B12M-446TW, $14500 ◆ ★</OPTION>
+<OPTION value=410>微星 Modern i7-1355U/16G/512G/15吋 星辰藍 15 B13M-279TW, $25499 ◆ ★</OPTION>
+<OPTION value=411 class=r>微星 Modern i5-13420H/8G/512G/15吋 黑 15 B13M-012TW 13代H版超威猛文書機, $18900 ◆ ★ 熱賣</OPTION>
+<OPTION value=412 class=r>微星 Modern i5-13420H/8G/512G/15吋 黑 15 B13M-012TW 13代H版 加8G直升16G, $19300 ◆ ★ 熱賣</OPTION>
+<OPTGROUP LABEL='13吋 微星 - 輕薄質感 Prestige'>
+<OPTION value=414>微星 Prestige i5-1240P/16G/512G/13吋 星辰灰 13Evo A12M-234TW, $28500 ◆ ★</OPTION>
+<OPTION value=415>微星 Prestige i7-1360P/16G/1T/13吋 純淨白 13Evo A13M-086TW, $36900 ◆ ★</OPTION>
+<OPTION value=416 class=r>微星 Prestige i7-1360P/32G/1T/13吋 星辰灰 13Evo A13M-041TW, $41900 ◆ ★ 熱賣</OPTION>
+<OPTION value=417 class=r>微星 Prestige Ultra 7-155H/32G/1T/13吋 星辰灰 13 AI Evo A1MG-011TW 新科技AI登場, $43900 ◆ ★ 熱賣</OPTION>
+<OPTGROUP LABEL='14吋 微星 - 輕薄質感 Prestige'>
+<OPTION value=419 class=r>微星 Prestige i5-13500H/16G/1T/14吋 星空銀 14Evo B13M-285TW, $25900 ◆ ★ 熱賣</OPTION>
+<OPTGROUP LABEL='16吋 微星 - 輕薄質感 Prestige'>
+<OPTION value=421>微星 Prestige i7-13700H/16G/1T/16吋 星空銀 16Evo A13M-246TW, $34500 ◆ ★</OPTION>
+<OPTION value=422>微星 Prestige Ultra 7-155H/32G/1T/16吋 星辰灰 16 AI Evo B1MG-007TW 客訂, $43900 ◆ ★</OPTION>
+<OPTION value=423>微星 Prestige Ultra 7-155H/RTX4060/16吋 星辰灰 16 AI Studio B1VFG-021TW, $59900 ◆ ★</OPTION>
+<OPTGROUP LABEL='13吋 微星 - 商務菁英 Summit 【時尚翻轉．輕盈呈現】三年保固'>
+<OPTION value=425 class=r>微星 Summit i7-1360P/16G/1T/13吋 星空黑 E13FlipEvo A13MT -204TW 翻轉觸控, $39500 ◆ ★ 熱賣</OPTION>
+<OPTGROUP LABEL='17吋 微星 - 創作首選 Creator'>
+<OPTION disabled value=427>&#x2764; 微星 Creator i9-12900H/RTX3080Ti/64G/2T/17吋 黑 Z17 A12UHST-001TW 客訂 ◆ ★</OPTION>
+<OPTGROUP LABEL='14吋 微星 - 輕薄時尚系列 Stealth'>
+<OPTION value=429>微星 Stealth i7-13700H/RTX4050/16G/1T/14吋 純淨白 14Studio A13VE-073TW, $50900 ◆ ★</OPTION>
+<OPTION value=430>微星 Stealth i7-13700H/RTX4060/16G/1T/14吋 星辰藍 14Studio A13VF-021TW 現貨, $54700 ◆ ★</OPTION>
+<OPTGROUP LABEL='15.6吋 微星 - 輕薄時尚系列 Cyborg/Katana/GF/Bravo'>
+<OPTION disabled value=432>&#x2764; 全館購買MSI筆電贈抗藍光保護貼</OPTION>
+<OPTION value=433>微星 Sword i5-12450H/RTX4050/16G/512G/15吋 白 15 A12VE-093TW, $27900 ◆ ★</OPTION>
+<OPTION value=434 class=r>微星 Cyborg Ultra 7-155H/RTX4050/16G/1T/15吋 黑 15 AI A1VEK-015TW 最新AI機種, $37900 ◆ ★ 熱賣</OPTION>
+<OPTION value=435>微星 Cyborg i5-12450H/RTX4060/16G/512G/15吋 黑 15 A12VF-255TW, $27400 ◆ ★</OPTION>
+<OPTION value=436>微星 Cyborg i7-13700H/RTX3050/16G/1T/15吋 黑 15 A13UDX-210TW, $32900 ◆ ★</OPTION>
+<OPTION value=437 class=r>微星 Katana i7-12650H/RTX4060/16G/1T/15吋 黑 15 B12VFK-071TW, $37900 ◆ ★ 熱賣</OPTION>
+<OPTION value=438 class=r>微星 Katana i5-13420H/RTX4060/16G/1T/15吋 黑 15 B13VFK-1471TW, $32500 ◆ ★ 熱賣</OPTION>
+<OPTION value=439>微星 Katana i9-13900H/RTX4060/16G/1T/15吋 黑 15 B13VGK-1201TW 客訂, $48900 ◆ ★</OPTION>
+<OPTION value=440>微星 Pulse i7-13700H/RTX4060/16G/1T/15吋 黑 15 B13VFK-449TW, $46900 ◆ ★</OPTION>
+<OPTION value=441>微星 Bravo R5-7535HS/RTX4060/8G/512G/15吋 黑 15 C7VFK-200TW, $29500 ◆ ★</OPTION>
+<OPTGROUP LABEL='16吋 微星 - 輕薄時尚系列 Stealth'>
+<OPTION disabled value=443>&#x2764; 鎂鋁合金打造質感機身，重量不到2公斤，搭配13代 + 40 系列顯卡，完全滿足挑剔的您</OPTION>
+<OPTION value=444>微星 Stealth i9-13900H/RTX4060/16G/1T/16吋 純淨白 16Studio A13VF-401TW, $58900 ◆ ★</OPTION>
+<OPTION value=445 class=r>微星 Stealth i9-13900H/RTX4070/32G/2T/16吋 星辰藍 16Studio A13VG-049TW超高性價比, $75900 ◆ ★ 熱賣</OPTION>
+<OPTGROUP LABEL='16 吋 微星 - 極致炫彩系列 GE/GP/Vector'>
+<OPTION value=447>微星 Vector i9-14900HX/RTX4060/32G/1T/16吋 黑 HX A14VFG-250TW, $59900 ◆ ★</OPTION>
+<OPTION value=448>微星 Vector i9-14900HX/RTX4080/32G/1T/16吋 黑 HX A14VHG-293TW, $79900 ◆ ★</OPTION>
+<OPTION value=449>微星 Raider i9-14900HX/RTX4090/64G/2T/16吋 黑 GE68 HX 14VIG-292TW 霸氣現貨, $117900 ◆ ★</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=450>　　&#x21AA; MiniLED/120Hz更新率/100% DCI-P3/VESA HDR 1000認證/99.9Whr超大容量電池</OPTION>
+<OPTGROUP LABEL='17.3吋 微星 - 輕薄時尚系列 Bravo/Cyborg/Katana/Pulse/Stealth'>
+<OPTION value=452 class=r>微星 Bravo R9-7940HS/RTX4060/16G/1T/17吋 黑 17 D7VFKP-076TW 活動強檔貨, $35900 ◆ ★ 熱賣</OPTION>
+<OPTION value=453 class=r>微星 R9-7940HS/4060/16G/1T/17吋 黑 17 D7VFKP-076TW神搭金士頓16GB D5-5600, $37400 ◆ ★ 熱賣</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=454>　　&#x21AA; 最新AMD 7000+RTX 4060配上DDR-5600超高速記憶體，完美搭配、無懈可擊的神機。</OPTION>
+<OPTION value=455>微星 Alpha R9-7945HX/RTX4070/16G/1T/17吋 黑 17 C7VG-027TW, $51900 ◆ ★</OPTION>
+<OPTION value=456 class=r>微星 Sword i7-12650H/RTX4060/16G/512G/17吋 白 17 A12VF-059TW 經典絕版, $34900 ◆ ★ 熱賣</OPTION>
+<OPTION value=457 class=r>微星 Katana i7-12650H/RTX4050/8G/512G/17吋 黑 17 B12VEK-058TW 活動促銷, $31900 ◆ ★ 熱賣</OPTION>
+<OPTION value=458>微星 Katana i7-13620H/RTX4050/16G/1T/17吋 黑 17 B13VEK-1065TW, $35500 ◆ ★</OPTION>
+<OPTION value=459>微星 Katana i7-13620H/RTX4060/16G/1T/17吋 黑 17 B13VFK-089TW, $41900 ◆ ★</OPTION>
+<OPTION value=460>微星 Katana R7-8845HS/RTX4050/16G/1T/17吋 黑 A17 AI B8VE-838TW 新科技AI智慧, $36900 ◆ ★</OPTION>
+<OPTION value=461 class=r>微星 Pulse i7-13700H/RTX4070/16G/1T/17吋 黑 15 B13VGK-057TW 搭16G直升24G, $47900 ◆ ★ 熱賣</OPTION>
+<OPTGROUP LABEL='17.3吋 微星 - 極致炫彩系列 Vector/GE/GT'>
+<OPTION value=463>微星 Creator i9-13950HX/RTX4070/64G/2TB/17吋 黑 Z17HXStudio A13VGT-083TW 訂, $87900 ◆ ★</OPTION>
+<OPTION value=464 class=r>微星 Vector i9-14900HX/RTX4070/32G/1T/17吋 黑 HX A14VGG-208TW, $69900 ◆ ★ 熱賣</OPTION>
+<OPTION value=465 class=r>微星 Raider i9-13980HX/RTX4090/64G/2T/17吋 黑 GE78HX 13VI-252TW, $117900 ◆ ★ 熱賣</OPTION>
+<OPTGROUP LABEL='18吋 微星 - 極致炫彩系列 GE/GT'>
+<OPTION value=467 class=r>微星 Titan i9-14900HX/RTX4090/128G/4TB/18吋 黑 18 HX A14VIG-016TW 筆電霸主, $169900 ◆ ★ 熱賣</OPTION>
+<OPTGROUP LABEL='雷蛇 Razer 筆電館-全館刷卡分期零利率(3)'>
+<OPTION value=469>暑假好禮大相送 - 二月份購買 RAZER 筆電指定型號贈送好禮請參閱原廠登錄網址。, $1 ◆ ★</OPTION>
+<OPTION value=470>買RAZER指定12代i9型號筆電現場送原廠 RC21-01680100-R3M1筆電架〈價值4890元〉, $1 ★</OPTION>
+<OPTION value=471>買RAZER 全系列筆電現場送 Razer Anzu 天隼智能太陽眼鏡 〈價值5990元〉, $1 ★</OPTION>
+<OPTGROUP LABEL='15.6吋 Razer Blade雷蛇 15 系列'>
+<OPTION value=473>Razer Blade i7-13800H/RTX4060/16G/1T/15吋 黑 RZ09-0485YTD3-R3T1, $84990 ◆ ★</OPTION>
+<OPTION value=474>Razer Blade i7-13800H/RTX4070/16G/1T/15吋 黑 RZ09-0485ZTD3-R3T1, $95990 ◆ ★</OPTION>
+<OPTGROUP LABEL='16吋 Razer Blade雷蛇 16 系列'>
+<OPTION value=476>Razer Blade i9-13950HX/RTX4060/16G/1T/16吋 黑 RZ09-0483RTH3-R3T1, $93900 ◆ ★</OPTION>
+<OPTION value=477>Razer Blade i9-13950HX/RTX4070/32G/1T/16吋 黑 RZ09-0483STJ3-R3T1 雙模切換, $114990 ◆ ★</OPTION>
+<OPTION value=478>Razer Blade i9-14900HX/RTX4090/32G/2T/16吋 黑 RZ09-05102TN4-R3T1, $138990 ◆ ★</OPTION>
+<OPTION value=479>Razer Blade i9-14900HX/RTX4090/64G/4T/16吋 黑 RZ09-05102TJ9-R3T1 雙模切換, $155990 ◆ ★</OPTION>
+<OPTGROUP LABEL='17吋 Razer Blade雷蛇 17 系列'>
+<OPTION value=481 class=r>Razer Blade i9-12900H/RTX3070Ti/16G/1T/17吋 黑 RZ09-0423QTD3-R3T1 活動開跑, $59900 ◆ ★ 熱賣</OPTION>
+<OPTGROUP LABEL='18吋 Razer Blade雷蛇 18 系列'>
+<OPTION value=483>Razer Blade i9-13950HX/RTX4090/32G/2T/18吋 黑 RZ09-0484UTH4-R3T1 王者風範, $157990 ◆ ★</OPTION>
+<OPTGROUP LABEL='LG Gram 筆電館-全館刷卡分期零利率(3)'>
+<OPTGROUP LABEL='16.0吋 LG Gram 筆電'>
+<OPTION disabled value=486>&#x2764; LG Gram 16吋-榮獲金氏世界紀錄最輕16吋筆電</OPTION>
+<OPTION value=487 class=g>LG Gram i5-1340P/16G/512G/16吋 白 16Z90R-G.AA54C2, $33900↘$32900 ◆ ★</OPTION>
+<OPTION value=488 class=r>LG Gram i5-1340P/16G/512G/16吋 白 16Z90R-G.AA54C2 福利品 / 僅各門市展示用, $26900 ◆ ★ 熱賣</OPTION>
+<OPTION value=489 class=b>LG Gram i5-1340P/16G/512G/16吋 黑 16Z90R-G.AA55C2, $33900↘$32900 ◆ ★ 熱賣</OPTION>
+<OPTION value=490 class=b>LG Gram i5-1340P/16G/512G/16吋 灰 16Z90R-G.AA56C2, $33900↘$32900 ◆ ★ 熱賣</OPTION>
+<OPTION value=491 class=r>LG Gram i5-1340P/16G/512G/16吋 灰 16Z90R-G.AA56C2 福利品 / 僅各門市展示用, $26900 ◆ ★ 熱賣</OPTION>
+<OPTION value=492>LG Gram Ultra 5-125H/16G/512G/16吋 白 16Z90S-G.AA54C2, $42900 ◆ ★</OPTION>
+<OPTION value=493>LG Gram Ultra 5-125H/16G/512G/16吋 灰 16Z90S-G.AA56C2, $42900 ◆ ★</OPTION>
+<OPTION value=494>LG Gram Ultra 7-155H/32G/512G/16吋 灰 16Z90S-G.AD79C2, $49900 ◆ ★</OPTION>
+<OPTION value=495>LG Gram i7-1360P/16G/1T/16吋 黑 16Z90R-G.AA78C2, $43900 ◆ ★</OPTION>
+<OPTION value=496>LG Gram i7-1360P/16G/1T/16吋 白 16Z90RS-G.AA77C2 炫彩極致輕薄筆電 客訂, $54900 ◆ ★</OPTION>
+<OPTGROUP LABEL='17吋 LG Gram 筆電'>
+<OPTION disabled value=498>&#x2764; LG Gram 17.0吋-高科技奈米碳鎂通過美國軍規測試 榮獲 CES 2021 世紀創新獎</OPTION>
+<OPTION value=499 class=g>LG Gram i5-1340P/16G/512G/17吋 白 17Z90R-G.AA54C2, $37900↘$36900 ◆ ★</OPTION>
+<OPTION value=500>LG Gram Ultra 5-125H/16G/512G/17吋 白 17Z90S-G.AA54C2, $45900 ◆ ★</OPTION>
+<OPTION value=501 class=g>LG Gram i7-1360P/32G/1T/17吋 灰 17Z90R-G.AD79C2, $49900↘$48900 ◆ ★</OPTION>
+<OPTION value=502>LG Gram Ultra 7-155H/32G/1T/17吋 灰 17Z90S-G.AD79C2, $54900 ◆ ★</OPTION>
+<OPTGROUP LABEL='捷元 Genuine 筆電館-全館刷卡分期零利率(3)'>
+<OPTION disabled value=504>&#x2764; 全館購買捷元筆電贈抗藍光保護貼送完為止</OPTION>
+<OPTGROUP LABEL='15.6吋 捷元 ZEUS 電競系列【二年保固，到府收送】RAM終保、SSD五年保'>
+<OPTION value=506 class=r>捷元 ZEUS 15H i5-13500H/RTX4050/8G/500G/15吋 黑 J0057806〈送 8G+包包+無線鼠〉, $24900 ◆ ★ 熱賣</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=507>　　&#x21AA; 買 J0057806 筆電，加贈 金士頓 8G D5-4800+Targus 商務側背包+捷元G350M 無線滑鼠</OPTION>
+<OPTION value=508>捷元 ZEUS 15H i9-13900H/RTX4060/8G/500G/15吋 黑 J0057810 *展示機出清, $36900 ◆ ★</OPTION>
+<OPTGROUP LABEL='HP惠普 筆電館-全館刷卡分期零利率(3)'>
+<OPTGROUP LABEL='15.6吋 HP 超品系列 / Pavilion 星鑽系列'>
+<OPTION value=511 class=g>HP 超品 i5-1235U/8G/512G/15吋 極地白 15s-fq5030TU 文青時尚/輕盈好搭, $17999↘$17688 ◆ ★</OPTION>
+<OPTION value=512>HP 超品 i5-1235U/8G/512G/15吋 極地白 15s-fq5030TU 福利品/僅展示, $14900 ◆ ★</OPTION>
+<OPTGROUP LABEL='15吋 HP Victus 光影V系列'>
+<OPTION value=514>HP Victus i5-13500H/RTX4050/16G/512G/15吋 黑騎士 15-fa1038TX, $30900 ◆ ★</OPTION>
+<OPTION value=515>HP Victus i7-13700H/RTX4050/16G/512G/15吋 黑騎士 15-fa1036TX, $36900 ◆ ★</OPTION>
+<OPTGROUP LABEL='HP惠普 工作站 筆電館-全館刷卡分期零利率(3)'>
+<OPTGROUP LABEL='14吋 HP惠普 ZBook Firefly 14 系列'>
+<OPTION disabled value=518>&#x2764; 推薦用於2D和輕量級3D工作流程、攝影以及執行多個大型Office檔案。</OPTION>
+<OPTION value=519>HP ZBook Firefly G10A R5 PRO-7640HS/16G/512G/14吋 灰 8U723PA*送ZBook一卡通錀匙圈, $25900 ◆ ★</OPTION>
+<OPTION value=520>HP ZBook Firefly G10A R9 PRO-7940HS/32G/2T/14吋 灰 8U753PA *展示機出清, $38900 ◆ ★</OPTION>
+<OPTION value=521 class=r>HP ZBook Firefly G10 i7-1360P/16G/512G/14吋 灰 84D81PA-5200 *送Liteon 65W 變壓器, $36900 ◆ ★ 熱賣</OPTION>
+<OPTION value=522 class=r>HP ZBook Firefly G10 i7-1370P/16G/1T/14吋 灰 84D88PA-5200 *送Liteon 65W 變壓器, $39900 ◆ ★ 熱賣</OPTION>
+<OPTGROUP LABEL='16吋 HP惠普 ZBook Firefly 16 系列'>
+<OPTION disabled value=524>&#x2764; 推薦用於2D和輕量級3D工作流程、攝影以及執行多個大型Office檔案。</OPTION>
+<OPTION value=525 class=r>HP ZBook Firefly G10 i7-1360P/16G/512G/16吋 灰 84K51PA-5200 *送Liteon 65W 變壓器, $36900 ◆ ★ 熱賣</OPTION>
+<OPTGROUP LABEL='15.6吋 HP惠普 ZBook Power 系列'>
+<OPTION disabled value=527>&#x2764; 推薦用於中量級3D工作流程、1080P影像編輯以及燈光彩現、模擬和資料分析。</OPTION>
+<OPTION value=528 class=r>HP ZBook Power G10 i7-13700H/A500/8G/512G/15吋 灰 8G3F9PA *送8G+延保, $39900 ◆ ★ 熱賣</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=529>　　&#x21AA; 購買 8G3F9PA 工作站筆電，加贈 威剛8G D5-5600 + 二年延長保固 *價值$8850元</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=530>　　&#x21AA; 提醒1~加贈二年延長保固會在售出時，以您的發票號碼及機器序號請原廠做加保！</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=531>　　&#x21AA; 提醒2~原廠加保時間需要約3~4週的工作天，屆時可於線上直接查詢您的保固年限。</OPTION>
+<OPTION value=532>HP ZBook Power G10 i7-13700H/A1000/8G/512G/15吋 灰 8G3F8PA *客訂, $55900 ◆ ★</OPTION>
+<OPTION value=533>HP ZBook Power G10 i7-13800H/RTX2000 Ada/16G/512G/15吋 灰 8G3G0PA *客訂, $73900 ◆ ★ ↓酷幣1500↓</OPTION>
+<OPTGROUP LABEL='智慧型手機'>
+<OPTGROUP LABEL='華碩 Zenfone 手機'>
+<OPTION value=536>ZenFone 8 (ZS590KS 16G/256G) -簡約銀 169g可單手掌鏡、8K電影級專業錄製, $12800 ◆ ★</OPTION>
+<OPTGROUP LABEL='Apple iPhone 15 系列'>
+<OPTION value=538>Apple iPhone 15 (256G-MTP73ZP/A)-粉紅色, $29500 ★</OPTION>
+<OPTION value=539>Apple iPhone 15 PROMax (256G-MU793ZP/A)-原色鈦金屬, $43400 ★</OPTION>
+<OPTGROUP LABEL='ASUS 華碩 手錶/手環'>
+<OPTION value=541>ASUS VivoWatch SP HC-A05 智慧手錶 指尖血氧測量*加送VIVOWATCH SE 手錶, $5990 ◆ ★</OPTION>
+<OPTGROUP LABEL='筆電周邊'>
+<OPTION value=543>3C Pig 第二顆硬碟托架轉接盒+ USB 筆電光碟機(9.5mm)外接盒, $390 ◆ ★</OPTION>
+<OPTION value=544>3C Pig 第二顆硬碟托架轉接盒+ USB 筆電光碟機(12.7mm)外接盒, $390 ◆ ★</OPTION>
+<OPTGROUP LABEL='筆電變壓器'>
+<OPTION value=546 class=r>Allite A2 GaN氮化鎵三孔2C1A 105W充電器/支援筆電/PD3.0/QC3.0/AFC, $1520 ◆ ★ 熱賣</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=547>　　&#x21AA; 超小體積105W，筆電、手機、平板、Switch皆能使用 / 2C1A / 附UK、EU、AU轉接頭</OPTION>
+<OPTION value=548>台達 Innergie C6 Duo 63W 萬用充電器 / USB-C*2 / 摺疊版 / PD3.0 / QC3.0 / QC4.0, $1690 ◆ ★</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=549>　　&#x21AA; 【買就送】買台達 Innergie C6 Duo 63W 萬用充電器 就送 Innergie 1.5M 筆電充電線</OPTION>
+<OPTION value=550>台達 Innergie 180G 180W 筆電充電器 / 1.8M / 基本6種筆電接頭 / 三年保, $1420 ◆ ★</OPTION>
+<OPTION value=551>Gigastone 65W GaN三孔充電器 USB-A*1/USB-C*2/PD3.0/QC3.0(黑) PD-7653B, $890 ★</OPTION>
+<OPTION value=552>Gigastone 65W GaN三孔充電器 USB-A*1/USB-C*2/PD3.0/QC3.0(白) PD-7650W, $950 ◆ ★</OPTION>
+<OPTION value=553>【組合優惠】Gigastone PD-7650W 三孔充電器 + Gigastone CC-7600W Type-C 充電線, $899 ◆ ★</OPTION>
+<OPTION value=554>Gigastone 100W GaN三孔充電器 A*1/C*1+C to C 100W快充傳輸線 PD-100B+CC-7800, $1790 ◆ ★</OPTION>
+<OPTION value=555>Gigastone 130W GaN四孔充電器 A*1/C*3+C to C 100W快充傳輸線 PD-130B+CC-100B, $2499 ◆ ★</OPTION>
+<OPTGROUP LABEL='快速充電座'>
+<OPTION value=557 class=r>Allite B1 史上最小支援Switch TV 模式 20W 快充/影像傳輸組合包, $888 ◆ ★ 熱賣</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=558>　　&#x21AA; 附二合一快充/投影線 USB-C to USB-C/HDMI 支援Switch TV 模式 一條抵兩條線</OPTION>
+<OPTION value=559>Gigastone 20W USB-C+USB-A / PD / QC 急速雙孔充電器 PD-6202W, $279 ★</OPTION>
+<OPTION value=560>Gigastone 33W USB-C+USB-A / PD / QC 急速雙孔充電器 PD-6330W, $490 ◆ ★</OPTION>
+<OPTION value=561>Gigastone 33W USB-C+A 雙孔充電器 + C to C 60W快充線PD-6330W+CC-7600W, $599 ◆ ★</OPTION>
+<OPTGROUP LABEL='行動電源'>
+<OPTION value=563>Gigastone【10000mAh】額定:6500mAh，最大20W / A*2 / C*1 三孔 PB-7113B, $599 ◆ ★</OPTION>
+<OPTION value=564>Gigastone【10000mAh】最大20W / A*1 / C*1 無線雙孔 行充/充電器兩用QP-10200B, $858 ◆ ★</OPTION>
+<OPTION value=565>Gigastone【10000mAh】最大20W / A*1 / C*1 / Lightning輸入 無線雙孔 QP-10100W, $999 ◆ ★</OPTION>
+<OPTION disabled value=566>&#x2764; iWalk 口袋行動電源</OPTION>
+<OPTION value=567>【加購價】買iWalk 行動電源 加購 ACER Iconia Tab M10，可折$760, $5290 ★</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=568>　　&#x21AA; 再送 Huawei Freebuds se 2(白) 真無線耳機</OPTION>
+<OPTION value=569 class=g>【加購價】買iWalk 行動電源 可加購 ACER Iconia Tab P10，可折$760, $6790↘$6490 ★</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=570>　　&#x21AA; 再送 Huawei Freebuds se 2(白) 真無線耳機</OPTION>
+<OPTION value=571>iWALK 五代 PRO【4800mAh】額定容量:2800mAh Type-C 數位顯示行動電源 - 雅黑, $760 ◆ ★</OPTION>
+<OPTION value=572>iWALK 五代 PRO【4800mAh】額定容量:2800mAh Type-C 數位顯示行動電源 - 粉紅, $760 ◆ ★</OPTION>
+<OPTION value=573>iWALK 五代 PRO【4800mAh】額定容量:2800mAh Type-C 數位顯示行動電源 - 湖綠, $760 ◆ ★</OPTION>
+<OPTION value=574>iWALK 五代 PRO【4800mAh】額定容量:2800mAh Type-C 數位顯示行動電源 - 錫奶, $760 ◆ ★</OPTION>
+<OPTION value=575>iWALK 五代 PRO【4800mAh】額定容量:2800mAh Type-C 數位顯示行動電源 - 靛紫, $760 ◆ ★</OPTION>
+<OPTION value=576>iWALK 五代 PRO【4800mAh】額定容量:2800mAh Type-C 數位顯示行動電源 - 白晝, $760 ◆ ★</OPTION>
+<OPTION value=577>iWALK 五代 PRO【4800mAh】額定容量:2800mAh Lightning 數位顯示行動電源 - 雅黑, $760 ◆ ★</OPTION>
+<OPTION value=578>iWALK 五代 PRO【4800mAh】額定容量:2800mAh Lightning 數位顯示行動電源 - 粉紅, $760 ◆ ★</OPTION>
+<OPTION value=579>iWALK 五代 PRO【4800mAh】額定容量:2800mAh Lightning 數位顯示行動電源 - 湖綠, $760 ◆ ★</OPTION>
+<OPTION value=580>iWALK 五代 PRO【4800mAh】額定容量:2800mAh Lightning 數位顯示行動電源 - 錫奶, $760 ◆ ★</OPTION>
+<OPTION value=581>iWALK 五代 PRO【4800mAh】額定容量:2800mAh Lightning 數位顯示行動電源 - 靛紫, $760 ◆ ★</OPTION>
+<OPTION value=582>iWALK 五代 PRO【4800mAh】額定容量:2800mAh Lightning 數位顯示行動電源 - 白晝, $760 ◆ ★</OPTION>
+</SELECT><img src=f.gif class=h title='Click篩選條件' onclick=Ftr(2)>
+<ins></ins>
+<div style='display:none'>
+<div>篩選條件：<button onclick="FReset('nbT')">清除</button> 　 　價格：
+＄<input name=nbTB size=8 onkeyup="FPrice('nbT');this.focus()" onkeydown="return OnlyNum()"> 以上 ～
+＄<input name=nbTE size=8 onkeyup="FPrice('nbT');this.focus()" onkeydown="return OnlyNum()"> 以下
+<img src="img/select.gif" onclick="AppearItemList(iNum)" class=fc>
+</div>
+<table width=92%>
+<tr><td width=8%>&nbsp;
+<td width=40>廠牌
+<td>
+<tt onmouseover=RI(this)><input type=checkbox name=nbT>華碩</tt><br>
+<tt onmouseover=RI(this)><input type=checkbox name=nbT>技嘉</tt><br>
+<tt onmouseover=RI(this)><input type=checkbox name=nbT>微星</tt><br>
+<tt onmouseover=RI(this)><input type=checkbox name=nbT>捷元</tt>
+<td style="padding-right:60">
+<tt onmouseover=RI(this)><input type=checkbox name=nbT>Acer</tt><br>
+<tt onmouseover=RI(this)><input type=checkbox name=nbT>Dell</tt><br>
+<tt onmouseover=RI(this)><input type=checkbox name=nbT>HP</tt><br>
+<tt onmouseover=RI(this)><input type=checkbox name=nbT>LG</tt><br>
+<tt onmouseover=RI(this)><input type=checkbox name=nbT>Lenovo</tt><br>
+<tt onmouseover=RI(this)><input type=checkbox name=nbT alt=1>Razer</tt>
+<td width=40>規格
+<td>
+<tt onmouseover=RI(this)><input type=checkbox name=nbT value=13>13吋</tt><br>
+<tt onmouseover=RI(this)><input type=checkbox name=nbT value=14>14吋</tt><br>
+<tt onmouseover=RI(this)><input type=checkbox name=nbT value=15>15吋</tt><br>
+<tt onmouseover=RI(this)><input type=checkbox name=nbT value=16>16吋</tt><br>
+<tt onmouseover=RI(this)><input type=checkbox name=nbT value=17>17吋</tt><br>
+<tt onmouseover=RI(this)><input type=checkbox name=nbT value=18 alt=1>18吋</tt>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+</td>
+<td width=40>核心
+<td>
+<tt onmouseover=RI(this)><input type=checkbox name=nbT value="R3-">AMD R3</tt><br>
+<tt onmouseover=RI(this)><input type=checkbox name=nbT value="R5-">AMD R5</tt><br>
+<tt onmouseover=RI(this)><input type=checkbox name=nbT value="R7-">AMD R7</tt><br>
+<tt onmouseover=RI(this)><input type=checkbox name=nbT value="R9-">AMD R9</tt><br>
+<td>
+<tt onmouseover=RI(this)><input type=checkbox name=nbT value="Celeron">Intel Celeron</tt><br>
+<tt onmouseover=RI(this)><input type=checkbox name=nbT value="Pentium">Intel Pentium</tt><br>
+<tt onmouseover=RI(this)><input type=checkbox name=nbT value="i3-">Intel i3 系列</tt><br>
+<tt onmouseover=RI(this)><input type=checkbox name=nbT value="i5-">Intel i5 系列</tt><br>
+<tt onmouseover=RI(this)><input type=checkbox name=nbT value="i7-">Intel i7 系列</tt><br>
+<tt onmouseover=RI(this)><input type=checkbox name=nbT value="i9-" alt=2>Intel i9 系列</tt>
+</table>
+</div>
+<span id=nb2></span><TD align=right valign=top><SELECT style='width:39px' onchange="cnt(2)" name=u2>
+<OPTION value=1 selected>1<OPTION value=2>2<OPTION value=3>3<OPTION value=4>4<OPTION value=5>5<OPTION value=6>6<OPTION value=7>7<OPTION value=8>8<OPTION value=9>9<OPTION value=10>10</SELECT><img src=a.gif class=v>
+<ins></ins>
+<TH align=right id=p2><TH align=right id=t2><TH id=k2><TD class=d></TR>
+<TR bgColor=efefe0><TD class=w>3<TD class=t>酷！PC 套裝產線 <a href='https://www.youtube.com/channel/UCXzaGpgOA4Du1OzWQejxC4Q/live' target=_blank><img src='/image/coolpc-yt.gif' style='float:right' border=0></a><TD noWrap>
+<SELECT onchange="cnt(3)" onmouseover="Tip(this,event)" name=n3 class=s>
+<OPTION value=0 selected class=bf>共有商品 19 樣，圖片 19，討論 9，價格異動 5
+<OPTGROUP LABEL='套裝主機限量促銷專區'>
+<OPTION value=2 class=g>技嘉【鋼彈Evolution】R7 7700X/X670/32G DDR5/1TB/850W/240水冷/RTX3060, $39900↘$38900 ★</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=3>　　&#x21AA; 歡慶新年實體限定活動，購買套裝機，加碼送Coolpc【火】機械式鍵盤(青軸/紅軸任選)</OPTION>
+<OPTION value=4>微星【地獄火含OS】R9 7900X【12核心】/X670/32G/500G/850W/360水冷/含Win11, $36900 ◆ ★</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=5>　　&#x21AA; 歡慶新年實體限定活動，購買套裝機，加碼送Coolpc【火】機械式鍵盤(青軸/紅軸任選)</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=6>　　&#x21AA; 本機出貨含Windows 11！最新版號22H2，驅動元件皆已安裝並終身享免費重灌服務</OPTION>
+<OPTGROUP LABEL='套裝必搭優惠專區'>
+<OPTION value=8>【套裝搭購優惠】羅技 G512 機械式鍵盤, $1990 ★</OPTION>
+<OPTION value=9>【套裝搭購優惠】羅技 G502 X 高效能電競滑鼠, $1590 ★</OPTION>
+<OPTION value=10>【套裝搭購優惠】羅技 G Pro X Superlight 電競滑鼠, $2590 ★</OPTION>
+<OPTION value=11>【套裝搭購優惠】羅技 G733 無線RGB炫光電競耳麥, $3390 ★</OPTION>
+<OPTION value=12>【套裝搭購優惠】羅技 MK295 靜音無線鍵盤滑鼠組, $799 ★</OPTION>
+<OPTION value=13>【套裝搭購優惠】羅技 MK200 USB鍵盤滑鼠組, $499 ★</OPTION>
+<OPTION value=14>【套裝搭購優惠】華碩 USB-AX55 NANO AX1800 迷你外型/隱藏天線/USB2.0/三年換新, $1099 ★</OPTION>
+<OPTION value=15>【套裝搭購優惠】華碩 PCE-AX58BT (AX3000 固定2天線/AX雙頻/PCI-E/藍牙5.0), $1490 ★</OPTION>
+<OPTION value=16>【套裝搭購優惠】圓剛 GC570 Live Gamer HD2 遊戲直播擷取卡/1080P 60/PCI-E介面, $2390 ★</OPTION>
+<OPTGROUP LABEL='Power by 華碩、技嘉、微星認證主機'>
+<OPTION value=18>技嘉【金龍】〈RTX4060 8GB〉I5-14600K/B760/32G DDR5/1TB SSD/750W, $33500 ◆ ★</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=19>　　&#x21AA; [回函索取]購買技嘉【金龍】主機，加碼贈人中之龍8 遊戲序號，價值$1890</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=20>　　&#x21AA; 購買技嘉金龍主機加碼贈 技嘉AMP900鼠墊＆Coolpc【火】機械式鍵盤</OPTION>
+<OPTION value=21>技嘉【金龍】〈RTX4070 12GB〉I5-14600K/B760/32G DDR5/1TB SSD/750W, $43690 ◆ ★</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=22>　　&#x21AA; [回函索取]購買技嘉【金龍】主機，加碼贈人中之龍8 遊戲序號，價值$1890</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=23>　　&#x21AA; 購買技嘉金龍主機加碼贈 技嘉AMP900鼠墊＆Coolpc【火】機械式鍵盤</OPTION>
+<OPTION value=24>Intel【琉璃】Intel I5-13500【14核心】/B760/16G DDR4/1TB/750W/ARC A750 8G, $25000 ◆ ★</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=25>　　&#x21AA; 購買Intel ARC主機加碼贈華碩USB-AC51 無線網卡，價值$499</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=26>　　&#x21AA; 歡慶新年實體限定活動，購買套裝機，加碼送Coolpc【火】機械式鍵盤(青軸/紅軸任選)</OPTION>
+<OPTION value=27>Intel【稜鏡】Intel I7-14700【20核心】/B760/32G DDR4/1TB/750W/ARC A750 8G, $31000 ◆ ★</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=28>　　&#x21AA; 購買Intel ARC主機加碼贈華碩USB-AC51 無線網卡，價值$499</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=29>　　&#x21AA; 歡慶新年實體限定活動，購買套裝機，加碼送Coolpc【火】機械式鍵盤(青軸/紅軸任選)</OPTION>
+<OPTION value=30 class=g>華碩【旋風蠻】R9 7950X【16核心】/X670/32G DDR5/1TB SSD/850W, $38900↘$37900 ◆ ★</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=31>　　&#x21AA; [六都電競活動]任搭華碩顯卡加碼贈TUF M3 滑鼠、TUF K3鍵盤，總價近$3000</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=32>　　&#x21AA; 歡慶新年實體限定活動，購買套裝機，加碼送Coolpc【火】機械式鍵盤(青軸/紅軸任選)</OPTION>
+<OPTION value=33>華碩【14代管理者】I5-14400【6核心】/H610/16G DDR4/512G SSD, $12900 ◆ ★</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=34>　　&#x21AA; Intel 14代十核CPU、超值影音文書機(產線SOP，自家物流免等待)</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=35>　　&#x21AA; ASUS CSM主機板 內含遠端管理軟體、USB控制、附伺服器級IT管理軟體</OPTION>
+<OPTION value=36 class=g>華碩【大地熊】I9-13900【24核心】/Z790/32G DDR5/1TB SSD/850W, $38900↘$37900 ◆ ★</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=37>　　&#x21AA; [六都電競活動]任搭華碩顯卡加碼贈TUF M3 滑鼠、TUF K3鍵盤，總價近$3000</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=38>　　&#x21AA; 歡慶新年實體限定活動，購買套裝機，加碼送Coolpc【火】機械式鍵盤(青軸/紅軸任選)</OPTION>
+<OPTION value=39 class=g>華碩【旋風蠻含OS】R9 7950X【16核心】/X670/32G DDR5/1TB SSD/850W/Win11, $41900↘$40900 ◆ ★</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=40>　　&#x21AA; [六都電競活動]任搭華碩顯卡加碼贈TUF M3 滑鼠、TUF K3鍵盤，總價近$3000</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=41>　　&#x21AA; 本機出貨含Windows 11！最新版號23H2，驅動元件皆已安裝並終身享免費重灌服務</OPTION>
+</SELECT><img src=f.gif class=h title='Click篩選條件' onclick=Ftr(3)>
+<ins></ins>
+<div style='display:none'>
+<div>篩選條件：<button onclick="FReset('padT')">清除</button> 　 　價格：
+＄<input name=padTB size=8 onkeyup="FPrice('padT');this.focus()" onkeydown="return OnlyNum()"> 以上 ～
+＄<input name=padTE size=8 onkeyup="FPrice('padT');this.focus()" onkeydown="return OnlyNum()"> 以下
+<img src="img/select.gif" onclick="AppearItemList(iNum)" class=fc>
+</div>
+</div>
+<TD align=right valign=top>
+<SELECT style='width:39px' onchange=cnt(3) name=u3>
+<OPTION value=1 selected>1<OPTION value=2>2<OPTION value=3>3<OPTION value=4>4<OPTION value=5>5<OPTION value=6>6<OPTION value=7>7<OPTION value=8>8<OPTION value=9>9<OPTION value=10>10</SELECT><img src=a.gif class=v>
+<ins></ins>
+<TH align=right id=p3><TH align=right id=t3><TH id=k3><TD class=d></TR>
+</tbody>
+<tr><td align=center vAlign=top bgcolor=#ffcc66 colspan=7 style="padding:1 0 1 0">
+<div id=fDiv class=fixDiv ondblclick=fixDIV(this)>
+<div id=MatchArea ondblclick="event.stopPropagation();" style="border:1px solid #999;padding:4 2 4 2;background-color:#f6f6f6;width:828px;display:none">
+<div id=Matchs align=left style="padding:0 2 0 1;height:396px;overflow-y:auto;"></div></div>
+<table class=ftb id=ftb cellspacing=0 align=center>
+<tbody><tr><td bgcolor=#ffcc66 style="padding:3px 0px 3px 6px;font-size1:11pt;height:28px">
+<img src="img/myItem.gif" onclick="myItemList()" align=top class=fc style="margin-right:2px" title="將選購的商品匯到左視窗">
+<img src="img/select.gif" id=FIcon class=fc onclick="AppearItemList(0)" style="float:left;margin:0 2px;" title="將搜尋結果的商品顯示於左視窗\n不能沒有資料或筆數不能超過500">
+<span class=SearchBox align=top>&#x1F50E;
+<input type=text name=SearchStr class=t onfocus="Cpy=true" onblur="Cpy=false" oninput="ChkDataList(this.value)" placeholder="請輸入要搜尋的關鍵字(例1: 6核|8核 代表6核或者8核一者符合) (例2: 600W^日系 代表600W且日系2者都要符合) '|'的優先順序高於'^'" style="width:768px;border:0px;background-color:#fff;margin:0;height:20px"><strong onclick="if (S.SearchStr.value) ChkDataList(S.SearchStr.value='')" class=clear>&#8855;</strong></span>
+<span id="SearchResult" style="font-size:12pt;font-weight:900;color:#630;"></span>
+</td></tr></tbody>
+<tbody>
+<tr><td bgcolor=#ffcc66 style="padding-left:1px;padding-right:5px;font-size:15pt;font-weight:900;margin-right:2"><span id=myIButton onclick="ShowMyItem()">只Show選購</span>
+優惠價:<input name=disprice size=4 class=i readonly style="width:88"> 省:<input name=discount size=3 class=i readonly>
+<a href="/phpBB2/viewtopic.php?f=21&t=55325&PHPSESSID=3dc181241e22ae092b900d1865e32576" target="_blank"><img src="/img/watt.gif" border=0 align=absmiddle></a><font class=wat>耗電<span id=wat>0</span>瓦</font>
+<img src="/img/cart814.gif" border=0 align=absmiddle onClick="Mail()" title="將估價結果 Email 給原價屋" style="cursor:pointer;cursor:hand">
+<img src="/img/dn.png" style="cursor:pointer;cursor:hand" align=absmiddle onClick="Excel(1)" title="將估價結果下載成 HTML 檔">
+<img src="/img/excel.png" style="cursor:pointer;cursor:hand" align=absmiddle onClick="Excel()" title="將估價結果匯入 Excel">
+<img src="/img/printer.png" align=absmiddle style="cursor:pointer;cursor:hand" onClick="if (Want()==1) alert('請先選擇產品與數量後再列印');
+else if (confirm('請先設定您的列表機\n以 A4 格式 橫向列印')) Gauze(1)" title="列印估價結果">
+現金價:<input name=tot size=4 class=i readonly style="width:90">元
+<input type=reset OnClick="Clear()" value="重 估" title="清除所有選項重新估價" style="color:#eee;background-color:#666;cursor:pointer;height:25px;;border:none;border-radius:5px;"></td></tr></tbody>
+</table></div>
+    <table background="/img/redbg.gif" height=39 width=100% cellpadding=0 cellspacing=0>
+    <tr id=installment><td><img name=bingo src="/img/any1.gif" height=34>
+    <td align=right><b style="display:none">　訂價:<span id=ins0 style="font-size:16pt;color:yellow">0</span>元　</b>分期付款每&nbsp;
+    <td width=18%><img src="/img/3.gif" align=absmiddle><span id=ins3>0</span>元
+    <td width=18%><img src="/img/6.gif" align=absmiddle><span id=ins6>0</span>元
+    <td width=18%><img src="/img/12.gif" align=absmiddle><span id=ins12>0</span>元
+    <td width=18%><img src="/img/24.gif" align=absmiddle><span id=ins24>0</span>元</tr>
+    </table>
+    <table background="/img/down-bg.gif" height=163 width=100% cellpadding=0 cellspacing=0 class=doc>
+    <tr><td style="padding-left:16">
+★中信,台新,國泰,玉山,花旗,一銀,匯豐,華南,聯邦,新光,永豐,上海,富邦,星展.. 等信用卡分期。<br>
+★零卡分期開辦，配合國內最大『中租』讓您輕鬆分期，請即下載APP完成額度申請。<br>
+★<font color="blue"><b>價格有誤歡迎告知，訂單成立與否皆須客服口頭連繫，未連繫前任何交易皆不成立以防詐騙。</b></font><br>
+★若要求時效，可直接撥打02-23972669按語音指示接網路客服。<br>
+★幣值為新台幣，價格僅供參考不保證市場最低，刷卡請以門市訂價為準，此報價為現金優惠。<br>
+★商品圖形僅供參考，若有誤謬，以官方提供為主。<br>
+★產品退換貨時請攜帶所有配件、外包裝、發票，人為損壞不負保固之責。<br>
+IP：122.116.142.104 　您是第 236703678 位來賓 　估價時間：2024/02/26 23:00:06<br>
+Copyright &copy; 2005 CoolPC.TW 原價屋電腦 DIY線上估價系統　版權所有！請勿複製！
+    <td width=240><p>首創價格即時更新，<br>分期付款亦跟隨改變！</p>
+    <p>就算是分期，也要給您<br>最即時最便宜！最高24期，<br>讓您輕鬆付款零負擔！</p>
+    <div style="font-size:9pt">瀏覽器相容IE6.0,Firefox4,Chrome10以上</div>
+    <td align=right width=178><img src="/img/coolpc-payeasy.gif" align=top>
+    </tr>
+    </table>
+</tr>
+</table>
+</td>
+<td valign=top style="padding:0">
+<div id=logo>
+<a href="/noQuery.php?PHPSESSID=3dc181241e22ae092b900d1865e32576" target="_blank"><img src="/image/coolpc/p2.png" style="margin-bottom:0px"></a><br>
+<img src="/img/link2.gif" border=0 onclick="Save()" align=absmiddle title="將估價結果產生一個網頁連結檔" style="cursor:pointer"><br>
+<a href="/photo/?PHPSESSID=3dc181241e22ae092b900d1865e32576" target="_blank"><img src="/image/distr.png" style="margin-bottom:0px"></a><br>
+<iframe src="/home/preOrder/cool-preorder-one.html" width="150" height="345" scrolling="no" align="center" frameborder="0">
+</iframe><br>
+<img src="/image/coolpc/flash161108.gif" height="205" width="150"><br>
+<iframe src="/home/img/right2.html" width="150" height="234" scrolling="no" align="center" frameborder="0">
+</iframe>
+</div>
+</tr>
+</form>
+<tr><td align=center colspan=2 id=pBtm style="color:white;display:none">本頁列印才算有效，列印前請先將印表機列印方向改為”橫印”...以方便容納整頁資料　 <button type=button onClick="Gauze(0)" title="還原成原先未列印的畫面" style="height:24"><img src="/img/return.gif" align=absmiddle> 還原畫面</button></td></tr>
+</table>
+<br>
+<div style="display:none"><var></var><kbd></kbd><var></var><kbd></kbd><var></var><kbd></kbd></div>
+</td></tr>
+</table>
+<form name=ISend method=post target=FItem action="eachitem.php"><input type="hidden" name="PHPSESSID" value="3dc181241e22ae092b900d1865e32576" />
+<input type=hidden name=Ititle><input type=hidden name=IGrp>
+<input type=hidden name=Itime value='1708959606'><input type=hidden name=Mtime value='1708959606'>
+<input type=hidden name=Ix><input type=hidden name=Iy>
+</form>
+<form name=eva method=post><input type="hidden" name="PHPSESSID" value="3dc181241e22ae092b900d1865e32576" /><input type=hidden name=iname><input type=hidden name=icnt><input type=hidden name=isearch><input type=hidden name=igrp value=""><input type=hidden name=iwins><input type=hidden name=ishow></form>
+<strong onclick="AppearItemList()" class=Switch title="單一與雙邊選項畫面">&#x25EB;</strong>
+<strong onclick="OverLay()" id="Switch" style="display:none" title="雙邊選項重疊上下畫面">&#x29c9;</strong>
+<span onclick="ModifyData()" id="Tester"></span>
+</body>
+</html>
+<script>
+Gauze(6)
+setTimeout('SkipMsg()',180000)
+</script>

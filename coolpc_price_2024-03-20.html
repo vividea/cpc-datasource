@@ -1,0 +1,549 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=big5">
+<title>原價屋線上估價-含稅</title>
+<style type="text/css">
+*{font:10pt Arial}
+.s, s. option{font-family:'Arial Narrow'}
+body{overflow:auto;margin:0 0 56 0;-moz-user-select:none}
+b{font-weight:700}
+button{color:#eee;background-color:#666;cursor:pointer;height:20;border:none;border-radius:5px;}
+em{color:red;cursor:pointer;margin:0 2 0 22;}
+ins div{margin-left:3px;}
+option, select, #tbdy td ins div, .t{letter-spacing:-0.4px;}
+select option:disabled{font-size:9pt;}
+select{margin-top:1px;margin-bottom:1px;}
+select optgroup{font-family: Arial, Helvetica, sans-serif;font-weight:900}
+tt{padding:4 6 1 5;border-radius:3px;}
+td{white-space:nowrap;padding:0 1 0 1}
+td #myIButton{
+        box-shadow: 3px 4px 0px 0px #8a2a21;
+        background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+        background-color:#c62d1f;
+        border-radius:17px;
+        border:1px solid #d02718;
+        display:inline-block;
+        cursor:pointer;
+        color:#fff3f3;
+        font-family:Arial;
+        font-size:15px;
+        font-weight:900;
+        margin:2px 8px 0px 7px;
+        padding:4px 8px 3px 8px;
+        float:left;
+        text-decoration:none;}
+td #myIButton:hover{
+        background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+        background-color:#f24437;color:#ddd;position:relative;top:1px;left:1px;}
+td #myIButton:active{position:relative;top:2px;left:2px;}
+#installment td,#installment span{color:#fee;font-size:15pt;font-weight:900}
+#installment span{text-decoration:underline;padding-left:3;padding-right:3}
+#Matchs ol{margin:0;list-style:none;}
+#Matchs ol li{padding-top:3px;padding-bottom:2px;border-bottom:1px solid #ddd;cursor:pointer;color:#333;}
+#Matchs ol li:hover{background-color:#d6d6d6;}
+#Matchs ol li::before{content:attr(value);color:#fff;padding:1px 0px;display:inline-block;width:1.5em;margin-left:-2em;margin-right:0.7em;
+  text-align:center;direction:rtl;background-color:#666;border-radius:50%;}
+#Matchs ol li p{color:#888;font-size:9pt;display:inline;}
+#Matchs u{color:orangered}
+#Mdy{color:#840;}
+#logo img{border:0}
+#tbdy th{white-space:nowrap;padding:3 1 0 1;font-weight:normal;vertical-align:top}
+#tbdy th div,#tbdy ins div{height:20;}
+#tbdy td ins div{text-overflow:ellipsis;overflow:hidden;}
+#thy th{padding:2 0 0 2;}
+#thy th, #thy th *{font-size:10pt;}
+#wat, .wat{font-size:15pt;font-weight:900;color:#060;margin-left:3px;}
+#know td{padding:5 8 5 8;}
+#Tester{position:fixed;left:68;top:-8;z-index:5;height:16;animation:blinkingText 1.5s infinite;}
+#Tester .rd{font-size:14pt;cursor:pointer;font-weight:900;position:relative;top:8px;margin-right:9pt;background-color:red;padding:4px 6px;border-radius:0 0 10px 10px;}
+#Tester .rd:hover{background-color:#ddd;color:red}
+
+.MyIButton{animation:blinkingText 1.5s infinite;}
+@keyframes blinkingText{
+    0%{color: #fed;}
+    49%{color: #fed;}
+    60%{color: transparent;}
+    99%{color:transparent;}
+    100%{color: #fed;}
+}
+.cner td{padding:0}
+.doc p{font-size:12pt;font-weight:900}
+.doc td{font-size:10pt}
+.bb{background-color:#ddd;color:brown}
+.bf{background-color:#ddd}
+.b{color:blue}
+.clear{font-size:14pt;cursor:pointer;color:#999}
+.clear:hover{color:red}
+.d{display:none}
+.f{color:brown;position:absolute}
+.fc{float:right;cursor:pointer;padding:2px;border-radius:3px;}
+.fd{float:left;cursor:pointer;padding:2px;margin:0 2px;border-radius:3px;}
+.fe{cursor:pointer;float:right;margin-right:2px;padding:3px;border-radius:2px;}
+.fc:hover{background-color:gold}
+.ftb .fc:hover{background-color:#e5e4e2;}
+.g{color:#090}
+.h{cursor:pointer;float:right;margin-top:1px;}
+.i{font:15pt 'Arial';border:0;border-bottom:ridge black 1px;background-color:transparent;color:blue;font-weight:900;text-align:center}
+.p{cursor:pointer}
+.r{color:red}
+.s{width:97%;margin-bottom1:3px;}
+.SearchBox{padding:3px;background-color:#fff;font-size:11pt;border:2px solid #eb5;border-radius:15px;-moz-border-radius:15px;-webkit-border-radius:15px;-khtml-border-radius:15px}
+.SearchBox:hover{border:2px solid #c80;}
+.Switch{position:fixed;top:-2;left:2;font-size:14pt;color:#fff;z-index:5;padding:0px 1px;cursor:col-resize;}
+#Switch{position:fixed;top:2;left:30;font-size:13pt;color:#fff;z-index:5;padding:0px 1px;cursor:alias;}
+.Switch:hover, #Switch:hover{color:gold;}
+.v{visibility:hidden;float:right}
+.w{font-weight:800;font-size:11pt;padding:0;text-align:center}
+.y{background-color:#fe0;padding:1 3 0 3}
+.ftb{border:2px dashed #996600;-moz-user-select:none;}
+.fixDiv{vertical-align:middle;filter:Alpha(Opacity=96);-moz-opacity:0.96;opacity:0.96;width:1040px;position:fixed;left:50%;bottom:0;transform:translate(-50%,0);}
+</style>
+<script>
+c1=[0,0,30990,69900,45990,0,36990,25900,19490,18500,19990,16800,10990,0,79900,59900,56900,33900,43900,38900,25900,28500,0,42900,25900,0,35900,0,22900,109900,169900,159900,46900,0,0,6900,18900,0,17900,13900,9990,0,49900,0,45600,0,29900,0,21800,18800,19990,22990,32990,23990,19990,19900,40990,32990,16990,0,46900,14500,12500,10300,19700,0,19700,15300,0,24800,28500,18800,9800,7999,0,0,25900,0,20900,0,17900,0,17900,0,14900,0,14900,0,9800,8888,0,14900,0,14900,0,11900,0,11900,0,8900,0,8900,0,5900,4900,0,28900,20900,20900,28900,19900,14800,10900,20900,16900,0,39900,19900,0,4990,0,0,0,19900,14800,24000,18900,15900,7777,4290,0,5190,10960,0,6090,6690,0,7390,4390,0,550,1150,250,230,280,450,790,360,0,18900,31900,0,20900,29900,22900,17900,15900,39900,30900,27900,22900,26900,21500,32900,25900,25900,20900,29900,0,18500,0,0,15900,14900,31900,33900,41900,0,8500,5600,6250,18900]
+c2=[0,0,699,1349,1890,5200,0,0,5490,0,3680,0,4990,0,6190,0,0,6990]
+d1=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+d2=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+
+w1=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+w2=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+
+Header=[0,[134,14,134,131,41,1],[9,1,9,9,4,1]]
+g1=[0,0,3.5,4.5,5.5,0,7.5,8.5,9.5,10.5,11.5,12.5,13.5,0,15.5,16.5,17.5,18.5,19.5,20.5,21.5,22.5,0,24.5,25.5,0,27.5,0,29.5,30.5,31.5,32.5,33.5,0,0,36.5,37.5,0,39.5,40.5,41.5,0,43.5,0,45.5,0,47.5,0,49.5,50.5,51.5,52.5,53.5,54.5,55.5,56.5,57.5,58.5,59.5,0,61.5,62.5,63.5,64.5,65.5,0,67.5,68.5,0,70.5,71.5,73.5,74.5,75.5,0,0,78.5,0,80.5,0,82.5,0,84.5,0,86.5,0,88.5,0,90.5,91.5,0,93.5,0,95.5,0,97.5,0,99.5,0,101.5,0,103.5,0,105.5,106.5,0,108.5,109.5,110.5,111.5,112.5,113.5,114.5,115.5,116.5,0,118.5,119.5,0,121.5,0,0,0,125.5,126.5,127.5,128.5,129.5,130.5,133.5,0,135.5,136.5,0,140.5,141.5,0,143.5,144.5,0,146.5,147.5,148.5,149,150.5,151.5,152.5,153.5,0,155.5,156.5,0,158.5,159.5,160.5,161.5,162.5,163.5,164.5,165.5,166.5,167.5,168.5,169.5,170.5,171.5,172.5,173.5,0,175.5,0,0,178.5,179.5,180.5,181.5,182.5,0,184.5,185.5,187,188]
+g2=[0,0,190.5,191.5,192.5,193.5,0,0,196.5,0,198.5,0,200.5,0,202.5,0,0,205.5]
+J=2
+ftime=1710946807
+DD='&D=1';DT='?D=1'
+Mobile=0
+function ChkPost(){
+}
+</script>
+<script language=JavaScript src="/js/e19.js"></script>
+</head>
+<body bgcolor="#111111" background="/img/bg.gif" onLoad="init();Cpy=false;" oncontextmenu="return Cpy" onselectstart="return Cpy" onkeyup="QPrint(event)" onresize="CheckXBar()" >
+<span id=Psu style="position:absolute;left:0;top:0;background-color:#000;z-index:10;filter:Alpha(Opacity=85);-moz-opacity:0.85;opacity:0.85"></span>
+<span id=tip style="position:absolute;z-index:15"></span>
+<span id=doc style="position:absolute;z-index:20"></span>
+<form name=QP method=post target=pWin action="eva-print.php"><input type="hidden" name="PHPSESSID" value="3e65d4ab82a951cdf30bb4040e816d16" /><input type=hidden name=QS></form>
+<iframe name=DL width=0 height=0 class=d></iframe><form name=S method=post target=DL action="eva-excel.php"><input type="hidden" name="PHPSESSID" value="3e65d4ab82a951cdf30bb4040e816d16" />
+<input type=hidden name=Duty value=1>
+<input type=hidden name=UL>
+<br>
+<center>
+<table cellscpaing=0 cellpadding=0>
+<tr><td id=ItemList width="686" valign=top style="display:none;">
+<script>
+iClear='<body><table width="100%" height="98%"><tr><th style="color:white;font-size:24pt;">請先進行估價！</th></tr></table><span style="display:none" id="mtime"></span></body>'
+document.write('<iframe id="Fitem" name="FItem" width=686 height='+(document.body.clientHeight-18)+' allowtransparency=true style="border:0;position:fixed;"></iframe>')
+//FItem.document.body.outerHTML=iClear // 用 innerHTML fireFox 出問題 
+FItem.src="javascript:parent.iClear" // 2023/9/30 以後的 Chrome 在 iframe tag 的 src="javascript:parent.iClear" 會出問題
+</script>
+</td>
+<td id=LayerMode>
+<div id=hid><iframe src="/home/img/top.html" width="1190" height="132" scrolling="no" align="center" frameborder="0"></iframe></div>
+<table cellspacing=0 width=1200>
+<caption>
+<table border=0 cellspacing=0 cellpadding=0 width=99% id=Ttitle>
+  <tr>
+    <td width=30% nowrap rowspan=2>
+      <u style="display:none">Designed by ShauPi 吳祚維</u>
+      <table cellspacing=0 id=know>
+	<tr><td><a href="/tw/shop/welcome-to-coolpc/coolpc-buy/?PHPSESSID=3e65d4ab82a951cdf30bb4040e816d16" target=_blank><img src="/img/know.gif" border=0></a><td><a href="/m/?PHPSESSID=3e65d4ab82a951cdf30bb4040e816d16" target=_blank><img src="/img/phone.gif" border=0 title="手機行動網路版"></a></tr>
+	<tr><td><img src="/img/tea.gif" border=0 onClick="window.open('https://www.youtube.com/embed/D2OlHBJ-soM?hd=1')" style="cursor:pointer"><td><img src="/img/success.gif" border=0 onClick="window.open('http://photo.coolpc.com.tw')" style="cursor:pointer"></tr>
+	<tr><td><img src="/img/tell.gif" border=0 onClick="Gauze(5)" style="cursor:pointer"><td><a href="/tw/?PHPSESSID=3e65d4ab82a951cdf30bb4040e816d16" target=_blank><img src="/img/act.gif" border=0></tr>
+      </table>
+    </td>
+    <td>
+<a href='/tw/shop/case/asus-proart-pa602/?PHPSESSID=3e65d4ab82a951cdf30bb4040e816d16' target=_blank><img src='/mkt/fan/ad/coolpc-asus-pa602-ad.jpg' border=0></a>
+<a href='https://www.zotac.com/tw/news/TW-FebMar24-Promo' target=_blank><img src='/mkt/da/ad/zotac-rtx40super.gif' border=0></a>
+<a href='/tw/shop/ssd/samsung-990-evo/?PHPSESSID=3e65d4ab82a951cdf30bb4040e816d16' target=_blank><img src='/mkt/da/samsung/990-evo/coolpc-samsung-990-evo-150.jpg' border=0></a>
+<a href='https://www.coolpc.net/gigabyte-ryu-ga-gotoku8' target=_blank><img src='/mkt/da/ad/coolpc-gigabyte-pc.gif' border=0></a>
+<a href='https://www.coolpc.net/logitech-coolpcevent' target=_blank><img src='/mkt/age/ad/coolpc-logitech-gpx-2308.jpg' border=0></a>
+<a href='/tw/shop/keyboard/ducky-origin/?PHPSESSID=3e65d4ab82a951cdf30bb4040e816d16' target=_blank><img src='/mkt/age/ad/coolpc-ducky-origin.jpg' border=0></a></td>
+  </tr>
+  <tr><td><div style="color:gold"><nobr>已<font color=#00cc00>【聯絡我們】</font>者：<marquee id=mailOK width=790 scrolldelay=150 style="float:right;margin-right:6px;">【熊少◎ 03/20 22:58】
+【趙炳◎ 03/20 22:53】
+【許書◎ 03/20 22:49】
+【謝宇◎ 03/20 22:39】
+【陳奕◎ 03/20 22:22】
+【吳哲◎ 03/20 22:19】
+【朱禎◎ 03/20 22:19】
+【蔣聖◎ 03/20 22:16】
+【練柏◎ 03/20 22:15】
+【蔣聖◎ 03/20 22:13】
+【王嘉◎ 03/20 22:09】
+【chenphilip14 03/20 22:09】
+【吳佳◎ 03/20 22:08】
+【蔡宗◎ 03/20 21:55】
+【陳冠◎ 03/20 21:53】
+【黃子◎ 03/20 21:51】
+【王凱◎ 03/20 21:51】
+【陳明◎ 03/20 21:50】
+【葉庭◎ 03/20 21:43】
+【楊大◎ 03/20 21:43】
+資料僅保存最近更新的20筆
+</marquee></nobr></div>
+</td></tr>
+</table>
+</caption>
+<tr><td width=95% valign=top>
+<table border=0 cellspacing=1 width=100% id=Tfix>
+<col width=18><col width=152><col width=606><col width=55><col width=43><col width=46><col align=center>
+<tr align=middle bgcolor=#ffcc66 id=thy>
+<th bgcolor=#993300 width=18 onClick="Save()" style="cursor:pointer;cursor:hand" title="將估價結果產生一個網頁連結檔">Ｃ<th>品　名<th width=606><font id=Mdy>2024/3/20 23:00<span style="font-family:'Segoe UI Symbol', Wingdings;margin-left:8">&#xe1db;</span> </font>　<font class=r>紅-熱賣</font>　<font class=g>綠-價格異動</font>　<font class=b>藍-熱賣+價格異動</font>　◆開箱討論　★參考圖片　<img src=/img/recommend.gif align=top title="啟動熱賣商品推薦" class=p onClick="ReComm(this)"><th width=55>數 量<th width=43>單 價<th width=46>小 計<th width=23>◆★<th class=d>備 註</tr>
+<tbody id=tbdy>
+<TR bgColor=efefe0><TD class=w>1<TD class=t>品牌小主機、AIO｜VR虛擬</TD><TD noWrap>
+<SELECT onchange="cnt(1)" onmouseover="Tip(this,event)" name=n1 class=s>
+<OPTION value=0 selected class=bf>共有商品 134 樣，熱賣 14，圖片 134，討論 131，價格異動 41，限時下殺▼1
+<OPTGROUP LABEL='華碩 ASUS 品牌主機區'>
+<OPTION value=2>ASUS G13CH-7137000340 i7-13700 / 16G / 512G SSD / 700W, $30990 ◆ ★</OPTION>
+<OPTION value=3>ASUS G22CH-1370KF028W i7-13700KF/32G/1T+512G SSD/WIN11/RTX3070, $69900 ◆ ★</OPTION>
+<OPTION value=4 class=r>ASUS G22CH-714700004W I7-14700/8G DDR5/512G SSD/WIN11, $45990 ◆ ★ 熱賣</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=5>　　&#x21AA; 買G22CH-714700004W，加送華碩 ROG Strix Scope II Rx 機械式鍵盤 $4190</OPTION>
+<OPTION value=6>ASUS G16CHR-7147000130 i7-14700 / 16G DDR5 / 512G SSD / 700W / 水冷, $36990 ◆ ★</OPTION>
+<OPTION value=7>ASUS H-S500SD-712700015W i7-12700/16G/512G SSD/WIN11/300W, $25900 ◆ ★</OPTION>
+<OPTION value=8 class=g>ASUS H-S500SE-513400006W i5-13400/8G/512G/WIN11/300W, $19900↘$19490 ◆ ★</OPTION>
+<OPTION value=9>ASUS H-S500SD-512400051W i5-12400/8G/512G SSD/WIN11/300W, $18500 ◆ ★</OPTION>
+<OPTION value=10 class=g>ASUS H-S500SD-512400045W i5-12400/8G/1T+256G SSD/WIN11 *內含GTX1030, $20900↘$19990 ◆ ★</OPTION>
+<OPTION value=11>ASUS H-S500SE-313100007W i3-13100/8G/512G/WIN11/300W, $16800 ◆ ★</OPTION>
+<OPTION value=12 class=g>ASUS H-S500SD-0G6900011W G6900/4G/1T/WIN11/180W, $11900↘$10990 ◆ ★</OPTION>
+<OPTGROUP LABEL='微星 MSI 電競主機'>
+<OPTION value=14>MSI Infinite S3 14NUE7【1656TW】i7-14700F/32G/2T SSD/WIN11/RTX 4070S【訂】, $79900 ◆ ★</OPTION>
+<OPTION value=15>MSI Infinite S3 14NUB7【1618TW】i7-14700F/32G/2T SSD/WIN11/RTX 4060Ti 16G, $59900 ◆ ★</OPTION>
+<OPTION value=16>MSI Infinite S3 14NUD7【1466TW】i7-14700F/32G/2T SSD/WIN11/RTX 4060Ti 8G, $56900 ◆ ★</OPTION>
+<OPTION value=17>MSI Infinite S3 14NSA【1655TW】i7-14700F/16G/1T SSD/WIN11/GTX 1650, $33900 ◆ ★</OPTION>
+<OPTION value=18>MSI Infinite S3 14NUB5【1619TW】i5-14400F/16G/1T SSD/WIN11/RTX 4060Ti, $43900 ◆ ★</OPTION>
+<OPTION value=19>MSI Infinite S3 14NUC5【1468TW】i5-14400F/16G/1T SSD/WIN11/RTX 4060, $38900 ◆ ★</OPTION>
+<OPTION value=20>MSI Infinite S3 14NSA【1646TW】i5-14400F/16G/1T SSD/WIN11/GTX 1650, $25900 ◆ ★</OPTION>
+<OPTION value=21 class=g>MSI Infinite S3 13TH【846TW】i5-13400F/16G/512GB SSD/WIN11/RTX3050-8G, $29900↘$28500 ◆ ★</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=22>　　&#x21AA; 買MSI Infinite S3 13TH【846TW】，送MSI G245CV 24吋 曲面螢幕 $3290</OPTION>
+<OPTION value=23 class=g>MSI Infinite S3 13NUD【883TW】i5-13400F/16G/1TB/4060Ti/WIN11, $43900↘$42900 ◆ ★</OPTION>
+<OPTION value=24 class=r>MSI Infinite S3 13TH【661TW】i5-13400F/8G/512G SSD/【GTX1660S】, $25900 ◆ ★ 熱賣</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=25>　　&#x21AA; 買MSI Infinite S3 13TH【661TW】，送MSI G245CV 24吋 曲面螢幕 $3290</OPTION>
+<OPTION value=26 class=r>MSI Infinite S3 13TH【1016TW】i5-13400F/16G(8*2)/512G SSD/WIN11/RTX 4060, $35900 ◆ ★ 熱賣</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=27>　　&#x21AA; 買MSI Infinite S3 13TH【1016TW】，送MSI G2712V 27吋 螢幕 $4290</OPTION>
+<OPTION value=28 class=g>MSI Infinite S3 12BSA【1606TW】i5-12400F/16G/1T SSD/WIN11/GTX 1650, $23900↘$22900 ◆ ★</OPTION>
+<OPTION value=29>MSI Trident X2 14TH【268TW】i9-14900KF/32G/1TB SSD/RTX 4070TI /WIN1 PRO, $109900 ◆ ★</OPTION>
+<OPTION value=30>MSI Trident X2 14TH【267TW】i9-14900KF/64G/2TB HDD+2TB SSD/RTX 4090/WIN1 PRO, $169900 ◆ ★</OPTION>
+<OPTION value=31>MSI Infinite X2 14TH【299TW】i7-14700KF/64G/2TB HDD+1TB SSD/RTX 4090/WIN11, $159900 ◆ ★</OPTION>
+<OPTION value=32 class=r>MSI Trident AS 13TH【612TW】i5-13400F/16G(8*2)/1TB SSD/WIN11/RTX 4060, $46900 ◆ ★ 熱賣</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=33>　　&#x21AA; 買MSI Trident AS 13TH【612TW】，送MSI G2712V 27吋 螢幕 $4290</OPTION>
+<OPTGROUP LABEL='宏碁 ACER 品牌主機區'>
+<OPTION value=35>Acer RB610（DT.BL4TA.002）Celeron 7305/4G/128G UFS/WIN11 PRO, $6900 ◆ ★</OPTION>
+<OPTION value=36>Acer TC-1780 (UD.BK6TA.002) i5-13400/8G/512G SSD/WINDOWS 11, $18900 ◆ ★</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=37>　　&#x21AA; 買Acer TC-1780 (UD.BK6TA.002)，加送 金士頓 8G DDR4-3200 記憶體</OPTION>
+<OPTION value=38>Acer TC-1750_E-00K (UD.BHVTA.00K) i5-12400F/8G/512G SSD/GTX1650/W11, $17900 ◆ ★</OPTION>
+<OPTION value=39>Acer TC-1750_E-007 (UD.BHVTA.007) i3-12100/8G/512G SSD/W11, $13900 ◆ ★</OPTION>
+<OPTION value=40>Acer XC-1760_E-00F (UD.BHWTA.00F) G6900/8G/256G SSD/W11, $9990 ◆ ★</OPTION>
+<OPTGROUP LABEL='惠普 HP 品牌主機區'>
+<OPTION value=42 class=b>HP Z1G9【8G9B9PA】i7-13700/16G DDR5/512G SSD/550W/WIN11 PRO/RTX 3070, $64500↘$49900 ◆ ★ 熱賣</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=43>　　&#x21AA; 買HP Z1G9【8G9B9PA】，送HP Z24f G3 FHD 24吋 工作站顯示器(市價$8490)</OPTION>
+<OPTION value=44>HP Z2G9TWR【8F2J6PA】i7-13700/8G DDR5/500G SSD/700W/WIN11 PRO, $45600 ◆ ★</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=45>　　&#x21AA; 買HP Z2G9TWR【8F2J6PA】，加碼送 BenQ PD2705Q 專業繪圖螢幕(現賺$9988)</OPTION>
+<OPTION value=46 class=b>HP Z2G9TWR【6N0G2PA】i7-12700/8G DDR5/1TB SATA/500W/WIN11 PRO, $33900↘$29900 ◆ ★ 熱賣</OPTION>
+<OPTGROUP LABEL='戴爾 DELL 品牌主機區'>
+<OPTION value=48 class=g>DELL Inspiron 3030S-R1508BTW I5-14400/8G/512G SSD/180W/WIN11, $21990↘$21800 ◆ ★</OPTION>
+<OPTION value=49 class=g>DELL Inspiron 3030S-R1308BTW I3-14100/8G/512G SSD/180W/WIN11, $18990↘$18800 ◆ ★</OPTION>
+<OPTION value=50>DELL Inspiron 3030T-R1308BTW I3-14100/8G/512G SSD/300W/WIN11, $19990 ◆ ★</OPTION>
+<OPTION value=51>DELL Inspiron 3030T-R1508BTW I5-14400/8G/512G SSD/300W/WIN11, $22990 ◆ ★</OPTION>
+<OPTION value=52>DELL Inspiron 3030T-R1708BTW I7-14700/16G/1T SSD/300W/WIN11, $32990 ◆ ★</OPTION>
+<OPTION value=53>DELL Inspiron 3020T-R2708BTW I7-13700/16G/512G SSD/300W/WIN11, $23990 ◆ ★</OPTION>
+<OPTION value=54>DELL Vostro Small V3020S-R1608NTW I5-13400/8G/1T+256G/180W/WIN11 Pro, $19990 ◆ ★</OPTION>
+<OPTION value=55>DELL Vostro Tower V3020T-R1508STW I5-13400/8G/1T+256G/300W/WIN11 Pro, $19900 ◆ ★</OPTION>
+<OPTION value=56 class=g>DELL Vostro Tower V3020T-R3718STW I7-13700F/16G/512G SSD【RTX3060】, $41990↘$40990 ◆ ★</OPTION>
+<OPTION value=57 class=g>DELL Vostro Tower V3020T-R3618STW I5-13400F/16G/1T+256G SSD【RTX3060】, $39900↘$32990 ◆ ★</OPTION>
+<OPTION value=58>DELL Vostro Tower V3020T-R1308STW I3-13100/8G/1T+256G/300W/WIN11 Pro, $16990 ◆ ★</OPTION>
+<OPTGROUP LABEL='Intel NUC 迷你小主機 系列'>
+<OPTION value=60>Intel NUC RNUC13RNGI90001 i9-13900K (HDD.RAM.OS選購), $46900 ◆ ★</OPTION>
+<OPTION value=61 class=g>Intel NUC RNUC13ANHI50001 13代 i5-1340P (HDD.RAM.OS選購), $16900↘$14500 ◆ ★</OPTION>
+<OPTION value=62 class=g>Intel NUC RNUC12WSHI50000 12代 i5-1240P (HDD.RAM.OS選購), $13500↘$12500 ◆ ★</OPTION>
+<OPTION value=63 class=g>Intel NUC RNUC13ANHI30001 13代 i3-1315U (HDD.RAM.OS選購), $11900↘$10300 ◆ ★</OPTION>
+<OPTION value=64 class=g>Intel NUC RNUC13ANHI70001 13代 i7-1360P (HDD.RAM.OS選購), $20500↘$19700 ◆ ★</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=65>　　&#x21AA; 買NUC RNUC13ANHI70001 ，送 PHILIPS 221V8LB 護眼螢幕 (價值$2188)</OPTION>
+<OPTION value=66 class=g>Intel NUC RNUC13ANHI70000 13代 i7-1360P (HDD.RAM.OS選購), $20500↘$19700 ◆ ★</OPTION>
+<OPTION value=67 class=g>Intel NUC RNUC12WSHI70000 12代 i7-1260P (HDD.RAM.OS選購), $16800↘$15300 ◆ ★</OPTION>
+<OPTGROUP LABEL='華碩 ASUS VivoMini PC區'>
+<OPTION value=69>ASUS PN80-117UPKA(i7-11700B/8G/512G SSD/WIN 11), $24800 ◆ ★</OPTION>
+<OPTION value=70>ASUS PN64-127FPKA(i7-12700H/16G/512G SSD/WIN 11), $28500 ◆ ★</OPTION>
+<OPTION value=71>ASUS PN64-122HNYA(i3-1220P/8G/256G SSD/WIN 11), $18800 ◆ ★</OPTION>
+<OPTION value=72 class=g>ASUS CHROMEBOX5-730YMGA (Celeron 7305/4G/128G/Chrome OS), $9900↘$9800 ◆ ★</OPTION>
+<OPTION value=73 class=g>ASUS CHROMEBOX4-52UYMGA (Celeron 5250U/4G/128G/Chrome OS), $8300↘$7999 ◆ ★</OPTION>
+<OPTGROUP LABEL='微星 MSI 小主機 系列'>
+<OPTGROUP LABEL='MSI CUBI 主機'>
+<OPTION value=76>MSI CUBI 5 12M【267TW】I7-12550U/16G/1TG SSD/WIN11 PRO/黑色, $25900 ◆ ★</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=77>　　&#x21AA; 【買就送】買MSI CUBI 5 就送My Card 500點 + 微星龍積木桌曆</OPTION>
+<OPTION value=78>MSI CUBI 5 12M【033TW】I7-12550U/8G/512G SSD/WIN11/黑色, $20900 ◆ ★</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=79>　　&#x21AA; 【買就送】買MSI CUBI 5 就送My Card 500點 + 微星龍積木桌曆</OPTION>
+<OPTION value=80>MSI CUBI 5 12M【034TW】I5-1235U/8G/512G SSD/WIN11/黑色, $17900 ◆ ★</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=81>　　&#x21AA; 【買就送】買MSI CUBI 5 就送My Card 500點 + 微星龍積木桌曆</OPTION>
+<OPTION value=82>MSI CUBI 5 12M【082TW】I5-1235U/8G/512G SSD/WIN11/白色, $17900 ◆ ★</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=83>　　&#x21AA; 【買就送】買MSI CUBI 5 就送My Card 500點 + 微星龍積木桌曆</OPTION>
+<OPTION value=84>MSI CUBI 5 12M【035TW】I3-1215U/8G/512G SSD/WIN11/黑色, $14900 ◆ ★</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=85>　　&#x21AA; 【買就送】買MSI CUBI 5 就送My Card 500點 + 微星龍積木桌曆</OPTION>
+<OPTION value=86>MSI CUBI 5 12M【083TW】I3-1215U/8G/512G SSD/WIN11/白色, $14900 ◆ ★</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=87>　　&#x21AA; 【買就送】買MSI CUBI 5 就送My Card 500點 + 微星龍積木桌曆</OPTION>
+<OPTION value=88>MSI CUBI N ADL【035TW】Intel N200/4G/128G SSD/WIN11 PRO/黑色, $9800 ◆ ★</OPTION>
+<OPTION value=89 class=g>MSI CUBI N ADL【036TW】Intel N100/4G/128G SSD/WIN11 PRO/黑色, $8900↘$8888 ◆ ★</OPTION>
+<OPTGROUP LABEL='MSI CUBI 準系統'>
+<OPTION value=91 class=g>MSI CUBI 5 12M【010BTW】Intel i7-1255U (SSD.RAM.HDD.OS選購), $14990↘$14900 ◆ ★</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=92>　　&#x21AA; 【買就送】買MSI CUBI 5 就送My Card 500點 + 微星龍積木桌曆</OPTION>
+<OPTION value=93 class=g>MSI CUBI 5 12M【043BTW】Intel i7-1255U (SSD.RAM.HDD.OS選購)/白色, $14990↘$14900 ◆ ★</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=94>　　&#x21AA; 【買就送】買MSI CUBI 5 就送My Card 500點 + 微星龍積木桌曆</OPTION>
+<OPTION value=95 class=g>MSI CUBI 5 12M【011BTW】Intel i5-1235U (SSD.RAM.HDD.OS選購), $11990↘$11900 ◆ ★</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=96>　　&#x21AA; 【買就送】買MSI CUBI 5 就送My Card 500點 + 微星龍積木桌曆</OPTION>
+<OPTION value=97 class=g>MSI CUBI 5 12M【044BTW】Intel i5-1235U (SSD.RAM.HDD.OS選購)/白色, $11990↘$11900 ◆ ★</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=98>　　&#x21AA; 【買就送】買MSI CUBI 5 就送My Card 500點 + 微星龍積木桌曆</OPTION>
+<OPTION value=99 class=g>MSI CUBI 5 12M【012BTW】Intel i3-1215U (SSD.RAM.HDD.OS選購), $8990↘$8900 ◆ ★</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=100>　　&#x21AA; 【買就送】買MSI CUBI 5 就送My Card 500點 + 微星龍積木桌曆</OPTION>
+<OPTION value=101 class=g>MSI CUBI 5 12M【045BTW】Intel i3-1215U (SSD.RAM.HDD.OS選購)/白色, $8990↘$8900 ◆ ★</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=102>　　&#x21AA; 【買就送】買MSI CUBI 5 就送My Card 500點 + 微星龍積木桌曆</OPTION>
+<OPTION value=103 class=b>MSI CUBI N ADL 【018BTW】Intel N200 準系統 (SSD,RAM,HDD,OS選購)/黑色, $5990↘$5900 ◆ ★ 熱賣</OPTION>
+<OPTION value=104 class=b>MSI CUBI N ADL 【021BTW】Intel N100 準系統 (SSD,RAM,HDD,OS選購)/黑色, $4990↘$4900 ◆ ★ 熱賣</OPTION>
+<OPTGROUP LABEL='MSI PRO DP 主機'>
+<OPTION value=106 class=g>MSI PRO DP10 13M【005TW】i7-1360P/16G/1TB SSD/WIN11 PRO/白色, $29900↘$28900 ◆ ★</OPTION>
+<OPTION value=107 class=g>MSI PRO DP10 13M【006TW】i5-1340P/8G/512G SSD/WIN11 PRO/白色, $21900↘$20900 ◆ ★</OPTION>
+<OPTION value=108 class=g>MSI PRO DP10 13M【007TW】i5-1340P/8G/512G SSD/WIN11 PRO/黑色, $21900↘$20900 ◆ ★</OPTION>
+<OPTION value=109 class=g>MSI PRO DP21 13M【493TW】i7-13700/16G/512G SSD/WIN11 PRO, $29900↘$28900 ◆ ★</OPTION>
+<OPTION value=110 class=g>MSI PRO DP21 13M【494TW】i5-13400/8G/512G SSD/WIN11 PRO, $21900↘$19900 ◆ ★</OPTION>
+<OPTION value=111>MSI PRO DP21 13M【492TW】i3-13100/8G/512G SSD/WIN11, $14800 ◆ ★</OPTION>
+<OPTION value=112>MSI PRO DP21 13M【627TW】G7400/4G/128G SSD/WIN11 PRO, $10900 ◆ ★</OPTION>
+<OPTION value=113>MSI PRO DP180 14【275TW】i5-14400/8G/1TB SSD/WIN11, $20900 ◆ ★</OPTION>
+<OPTION value=114>MSI PRO DP180 14【277TW】i3-14100/8G/512G SSD/WIN11, $16900 ◆ ★</OPTION>
+<OPTGROUP LABEL='MSI PRO DP 準系統'>
+<OPTION value=116 class=r>MSI PRO DP180 13【029TW】i7-13700F/16G/1TBHD+512G/WIN11 P *搭RTX4060, $39900 ◆ ★ 熱賣</OPTION>
+<OPTION value=117 class=r>MSI PRO DP180 13【038TW】i5-13400F/8G/512G SSD/WIN11*搭GTX1650, $19900 ◆ ★ 熱賣</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=118>　　&#x21AA; 買 MSI PRO DP180【038TW】，加碼送金士頓 8GB DDR4-3200 記憶體(現賺$499)</OPTION>
+<OPTION value=119 class=g>MSI PRO DP21 13M【082BTW】Intel H610 (CPU.SSD.RAM.HDD選購), $5990↘$4990 ◆ ★</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=120>　　&#x21AA; MSI PRO DP21 13M【082BTW】，內含 AX211 WIFI6E+BT5.3 無線網卡</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=121>　　&#x21AA; 【買就送】買MSI PRO DP21 13M【082BTW】送 MSI SK-9626/SM-9023 有線鍵鼠組</OPTION>
+<OPTGROUP LABEL='技嘉 GIGABYTE BRIX 超微型電腦'>
+<OPTION value=123 class=g>GIGABYTE BRIX BER7HS-5700(R7-5700U 8C16T/選購 HDD/SSD、RAM/三年保固), $20380↘$19900 ◆ ★</OPTION>
+<OPTION value=124 class=g>GIGABYTE BRIX BER5HS-5500(R5-5500U 6C12T/選購 HDD/SSD、RAM/三年保固), $15880↘$14800 ◆ ★</OPTION>
+<OPTION value=125>GIGABYTE BRIX BEi7H-1260 (Core i7-1260P 12C16T/選購 SSD、RAM/三年保固), $24000 ◆ ★</OPTION>
+<OPTION value=126>GIGABYTE BRIX BEi5H-1240 (Core i5-1240P 12C16T/選購 SSD、RAM/三年保固), $18900 ◆ ★</OPTION>
+<OPTION value=127>GIGABYTE BRIX BEi3H-1220 (Core i3-1220P 10C12T/選購 SSD、RAM/三年保固), $15900 ◆ ★</OPTION>
+<OPTION value=128 class=b>GIGABYTE BRIX BSi3-1115G4 (Core i3-1115G4 2C4T/選購 SSD、RAM/三年保固), $8888↘$7777 ◆ ★ 熱賣</OPTION>
+<OPTION value=129>GIGABYTE BRIX BMCE-4500C (Celeron N4500 2C2T/選購 HDD/SSD、RAM/三年保固), $4290 ◆ ★</OPTION>
+<OPTGROUP LABEL='華擎 ASRock 迷你準系統'>
+<OPTION value=131>ASRock DeskMini AMD架構 X300【準系統】彩裝內含CPU風扇 (不含CPU/RAM/HDD), $5190 ◆ ★</OPTION>
+<OPTION value=132 class=r>【狂】ASRock DeskMini X300 + AMD 5500GT + 金士頓 NB 8G 3200 + 金士頓 NV2 1T, $10960 ◆ ★ 熱賣</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=133>　　&#x21AA; 【買就送】買ASRock DeskMini X300 整機 就送 ASRock AX210 Wi-Fi 6E M.2 無線網卡</OPTION>
+<OPTION value=134>ASRock DeskMeet AMD架構 X300【準系統】 (不含CPU/RAM/HDD), $6090 ◆ ★</OPTION>
+<OPTION value=135>ASRock DeskMini INTEL 架構 B760【準系統】(不含CPU/RAM/HDD) 適用12/13/14代 CPU, $6690 ◆ ★</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=136>　　&#x21AA; 買DeskMini B760，任搭CPU加送DeskMini AX210 WiFi 6E + BT5.2 無線網卡 價值$1150</OPTION>
+<OPTION value=137>ASRock DeskMeet INTEL 架構 B660【準系統】(不含CPU/RAM/HDD) 適用12/13/14代 CPU, $7390 ◆ ★</OPTION>
+<OPTION value=138>ASRock DeskMini 4205 INTEL 架構【準系統】(不含RAM/HDD), $4390 ◆ ★</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=139>　　&#x21AA; 買ASRock DeskMini 4205，加送 美光 8G DDR4 SO-DIMM 價值$499</OPTION>
+<OPTION value=140>ASRock DeskMini＆DeskMeet intel 3168 WIFI+BT4.2(intel 3168) 無線模組, $550 ◆ ★</OPTION>
+<OPTION value=141>ASRock DeskMini＆DeskMeet AX210 Wi-Fi 6E M.2 無線網卡 (M.2 2230), $1150 ◆ ★</OPTION>
+<OPTION value=142>ASRock DeskMini USB2.0 二埠擴充線, $250 ◆ ★</OPTION>
+<OPTION value=143>ASRock DeskMini VESA Mount 後背架, $230 ★</OPTION>
+<OPTION value=144>ASRock DeskMini A300/X300 AMD 散熱器, $280 ◆ ★</OPTION>
+<OPTION value=145>ASRock DeskMini Rear audio Cable 後置音效延長線, $450 ◆ ★</OPTION>
+<OPTION value=146>ASRock DeskMini＆DeskMeet ARGB 磁吸式燈條, $790 ◆ ★</OPTION>
+<OPTION value=147>ASRock DeskMini USB HUB 轉卡, $360 ◆ ★</OPTION>
+<OPTGROUP LABEL='宏碁 ACER AIO 主機'>
+<OPTION value=149 class=g>ACER Aspire C C24-1700（DQ.BJWTA.001）i5-1235U/8G/512G/Win11, $19900↘$18900 ◆ ★</OPTION>
+<OPTION value=150 class=g>ACER Aspire S S27-1755（DQ.BLMTA.001）i5-1240P/16G/1TSSD/WIN11【粉】▼下殺到 3/24 23:59, $32900↘$31900 ◆ ★</OPTION>
+<OPTGROUP LABEL='微星 MSI AIO 主機'>
+<OPTION value=152>MSI Modern AM272P 12M【499TW】27吋/i3-1215U/8G/512G SSD/WIN11/白, $20900 ◆ ★</OPTION>
+<OPTION value=153>MSI Modern AM242TP 12M【469TW】23.8吋/i5-1235U/8G/512G/WIN 11 PRO/白, $29900 ◆ ★</OPTION>
+<OPTION value=154>MSI Modern AM242 12M【677TW】23.8吋/i5-1235U/8G/512G/WIN 11, $22900 ◆ ★</OPTION>
+<OPTION value=155>MSI Modern AM242 12M【678TW】23.8吋/i3-1215U/8G/512G/WIN 11, $17900 ◆ ★</OPTION>
+<OPTION value=156>MSI Modern AM242 12M【836TW】23.8吋/Pentium 8505/4G/128G/WIN 11 PRO, $15900 ◆ ★</OPTION>
+<OPTION value=157>MSI PRO AP272P 14M【497TW】27吋/i7-14700/16G/1TB SSD/WIN11 PRO/白, $39900 ◆ ★</OPTION>
+<OPTION value=158>MSI PRO AP272P 13MA【478TW】27吋/i5-13400/8G/512G SSD/WIN11 PRO/白, $30900 ◆ ★</OPTION>
+<OPTION value=159>MSI PRO AP272P 13MA【479TW】27吋/i5-13400/8G/512G SSD/WIN11/白, $27900 ◆ ★</OPTION>
+<OPTION value=160>MSI PRO AP272P 13MA【480TW】27吋/i3-13100/8G/512G SSD/WIN11/白, $22900 ◆ ★</OPTION>
+<OPTION value=161>MSI PRO AP272 13M【403TW】27吋/i5-13400/8G/512G SSD/WIN 11/黑, $26900 ◆ ★</OPTION>
+<OPTION value=162>MSI PRO AP272 13M【452TW】27吋/I3-13100/8G/512GB/W11/白, $21500 ◆ ★</OPTION>
+<OPTION value=163>MSI PRO AP242P 14M【626TW】23.8吋/i7-14700/16G/1TB SSD/WIN11 PRO/白, $32900 ◆ ★</OPTION>
+<OPTION value=164>MSI PRO AP242P 14M【619TW】23.8吋/i5-14400/8G/512G SSD/WIN11/黑, $25900 ◆ ★</OPTION>
+<OPTION value=165>MSI PRO AP242P 14M【624TW】23.8吋/i5-14400/8G/512G SSD/WIN11/白, $25900 ◆ ★</OPTION>
+<OPTION value=166>MSI PRO AP242P 14M【625TW】23.8吋/i3-14100/8G/512G SSD/WIN11/白, $20900 ◆ ★</OPTION>
+<OPTION value=167>MSI PRO AP222T 13M【209TW】21.5吋/i5-13400/8G/512G/WIN11 PRO/觸控, $29900 ◆ ★</OPTION>
+<OPTGROUP LABEL='聯想 LENOVO AIO 主機'>
+<OPTION value=169 class=g>IdeaCentre AIO 3 24ITL6【F0G0012ATW】23.8吋/i5-1135G7/8G/512G SSD/Win11白, $19000↘$18500 ◆ ★</OPTION>
+<OPTGROUP LABEL='HTC VIVE 主機 (VR/MR虛擬實境)'>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=171>　　&#x21AA; 3/4~3/26 買HTC VIVE 系列商品 官網登錄送好禮</OPTION>
+<OPTION value=172>HTC VIVE COSMOS 虛擬實境裝置, $15900 ◆ ★</OPTION>
+<OPTION value=173>HTC VIVE COSMOS ELITE (頭戴式顯示器), $14900 ◆ ★</OPTION>
+<OPTION value=174>HTC VIVE Focus3, $31900 ◆ ★</OPTION>
+<OPTION value=175 class=r>HTC VIVE XR ELITE 無線串流一體機, $33900 ◆ ★ 熱賣</OPTION>
+<OPTION value=176 class=r>HTC VIVE Pro 2 VR 專業版 (整組), $41900 ◆ ★ 熱賣</OPTION>
+<OPTGROUP LABEL='HTC VIVE 周邊'>
+<OPTION value=178>HTC VIVE PRO / VIVE COSMOS 無線模組通用版, $8500 ◆ ★</OPTION>
+<OPTION value=179>HTC VIVE 基地台 二代, $5600 ◆ ★</OPTION>
+<OPTION value=180>HTC VIVE 自定位追蹤器, $6250 ★</OPTION>
+<OPTION value=181>HTC VIVE 自定位追蹤器 3+1組合, $18900 ★</OPTION>
+</SELECT><img src=f.gif class=h title='Click篩選條件' onclick=Ftr(1)>
+<ins></ins>
+<div style='display:none'>
+<div>篩選條件：<button onclick="FReset('appT')">清除</button>
+　　價格：＄<input name=appTB size=7 onkeyup="FPrice('appT');this.focus()" onkeydown="return OnlyNum()"> 以上 ～
+＄<input name=appTE size=7 onkeyup="FPrice('appT');this.focus()" onkeydown="return OnlyNum()"> 以下
+<img src="img/select.gif" onclick="AppearItemList(iNum)" class=fc>
+</div>
+</div>
+<span id=nb1></span><TD align=right valign=top><SELECT style='width:39px' onchange="cnt(1)" name=u1>
+<OPTION value=1 selected>1<OPTION value=2>2<OPTION value=3>3<OPTION value=4>4<OPTION value=5>5<OPTION value=6>6<OPTION value=7>7<OPTION value=8>8<OPTION value=9>9<OPTION value=10>10</SELECT><img src=a.gif class=v>
+<ins></ins>
+<TH align=right id=p1><TH align=right id=t1><TH id=k1><TD class=d></TR>
+<TR bgColor=efefe0><TD class=w>2<TD class=t>手機｜平板｜筆電｜穿戴<TD noWrap>
+<SELECT onchange="cnt(2)" onmouseover="Tip(this,event)" name=n2 class=s>
+<OPTION value=0 selected class=bf>共有商品 9 樣，熱賣 1，圖片 9，討論 9，價格異動 4，限時下殺▼1
+<OPTGROUP LABEL='PAD 智慧平板/遊戲掌機 區'>
+<OPTION value=2>【加購優惠】任選平板或筆電享Gigastone PD-7650W 三孔充電器 加購優惠價, $699 ◆ ★</OPTION>
+<OPTION value=3>【加購優惠】任選平板或筆電享Gigastone PD-100B+CC-7800 100W充電器含線 優惠價, $1349 ◆ ★</OPTION>
+<OPTION value=4 class=r>Smart Mirror EV22A-010 2.0 智慧魔鏡 (黑/21.5吋/Rockchip RK3288 四核/2G/16G/WIFI), $1890 ◆ ★ 熱賣</OPTION>
+<OPTION value=5 class=g>TCL TAB 10 FHD (2023) (星塵灰 / 10.1吋 / 聯發科 MT8768E 八核 / 4G / 128G / WIFI)▼下殺到 3/31 23:59, $5580↘$5200 ◆ ★</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=6>　　&#x21AA; 門市內洽驚喜價！</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=7>　　&#x21AA; 【買就送】買TCL TAB 10 FHD 就送 專屬書本式保護套 + 專屬保護貼！</OPTION>
+<OPTION value=8 class=g>TCL TAB 10 Gen2 (太空灰 / 10.4吋 / 聯發科 MT8768 八核 / 4G / 128G / WIFI), $5988↘$5490 ◆ ★</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=9>　　&#x21AA; 【買就送】買TCL TAB 10 Gen2 就送 專屬書本式保護套</OPTION>
+<OPTION value=10>Lenovo TAB M8(4代) TB300FU(灰/8吋/聯發科 A22 四核/4G/64G/WIFI), $3680 ◆ ★</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=11>　　&#x21AA; 【買就送】買TAB M8 就送 金士頓 Canvas Select+ 128G micro SDXC</OPTION>
+<OPTION value=12 class=g>Lenovo TAB M10(3代) TB328FU(灰/10吋/Unisoc T610 八核/4G/64G/WIFI), $5111↘$4990 ◆ ★</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=13>　　&#x21AA; 【買就送】買TAB M10 就送專屬皮套！</OPTION>
+<OPTION value=14 class=g>Lenovo TAB M10 Plus(3代) TB128FU(藍/10吋/高通 SDM680 八核/4G/128G/WIFI), $7490↘$6190 ◆ ★</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=15>　　&#x21AA; 【買就送】買TAB M10 Plus 就送專屬皮套！</OPTION>
+<OPTION disabled style='font-size:9pt;color:#222;background-color:transparent' value=16>　　&#x21AA; 【買就送】買TAB M10 Plus就送 金士頓 Canvas Select+ 128G micro SDXC</OPTION>
+<OPTION value=17>Lenovo TAB M11 TB330FU(灰/11吋/聯發科 G88 八核/8G/128G/WIFI), $6990 ◆ ★</OPTION>
+</SELECT><img src=f.gif class=h title='Click篩選條件' onclick=Ftr(2)>
+<ins></ins>
+<div style='display:none'>
+<div>篩選條件：<button onclick="FReset('nbT')">清除</button> 　 　價格：
+＄<input name=nbTB size=8 onkeyup="FPrice('nbT');this.focus()" onkeydown="return OnlyNum()"> 以上 ～
+＄<input name=nbTE size=8 onkeyup="FPrice('nbT');this.focus()" onkeydown="return OnlyNum()"> 以下
+<img src="img/select.gif" onclick="AppearItemList(iNum)" class=fc>
+</div>
+<table width=92%>
+<tr><td width=8%>&nbsp;
+<td width=40>廠牌
+<td>
+<tt onmouseover=RI(this)><input type=checkbox name=nbT>華碩</tt><br>
+<tt onmouseover=RI(this)><input type=checkbox name=nbT>技嘉</tt><br>
+<tt onmouseover=RI(this)><input type=checkbox name=nbT>微星</tt><br>
+<tt onmouseover=RI(this)><input type=checkbox name=nbT>捷元</tt>
+<td style="padding-right:60">
+<tt onmouseover=RI(this)><input type=checkbox name=nbT>Acer</tt><br>
+<tt onmouseover=RI(this)><input type=checkbox name=nbT>Dell</tt><br>
+<tt onmouseover=RI(this)><input type=checkbox name=nbT>HP</tt><br>
+<tt onmouseover=RI(this)><input type=checkbox name=nbT>LG</tt><br>
+<tt onmouseover=RI(this)><input type=checkbox name=nbT>Lenovo</tt><br>
+<tt onmouseover=RI(this)><input type=checkbox name=nbT alt=1>Razer</tt>
+<td width=40>規格
+<td>
+<tt onmouseover=RI(this)><input type=checkbox name=nbT value=13>13吋</tt><br>
+<tt onmouseover=RI(this)><input type=checkbox name=nbT value=14>14吋</tt><br>
+<tt onmouseover=RI(this)><input type=checkbox name=nbT value=15>15吋</tt><br>
+<tt onmouseover=RI(this)><input type=checkbox name=nbT value=16>16吋</tt><br>
+<tt onmouseover=RI(this)><input type=checkbox name=nbT value=17>17吋</tt><br>
+<tt onmouseover=RI(this)><input type=checkbox name=nbT value=18 alt=1>18吋</tt>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+</td>
+<td width=40>核心
+<td>
+<tt onmouseover=RI(this)><input type=checkbox name=nbT value="R3-">AMD R3</tt><br>
+<tt onmouseover=RI(this)><input type=checkbox name=nbT value="R5-">AMD R5</tt><br>
+<tt onmouseover=RI(this)><input type=checkbox name=nbT value="R7-">AMD R7</tt><br>
+<tt onmouseover=RI(this)><input type=checkbox name=nbT value="R9-">AMD R9</tt><br>
+<td>
+<tt onmouseover=RI(this)><input type=checkbox name=nbT value="Celeron">Intel Celeron</tt><br>
+<tt onmouseover=RI(this)><input type=checkbox name=nbT value="Pentium">Intel Pentium</tt><br>
+<tt onmouseover=RI(this)><input type=checkbox name=nbT value="i3-">Intel i3 系列</tt><br>
+<tt onmouseover=RI(this)><input type=checkbox name=nbT value="i5-">Intel i5 系列</tt><br>
+<tt onmouseover=RI(this)><input type=checkbox name=nbT value="i7-">Intel i7 系列</tt><br>
+<tt onmouseover=RI(this)><input type=checkbox name=nbT value="i9-" alt=2>Intel i9 系列</tt>
+</table>
+</div>
+<TD align=right valign=top>
+<SELECT style='width:39px' onchange=cnt(2) name=u2>
+<OPTION value=1 selected>1<OPTION value=2>2<OPTION value=3>3<OPTION value=4>4<OPTION value=5>5<OPTION value=6>6<OPTION value=7>7<OPTION value=8>8<OPTION value=9>9<OPTION value=10>10</SELECT><img src=a.gif class=v>
+<ins></ins>
+<TH align=right id=p2><TH align=right id=t2><TH id=k2><TD class=d></TR>
+</tbody>
+<tr><td align=center vAlign=top bgcolor=#ffcc66 colspan=7 style="padding:1 0 1 0">
+<div id=fDiv class=fixDiv ondblclick=fixDIV(this)>
+<div id=MatchArea ondblclick="event.stopPropagation();" style="border:1px solid #999;padding:4 2 4 2;background-color:#f6f6f6;width:828px;display:none">
+<div id=Matchs align=left style="padding:0 2 0 1;height:396px;overflow-y:auto;"></div></div>
+<table class=ftb id=ftb cellspacing=0 align=center>
+<tbody><tr><td bgcolor=#ffcc66 style="padding:3px 0px 3px 6px;font-size1:11pt;height:28px">
+<img src="img/myItem.gif" onclick="myItemList()" align=top class=fc style="margin-right:2px" title="將選購的商品匯到左視窗">
+<img src="img/select.gif" id=FIcon class=fc onclick="AppearItemList(0)" style="float:left;margin:0 2px;" title="將搜尋結果的商品顯示於左視窗\n不能沒有資料或筆數不能超過500">
+<span class=SearchBox align=top>&#x1F50E;
+<input type=text name=SearchStr class=t onfocus="Cpy=true" onblur="Cpy=false" oninput="ChkDataList(this.value)" placeholder="請輸入要搜尋的關鍵字(例1: 6核|8核 代表6核或者8核一者符合) (例2: 600W^日系 代表600W且日系2者都要符合) '|'的優先順序高於'^'" style="width:768px;border:0px;background-color:#fff;margin:0;height:20px"><strong onclick="if (S.SearchStr.value) ChkDataList(S.SearchStr.value='')" class=clear>&#8855;</strong></span>
+<span id="SearchResult" style="font-size:12pt;font-weight:900;color:#630;"></span>
+</td></tr></tbody>
+<tbody>
+<tr><td bgcolor=#ffcc66 style="padding-left:1px;padding-right:5px;font-size:15pt;font-weight:900;margin-right:2"><span id=myIButton onclick="ShowMyItem()">只Show選購</span>
+優惠價:<input name=disprice size=4 class=i readonly style="width:88"> 省:<input name=discount size=3 class=i readonly>
+<a href="/phpBB2/viewtopic.php?f=21&t=55325&PHPSESSID=3e65d4ab82a951cdf30bb4040e816d16" target="_blank"><img src="/img/watt.gif" border=0 align=absmiddle></a><font class=wat>耗電<span id=wat>0</span>瓦</font>
+<img src="/img/cart814.gif" border=0 align=absmiddle onClick="Mail()" title="將估價結果 Email 給原價屋" style="cursor:pointer;cursor:hand">
+<img src="/img/dn.png" style="cursor:pointer;cursor:hand" align=absmiddle onClick="Excel(1)" title="將估價結果下載成 HTML 檔">
+<img src="/img/excel.png" style="cursor:pointer;cursor:hand" align=absmiddle onClick="Excel()" title="將估價結果匯入 Excel">
+<img src="/img/printer.png" align=absmiddle style="cursor:pointer;cursor:hand" onClick="if (Want()==1) alert('請先選擇產品與數量後再列印');
+else if (confirm('請先設定您的列表機\n以 A4 格式 橫向列印')) Gauze(1)" title="列印估價結果">
+現金價:<input name=tot size=4 class=i readonly style="width:90">元
+<input type=reset OnClick="Clear()" value="重 估" title="清除所有選項重新估價" style="color:#eee;background-color:#666;cursor:pointer;height:25px;;border:none;border-radius:5px;"></td></tr></tbody>
+</table></div>
+    <table background="/img/redbg.gif" height=39 width=100% cellpadding=0 cellspacing=0>
+    <tr id=installment><td><img name=bingo src="/img/any1.gif" height=34>
+    <td align=right><b style="display:none">　訂價:<span id=ins0 style="font-size:16pt;color:yellow">0</span>元　</b>分期付款每&nbsp;
+    <td width=18%><img src="/img/3.gif" align=absmiddle><span id=ins3>0</span>元
+    <td width=18%><img src="/img/6.gif" align=absmiddle><span id=ins6>0</span>元
+    <td width=18%><img src="/img/12.gif" align=absmiddle><span id=ins12>0</span>元
+    <td width=18%><img src="/img/24.gif" align=absmiddle><span id=ins24>0</span>元</tr>
+    </table>
+    <table background="/img/down-bg.gif" height=163 width=100% cellpadding=0 cellspacing=0 class=doc>
+    <tr><td style="padding-left:16">
+★中信,台新,國泰,玉山,花旗,一銀,匯豐,華南,聯邦,新光,永豐,上海,富邦,星展.. 等信用卡分期。<br>
+★零卡分期開辦，配合國內最大『中租』讓您輕鬆分期，請即下載APP完成額度申請。<br>
+★<font color="blue"><b>價格有誤歡迎告知，訂單成立與否皆須客服口頭連繫，未連繫前任何交易皆不成立以防詐騙。</b></font><br>
+★若要求時效，可直接撥打02-23972669按語音指示接網路客服。<br>
+★幣值為新台幣，價格僅供參考不保證市場最低，刷卡請以門市訂價為準，此報價為現金優惠。<br>
+★商品圖形僅供參考，若有誤謬，以官方提供為主。<br>
+★產品退換貨時請攜帶所有配件、外包裝、發票，人為損壞不負保固之責。<br>
+IP：122.116.142.104 　您是第 237874647 位來賓 　估價時間：2024/03/20 23:00:07<br>
+Copyright &copy; 2005 CoolPC.TW 原價屋電腦 DIY線上估價系統　版權所有！請勿複製！
+    <td width=240><p>首創價格即時更新，<br>分期付款亦跟隨改變！</p>
+    <p>就算是分期，也要給您<br>最即時最便宜！最高24期，<br>讓您輕鬆付款零負擔！</p>
+    <div style="font-size:9pt">瀏覽器相容IE6.0,Firefox4,Chrome10以上</div>
+    <td align=right width=178><img src="/img/coolpc-payeasy.gif" align=top>
+    </tr>
+    </table>
+</tr>
+</table>
+</td>
+<td valign=top style="padding:0">
+<div id=logo>
+<a href="/noQuery.php?PHPSESSID=3e65d4ab82a951cdf30bb4040e816d16" target="_blank"><img src="/image/coolpc/p2.png" style="margin-bottom:0px"></a><br>
+<img src="/img/link2.gif" border=0 onclick="Save()" align=absmiddle title="將估價結果產生一個網頁連結檔" style="cursor:pointer"><br>
+<a href="/photo/?PHPSESSID=3e65d4ab82a951cdf30bb4040e816d16" target="_blank"><img src="/image/distr.png" style="margin-bottom:0px"></a><br>
+<iframe src="/home/preOrder/cool-preorder-one.html" width="150" height="345" scrolling="no" align="center" frameborder="0">
+</iframe><br>
+<img src="/image/coolpc/flash161108.gif" height="205" width="150"><br>
+<iframe src="/home/img/right2.html" width="150" height="234" scrolling="no" align="center" frameborder="0">
+</iframe>
+</div>
+</tr>
+</form>
+<tr><td align=center colspan=2 id=pBtm style="color:white;display:none">本頁列印才算有效，列印前請先將印表機列印方向改為”橫印”...以方便容納整頁資料　 <button type=button onClick="Gauze(0)" title="還原成原先未列印的畫面" style="height:24"><img src="/img/return.gif" align=absmiddle> 還原畫面</button></td></tr>
+</table>
+<br>
+<div style="display:none"><var></var><kbd></kbd><var></var><kbd></kbd></div>
+</td></tr>
+</table>
+<form name=ISend method=post target=FItem action="eachitem.php"><input type="hidden" name="PHPSESSID" value="3e65d4ab82a951cdf30bb4040e816d16" />
+<input type=hidden name=Ititle><input type=hidden name=IGrp>
+<input type=hidden name=Itime value='1710946807'><input type=hidden name=Mtime value='1710946807'>
+<input type=hidden name=Ix><input type=hidden name=Iy>
+</form>
+<form name=eva method=post><input type="hidden" name="PHPSESSID" value="3e65d4ab82a951cdf30bb4040e816d16" /><input type=hidden name=iname><input type=hidden name=icnt><input type=hidden name=isearch><input type=hidden name=igrp value=""><input type=hidden name=iwins><input type=hidden name=ishow></form>
+<strong onclick="AppearItemList()" class=Switch title="單一與雙邊選項畫面">&#x25EB;</strong>
+<strong onclick="OverLay()" id="Switch" style="display:none" title="雙邊選項重疊上下畫面">&#x29c9;</strong>
+<span onclick="ModifyData()" id="Tester"></span>
+</body>
+</html>
+<script>
+Gauze(6)
+setTimeout('SkipMsg()',180000)
+</script>
